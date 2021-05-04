@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 A favor de la eutanasia
 =======================
 
