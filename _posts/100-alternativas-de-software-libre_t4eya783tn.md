@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 100 alternativas de Software Libre
 ==================================
 
