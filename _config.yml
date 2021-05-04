@@ -2,4 +2,4 @@ theme: jekyll-theme-hacker
 paginate: 5
 plugins:
 - jekyll-paginate
- - jekyll-feed
+
