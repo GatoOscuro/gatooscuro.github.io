@@ -1,0 +1,30 @@
+---
+layout: post
+---
+
+# El sueño de acabar con el anonimato en Internet
+
+Hace poco escribí sobre el tal polémico Artículo 11 y Artículo 13 de la Unión Europea (https://write.privacytools.io/gatooscuro/internet-cada-vez-mas-se-aleja-de-ser-libre), qué por cierto al día siguiente de escribir el artículo se había votado ¿Y qué pasó? Dieron un paso atrás, pero andan haciendo algunos cambios para una nueva votación en septiembre así que no nos salvamos, si eso fuera poco ahora también el PSOE quiere realizar una serie de enmiendas para acabar con el anonimato en Internet, en cuestión.
+
+Según lo que leí: El PSOE quiere renovar la Ley Orgánica de Protección de datos para «asegurar la libertad de expresión de los usuarios». Obvio no, se trata solo de una ley que les permita controlar y censurar bajo la excusa de «libertad de expresión» claro; ese cuento no sé lo creen ni ellos.
+
+![Cosmic radiation](https://raw.githubusercontent.com/GatoOscuro/fotos/main/articulo-91-ley-de-proteccion-de-datos-de-caracter-personal-lopd.webp)
+
+El resumen sobre lo que propone el PSOE: Básicamente en su **Artículo 91** se menciona «Los responsables de estos servicios de Internet adoptarán los protocolos necesarios para preservar la dignidad humana, los mencionados derechos y, en su caso, garantizar la identificación de los usuarios que los vulneren» **¿Identificar a los usuarios que vulneren la «ley»? ¿Acaso al hacer esto no están identificando a todos los otros?** Es algo bastante malo, ósea que por uno paguen todos. Además esto implica que tengan grandes bases de datos (si es que no las tienen en otros lados) con nuestra preciada información qué puede estar bastante vulnerable en sus manos y en manos de terceros. Por otro lado, según ellos **«los responsables deberán adoptar los protocolos necesarios»** y es allí donde todo se sale de control.
+
+Hagamos un pequeño ejercicio de memoria, **recordemos cómo era Internet antes y cómo eran los procesos de registro** ¿Te acordaste? Según como yo lo recuerdo, era una época donde los datos que se pedían para poder ingresar/permanecer en x sitio eran bastantes escasos -por no decir cortos-, si mucho pedían nombre y seudónimo (dependiendo del espacio). Así que volviendo al Artículo 91 y lo que se menciona allí, básicamente las redes sociales tendrían que adoptar mecanismo de registros como DNI (probablemente, incluso, subir una foto) vaya, una locura.
+
+Aclaro que hice un pequeño resumen sobre este artículo porque en su momento fue mejor documentado en **El Español** y claro, dejó la fuente para comprender esto mejor y con fuentes verídicas: https://www.elespanol.com/omicrono/software/20180729/psoe-quiere-cargarse-anonimato-internet/326218062_0.html. Solo quería dar mi opinión personal sobre el tema, aunque haya sido tema del mes pasado, pero al menos queda la reflexión del registro (el ejercicio mental de recordar aquel pasado).
+
+Ahora bien, la reflexión de más arriba «Cómo era el proceso de registro antes en Internet» es muy buena para hacer una gran comparativa de un antes y un después, ver como se ha reducido aquella libertad considerablemente. Yo personalmente creo que cada vez más habrá restricciones con la finalidad de tener el control, claro, no les conviene que la comunidad escoja lo mejor, se informe por su cuenta y un largo etc. Estos sujetos (nuestros gobernantes, lamentablemente) siempre estarán buscando como regular este medio de información porque ya todo lo otro se supone que lo tienen bajo control y es allí donde pienso que si seguimos así el poder quedará a merced de una sola persona y eso jamás estará bien (y más con Internet), el poder debe estar distribuido ¿Por qué? El poder a merced de una persona puede convertirse en una dictadura, básicamente todo puede fallar en cambio si el poder está distribuido aquella parte vulnerable será menos importante (por no decir miserable e inservible).
+
+Siguiendo el mismo hilo del tema me he encontrado con algo bastante curioso y son ciertos sujetos que apoyan este tipo de restricciones, de hecho son bloguers que han escrito sobre ello, cosas como: «El anonimato para cobardes», «Un Internet sin anonimato», «No al anonimato en Internet» y un largo etc… yo personalmente les he comentado en sus artículos y he desmentido paso a paso el argumento que tienen para estar en contra del anonimato, de hecho como burla les he colocado al final del comentario: Att GatoOscuro; un anónimo más, de hecho alguien por ahí me llamo cobarde por defender el anonimato (vaya nivel de retraso). Por otro lado, hay que ser sinceros y muchos me han hecho una respuesta a mi respuesta (valga la redundancia) de forma educada, es allí donde re-analizan su postura… pero eso no sucede con todos; unos pocos simplemente eliminan mi comentario y a tomar por culo jajajaja (son graciosos) no están a favor del anonimato y aun así censuran; tiene coherencia. 
+
+> **El anonimato no significa delincuencia, significa libertad.**
+
+Este tipo de comportamientos me ha hecho pensar muchas cosas, pero ninguna me ha llevado a una buena conclusión, de hecho ya he dado una conclusión coherente de por qué los gobiernos cada vez quieren menos libertad en Internet, pero con sujetos individuales y además de la comunidad no puedo sacar una conclusión viable, se me hace confuso **¿Por qué dispararte a ti mismo?** Simplemente termino con esto aquí y desde una vez dejó claro: Desde la ley S.O.P.A en adelante (y quizás hubo algo más atrás que se me haya olvidado) seguirán surgiendo todo tipo de restricciones por parte de los gobiernos a Internet, les dejo una imagen para que reflexionen un poco:
+
+![Cosmic radiation](https://freedomhouse.org/sites/default/files/styles/1080_wide/public/2020-02/FOTN_2016_WorldMap_820px.jpg?itok=QgmD6zGq)
+
+<iframe width="760" height="428" src="https://www.youtube.com/embed/krZaKpDSxU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+(https://www.youtube.com/embed/krZaKpDSxU8)
