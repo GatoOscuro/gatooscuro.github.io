@@ -1,6 +1,5 @@
 ---
 layout: post
-title: "Hola mundo"
 ---
 
 Después de un largo camino buscando que sería lo más ideal para mi (tecnicamente) en el mundo del blogguin, decidi ir a por Github Pages ya que suele ser bastante estable, eficiente y demás.
