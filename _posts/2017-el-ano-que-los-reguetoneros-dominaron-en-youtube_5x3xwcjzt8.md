@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 2017, el año que los reguetoneros dominaron en YouTube
 ======================================================
 
