@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 2018 El año de los vídeos verticales
 ====================================
 
