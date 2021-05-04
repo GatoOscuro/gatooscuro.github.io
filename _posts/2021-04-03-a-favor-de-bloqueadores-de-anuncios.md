@@ -1,3 +1,8 @@
+---
+layout: post
+---
+
+
 A favor de bloqueadores de anuncios
 ===================================
 
