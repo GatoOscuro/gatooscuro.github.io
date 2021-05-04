@@ -1,3 +1,8 @@
+---
+layout: post
+---
+
+
 2 de febrero ¡cumplo años!
 ==========================
 
