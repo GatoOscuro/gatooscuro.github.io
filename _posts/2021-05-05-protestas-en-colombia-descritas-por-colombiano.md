@@ -94,3 +94,66 @@ Saludos a todos, espero haber dejado todo bastante claro y si me salte algo, dis
 ![Protesta](https://www.cubahora.cu/uploads/imagen/2014/09/03/pazmundial.jpg)
 
 
+**Actualización 6/Mayo/2021**
+
+Después de haber publicado dicho artículo las reacciones no tardaron en llegar, en su mayoría, negativas y la cuestión es ¿somos presos de nuestra ideología? La cuestión es clara y el artículo lo hice de una forma simple de entender. Además de estar dirigido al extranjero que se deja llevar por las Fake News, en cuanto acá la critica debe ser por igual, tanto a la fuerza publica abusiva como a los radicales manifestantes, si crees lo contrarios es porque estás siendo parte de algún tinte político, una ideología, un movimiento y demás, cosa que yo niego, soy escéptico y no creó en nada, a duras penas creó en mi. 
+
+Sin ir más lejos, hay quién prefiere perder una amistad por no coincidir con la idea descrita (eso me sucede) y peor aun, siendo sesgados por el movimiento... bien me lo dijo alguien "defender lo indefendible" y creyendo que su verdad es la única, lo que más llama la atención, la que acapara el foto de atención para luego retribuir señalamientos a todos, tanto a favor como los neutros, cosa pésima en una sociedad donde se ha perdido el espíritu de la discusión libre/abierta y sin inclinaciones pendejas. 
+
+Vamos directo al grano, en unos pequeños y resumidos puntos de lo que he podido sentir en redes. 
+
+- 1 **Sacar de contexto**: Según una de las mayores criticas que se sale mucho de la onda del artículo, es que, yo soy a fin al gobierno y su militancia cosa que NIEGO totalmente y toda injusticia debe ser denunciada para que los encargados tomen las medidas correspondientes, en caso contrario, de la misma forma. Incluso al comenzar el artículo expreso "ahora es cuando un mal manejo se ve representado a gran escala" ¿es acaso ello apoyar a nuestro gobernante? Nada que ver, lo rechazo tanto como los manifestantes radicales, por su mal manejo tanto en el tema económico como el de la salud, eso si que es un dolor grande... enfermo y sin dinero (no creó que haya algo peor, eso si, es un ejemplo).
+
+- 2 **Apoyar el sensacionalismo**: De todas las criticas he notado ese amarillismo/sensacionalismo a más no poder, siendo del sector que sea, siempre describiendo con imágenes fuertes para sustentar su "respuesta" cosa que no ayuda en nada, inclusive el mensaje que intenta transmitir se ve manchado y no porque tenga una victima, lo es, todo porque lo están tomando como un medio para llamar la atención y así ampliar su repercusión ¿crees  que su familia está orgullosa de ello? Demasiado lamentable y no lo toman en serio, pero aun, con datos alejados de la realidad. Según la Defensoría del Pueblo, a la fecha del 4 de mayo habían un total de 23 muertes confirmadas (https://www.defensoria.gov.co/) y no 8000 como lo describió por ahí un ilustrador o "cientos", "miles" como expresan muchos en redes. Además, dentro de aquella muertes están manifestantes, policías y no participantes ¿entendés? Y también se judicializa los actos en contra de los derechos humanos por parte de la policía, ejemplo los 17 años de prisión a un patrullero que mato un menor de edad con granada de gas (https://www.fiscalia.gov.co/colombia/hay-justicia/17-anos-de-prision-para-patrullero-que-disparo-granada-de-gas-lacrimogeno-y-ocasiono-la-muerte-de-un-menor-de-edad/).
+
+- 3 **Negar la base empírica** Primero que nada *¿qué es el empirismo?* Cito a Wikipedia:
+> "El empirismo es una teoría filosófica que enfatiza el papel de la experiencia y la evidencia, especialmente la percepción sensorial, en la formación de ideas y adquisición de conocimiento, sobre la noción de ideas innatas o tradición. Para el empirismo más extremo, la experiencia es la base de todo conocimiento, no solo en cuanto a su origen sino también en cuanto a su contenido. Se parte del mundo sensible para formar los conceptos y estos encuentran en lo sensible su justificación y su limitación".  (https://es.wikipedia.org/wiki/Empirismo).
+
+¿Y que con ello? Pues, que muchos refutaban mis afirmaciones y demás exposiciones en mi blog y redes sociales, mi mayor sustento el ser Colombiano frente a ellos que estaban en su casa en Europa, si tienen la misma capacidad argumentativa, pero siguiendo la base empírica, negar lo que expreso a través de la experiencia y la evidencia es un acto de plena ignorancia y poca sensatez, incluso llegándose a engañar ellos mismos, ¿cómo conocen más que yo? Cosa que he vivido en carne propia y se atreven a discutir y negar nuestra situación, desde su cómoda en España, USA y etc; no tiene presentación. He estado en uno de los centros principales de la protesta, sintiendo la violencia de ambos bandos, sintiendo la escasez gracias al cierre de las vías, sintiendo los cobros excesivos por la poca comercialización ¿lo sientes igual? No lo creó, pueden hacerse una idea pero jamás sentirse igual sino lo vive; es como cuestionar el dolor ajeno (un sin sentido). 
+
+- 4 **No todo es malo**: Tenemos actos demasiados honorables donde el pueblo se ha unido junto a las fuerzas militares para dialogar, para comer algo y así colocar fin a la violencia, pero no, esta parte es ignorada porque lo que le interesa a los medios y los consumidores del amarillismo es ver solo la plena violencia ¡la represión! y así lavarse las manos con 4 publicaciones en contra en su red favorita, una pena... aquí unos ejemplos precisos de estos días:
+
+**ESMAD (escuadrón anti-disturbios) siendo verificado por la Defensoría del Pueblo** 
+
+![Protesta](https://raw.githubusercontent.com/GatoOscuro/fotos/main/fot.png)
+
+La Defensoría del Pueblo lo ha documentado en redes sociales, la verificación que se suele a hacer a dicho escuadrón para que no cometa o utilice herramientas que vayan en contra de los derechos humanos, todo queda estrictamente bajo la ley.
+
+**La unión hace la fuerza**
+
+![Protesta](https://raw.githubusercontent.com/GatoOscuro/fotos/main/paz.png)
+
+Acá se reúnen para poner fin a la violencia. 
+
+**Presencia de la Defensoría del Pueblo**
+
+![Protesta](https://raw.githubusercontent.com/GatoOscuro/fotos/main/0723f204a991b36f.png)
+
+
+**Pacifismo por parte de los manifestantes**
+
+![Protesta](https://raw.githubusercontent.com/GatoOscuro/fotos/main/312c913cb316d37d.png)
+
+Las fuentes están y aun así prefieren obviar lo evidente para pasar al tema de momento, a lo que tiene más repercusión entrando en debates sin sentido sobre quién tiene la razón 
+y peor aun, sin una base o refuerzo.
+
+Defensoría del pueblo: https://twitter.com/DefensoriaCol (https://www.defensoria.gov.co/). 
+
+Incluso una organización internacional donde sus datos son procesados no tan formalmente (puedes enviar hasta cartas para interponer una denuncia): Amnístia Internacional: https://www.amnesty.org/es/
+
+Ahí les he hecho el trabajo de información, con datos, secuencias y demás sin tener que ir a leer a CNN 🤔 , sin tener que creerle al que está en la esquina tomándose un café ¿qué son? Se llaman fuentes y las tienen en las manos. 
+
+**CENSURA**
+
+Hubo incluso quién expreso que en nuestra tierra no había Internet para así reprimir la expresividad de las protestas y fue lo más estúpido que leí ese día ¿por qué? No hubo una sola interrupción a Internet y se puede comprobar con la Big-data haciendo Ping a todos los servidores ubicados en Colombia y obtendrás los resultados sin caídas, ese día aumentaron las creencias de ese tipo y más cuando no les respondí durante algunas horas porque claramente me encontraba laborando, como siempre, no tengo tiempo libre como para discutir cualquier bobada. Internet tuve todo el maldito día sin ningún problema. 
+
+Foto sin el nombre del usuario para proteger su identidad.
+
+![Protesta](https://raw.githubusercontent.com/GatoOscuro/fotos/main/red.png)
+
+No le voy a creer que luego salga a decir que fue una broma porque justo ese día fue casi trending topic dicho tema por los extranjeros JEJE ¡cuanta ignorancia! Sus dominios van de mal a peor. 
+
+Por último un vídeo sobre la Densoría del Pueblo: https://cdn.mastodon.la/media_attachments/files/106/187/845/152/411/776/original/718818eee98d3f6a.mp4
+
+Hasta aquí quiero llegar con este tema de forma definitiva y quién quiera seguir discutiendo sin sentido, qué lo haga para que quede evidenciado de forma pública. 
+
