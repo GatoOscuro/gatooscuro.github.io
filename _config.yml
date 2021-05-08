@@ -7,3 +7,41 @@ title: GatoOscuro
 description: Todo tiene una razón de ser
 author: Gato Oscuro
 
+# Site settings
+title: "GatoOscuro"
+email: gatooscuro@protonmail.com
+description: "Todo tiene una razón de ser"
+baseurl: ""
+url: "https://gatooscuro.github.io"
+title_description: "Todo tiene una razón de ser.
+<br><br>
+<a href=\"https://vexpert.vmware.com/directory/1581\"><img src=\"/images/vExpert.png\"></a> 
+<a href=\"https://www.certmetrics.com/vmware/public/transcript.aspx?transcript=475K7SWC2N41QLWF\"><img src=\"/images/vcert.png\"></a>"
+title_image: "/images/brian.jpg"
+google_analytics: "UA-59218526-2"
+github_repository: https://github.com/gatooscuro/gatooscuro.github.io
+post_limit: 5
+# disqus_account: insert-here
+# addthis_id: insert-here
+
+# Social usernames/URLs
+mastodon: @gatooscuro@mastodon.la
+matrix:  gatooscuro7:nerdsin.space
+xmpp: gatoocuro
+email: gatooscuro@protonmail.com
+
+
+
+# Footer
+footer_left: "<a href=\"https://jekyllrb.com\">Jekyll</a> | <a href=\"https://pages.github.com\">GitHub Pages</a> | <a href=\"https://github.com/jacobtomlinson/carte-noire\">Carte Noire</a>"
+footer_right: "<a href=\"https://github.com/brianbunke/brianbunke.github.io\"><i class=\"fa fa-code\"></i><i class=\"fab fa-github\"></i></a>"
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+permalink: pretty
+exclude: [vendor]
+future: false
