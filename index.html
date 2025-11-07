@@ -1,62 +1,43 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>El cuarto de GatoOscuro</title>
-<meta name="description" content="Reflexiones sobre privacidad, software libre y pensamiento digital crítico.">
-<link rel="manifest" href="./manifest.json">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="./feed.xml">
-<link rel="stylesheet" href="./assets/style.css">
-<link rel="icon" href="./assets/favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="./assets/icon-192.png">
-<meta property="og:site_name" content="El cuarto de GatoOscuro">
-<meta property="og:title" content="El cuarto de GatoOscuro">
-<meta property="og:description" content="Reflexiones sobre privacidad, software libre y pensamiento digital crítico.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://gatooscuro.github.io/">
-<meta property="og:image" content="./assets/icon-512.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="El cuarto de GatoOscuro">
-<meta name="twitter:description" content="Reflexiones sobre privacidad, software libre y pensamiento digital crítico.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"El cuarto de GatoOscuro","url":"https://gatooscuro.github.io","description":"Reflexiones sobre privacidad, software libre y pensamiento digital crítico."}</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>El Cuarto De GatoOscuro</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-  <header class="header">
-    <div class="brand"><div class="logo">G</div>
-      <div>
-        <h1 style="margin:0">El cuarto de GatoOscuro</h1>
-        <div class="meta">Reflexiones sobre privacidad, software libre y pensamiento digital crítico.</div>
-      </div>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">El Cuarto De GatoOscuro</a></h1>
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="/about.html">Sobre mí</a>
+      </nav>
     </div>
-    <nav class="meta"><a href="./about.html">Sobre mi</a> · <a href="./feed.xml">RSS</a></nav>
   </header>
-  <div class="layout">
-    <main>
-      <section class="card">
-        <h2>Sobre mi</h2>
-        <p>Bienvenido al cuarto de GatoOscuro — colección de pensamientos, guías y piezas sobre privacidad, software libre y reflexión. Este sitio fue convertido a un formato estático, rápido y offline-capable. Disfruta la lectura.</p>
-      </section>
-      <section id="posts-list"></section>
-    </main>
-    <aside class="sidebar">
-      <div class="card">
-        <div class="search"><input id="search-input" placeholder="Buscar en artículos..."></div>
-        <div><strong>Categorías</strong><div id="categories-list" class="categories"></div></div>
-      </div>
-      <div class="card">
-        <strong>Etiquetas</strong>
-        <div id="tags-list" style="margin-top:10px"></div>
-      </div>
-      <div class="card">
-        <strong>Accesos</strong>
-        <div style="margin-top:8px"><a href="./feed.xml">RSS</a></div>
-      </div>
-    </aside>
-  </div>
-  <footer class="footer">© 2025 El cuarto de GatoOscuro · Sitio estático · PWA</footer>
-</div>
-<script src="./assets/main.js"></script>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Bienvenido a mi blog</h2>
+      <p>Entradas sobre internet, privacidad, anonimato y vida</p>
+    </section>
+
+    <section class="posts">
+      <h3>Publicaciones recientes</h3>
+      <ul class="post-list">
+        <li>
+          <a href="posts/sample-post.html">Mi primera entrada — Ejemplo</a>
+          <small class="date">2025-11-07</small>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 GatoOscuro • Hecho con HTML y GitHub Pages</p>
+    </div>
+  </footer>
 </body>
 </html>
