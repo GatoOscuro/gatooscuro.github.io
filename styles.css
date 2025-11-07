@@ -1,0 +1,57 @@
+:root{
+  --bg:#ffffff;
+  --text:#222;
+  --accent:#2b6cb0;
+  --muted:#666;
+  --container:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:1rem;
+}
+.site-header{
+  border-bottom:1px solid #eee;
+  background:#fafafa;
+}
+.site-title a{color:var(--accent);text-decoration:none}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:0.8rem 1rem;
+}
+nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{padding:1rem 0}
+.posts{padding:1rem 0}
+.post-list{list-style:none;padding:0;margin:0}
+.post-list li{
+  padding:0.6rem 0;
+  border-bottom:1px dashed #eee;
+}
+.post-list a{color:var(--accent);font-weight:600;text-decoration:none}
+.post-container{padding:1rem 0}
+.site-footer{
+  border-top:1px solid #eee;
+  padding:1rem 0;
+  color:var(--muted);
+  font-size:0.9rem;
+  background:#fafafa;
+  margin-top:2rem;
+}
+
+/* Responsive */
+@media (max-width:700px){
+  .site-header .container{flex-direction:column;align-items:flex-start}
+  nav a{margin-left:0;margin-top:0.5rem}
+}
