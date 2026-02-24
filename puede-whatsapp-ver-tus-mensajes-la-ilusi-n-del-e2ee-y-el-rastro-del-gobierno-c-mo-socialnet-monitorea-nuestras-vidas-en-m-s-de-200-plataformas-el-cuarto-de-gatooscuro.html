@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>¿Puede WhatsApp ver tus mensajes? La Ilusión del E2EE y el rastro del gobierno: Cómo SocialNet monitorea nuestras vidas en más de 200 plataformas - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>¿Puede WhatsApp ver tus mensajes? La Ilusión del E2EE y el rastro del gobierno: Cómo SocialNet monitorea nuestras vidas en más de 200 plataformas</h2>
+            <p class='meta'>Publicado el 21/03/2025</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Durante esta semana que he estado algo ausente han surgido demasiadas cosas, mismas de las que cada día pensaba <strong>¿Será que mañana puede haber un titular que supere al anterior? </strong>Y lo sorprendente es que sucedió, pues ahora he venido a escribir un poco sobre ello, trayendo algo de ese contenido al español y bajo mi perspectiva para entender un poco cual es el panorama en el que vivimos actualmente y sí digitalmente estamos "seguros" cuestión de dudar con cada día que pasa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">WhatsApp: se lo que deaseas</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>De lo primero que leí fue: '<a href="https://web.archive.org/web/20250325140312/https://toprakdeviren.github.io/posts/can-whatsapp-see-your-messages-the-e2ee-illusion.html" target="_blank" rel="noreferrer noopener">¿Puede WhatsApp ver tus mensajes? La ilusión E2EE'</a>, de Uğur Toprakdeviren, un conocido investigador de cifrado E2EE, quien ha tenido un papel importante en otros protocolos de cifrado y, de hecho, propone un nuevo concepto de cifrado seguro, cosa que les contaré más adelante. El caso es que en su artículo mencionado anteriormente describe cuáles son las partes de la arquitectura de WhatsApp por las que se debe desconfiar y, en sí, desmontar su cifrado de extremo a extremo. En resumen:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Clave Pública Compartida:</strong> WhatsApp utiliza claves públicas para cifrado resistente a computadoras cuánticas, pero no se puede verificar si la clave pública de un contacto es auténtica, lo que podría permitir ataques Man-In-The-Middle (MITM). La verificación requiere servidores independientes que WhatsApp no implementa.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Múltiples Dispositivos:</strong> Al usar WhatsApp en varios dispositivos, la información sobre el inicio de sesión proviene de sus servidores, lo que podría permitirles leer mensajes. Sin un protocolo seguro como el "Algoritmo Sesame" de Signal, esto genera vulnerabilidades.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Reenvío de Archivos:</strong> WhatsApp elimina archivos grandes al reenviarlos instantáneamente, lo que sugiere que podría tener acceso a contenido sin cifrar, en lugar de requerir un nuevo cifrado.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Mensajería Grupal:</strong> WhatsApp no utiliza el protocolo MLS para cifrado en grupos, sino una solución menos segura que distribuye una clave grupal, lo que introduce vulnerabilidades en la gestión de claves.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Videoconferencia Grupal: </strong>En videoconferencias, WhatsApp combina y envía video a través de sus servidores, lo que requiere acceso a datos sin cifrar. Signal, en cambio, cifra las transmisiones individualmente, manteniendo la privacidad.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Modelo de Ingresos: </strong>WhatsApp envía 100 mil millones de mensajes diarios de forma gratuita, lo que plantea la pregunta de cómo financian sus operaciones. Se sugiere que Meta podría estar utilizando datos de usuarios para monetizar la información.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Metadatos:</strong> A pesar del cifrado, WhatsApp procesa metadatos que pueden revelar patrones de comunicación, lo que puede ser muy informativo sobre los usuarios.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Anomalías en la Vida Real: </strong>Existen casos documentados donde las autoridades han accedido a correspondencia de WhatsApp sin el conocimiento de los usuarios. Aunque WhatsApp afirma que no rastrea a individuos, los datos se analizan en conjunto para fines de marketing.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Aclaro que lo anterior es solo un resumen, para entender cada punto te manera extensa deben de redirigirse al artículo original en cuestión que he anclado al inicio de estás líneas. Respecto a la pregunta del titulo, si aun no quedo claro: sí.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y sí… de verdad que no me extrañaría para nada que esto fuese real, por la misma razón en que está construido WhatsApp. Osea, aunque el protocolo de cifrado en sí es accesible y puede ser auditado por la comunidad, la implementación específica de WhatsApp de este protocolo es parte de su código cerrado. Esto significa que, aunque los principios y la seguridad del protocolo Signal pueden ser verificados y revisados por expertos en seguridad, la forma en que WhatsApp lo ha integrado en su aplicación y cómo maneja otros aspectos de la seguridad y la privacidad de los datos no puede ser auditada de manera independiente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ya había momentos en los que yo pensaba: <strong>¿Cómo es posible que WhatsApp pueda mover tanta cantidad de datos en cuestión de segundos?</strong> Y sí, pueden decir "sus grandes datacenters", pero he notado cómo otras compañías que adoptan cifrado de extremo a extremo y tienen una cantidad de usuarios mucho menor pueden, fácilmente, tener problemas en sus servidores al momento de intercambiar información, lo que suele tardarse bastantes segundos, lo cual es apreciable. Todo esto, mientras internamente las operaciones matemáticas juegan entre sí para que el usuario pueda obtener un archivo descifrado de quién corresponde. De ahí que se note la diferencia a primera vista… siempre esa ha sido mi sensación, la razón por la que suelo desconfiar de este tipo de mensajerías que hacen todo tan rápido sin importar todos esos procesos complejos que hay de fondo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Así que, bueno, sorpresa como tal no es; es inseguro hasta que se demuestre lo contrario, cosa que no creo. Sin embargo, ya se ha convertido en un monstruo con el que tenemos que convivir día tras día, y sí, tanto en el ámbito laboral como personal. Por lo tanto, siempre mi recomendación será: cuidado con lo que compartes por dicho medio y trata de evitar conversaciones demasiado privadas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ahora, respecto al nuevo concepto que<a href="https://web.archive.org/web/20250313024907/https://toprakdeviren.github.io/posts/we-dont-need-end-to-end-encryption-we-need-peer-to-peer-encryption.html" target="_blank" rel="noreferrer noopener"> introduce este autor</a>, cito:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Ninguna aplicación de mensajería conectada a un servidor es realmente segura. Como ya he escrito, lo que necesitamos no es E2EE, sino P2PE (cifrado punto a punto). La verdadera seguridad reside en eliminar el servidor como posible punto de vulnerabilidad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En un sistema P2PE, los mensajes se transmitirían directamente entre usuarios sin pasar por servidores centrales ni almacenarse en ellos. Esto eliminaría muchas de las vulnerabilidades descritas anteriormente y daría a los usuarios un control real sobre sus comunicaciones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hasta que logremos eso, debemos mantener un sano escepticismo sobre las afirmaciones de encriptación "inquebrantable" de cualquier servicio que mantenga servidores centrales y un modelo de negocios que no explique de manera transparente cómo cubren sus enormes costos operativos".</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center"><strong>El gran hermano nos vigila</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Otra cuestión de la que leí recientemente y de la que finjo "sorpresa" fue la de enterarme de que en USA se está utilizando una <a href="https://shadowdragon.io/socialnet/" target="_blank" rel="noreferrer noopener">herramienta llamada SocialNet </a>para acceder a datos públicos de usuarios de más de 200 plataformas y mapear las actividades, movimientos y relaciones de los individuos. Esto no es del todo sorpresa debido a que gracias a las filtraciones y demás artículos periodísticos nos hemos estado enterado que USA siempre ha andado a la vanguardia en términos de OSINT, que significa Open Source Intelligence (Inteligencia de Fuentes Abiertas), se refiere a la recopilación y análisis de información disponible públicamente para obtener inteligencia útil. Esta información puede provenir de diversas fuentes, como:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Internet: </strong>Sitios web, redes sociales, blogs, foros y otros recursos en línea.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Medios de comunicación:</strong> Artículos de noticias, informes y publicaciones de medios.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Documentos públicos: </strong>Registros gubernamentales, informes de auditoría, documentos legales y otros registros accesibles al público.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Publicaciones académicas: </strong>Artículos de investigación, tesis y otros trabajos académicos. Datos de empresas: Información sobre empresas, como informes anuales, datos de mercado y análisis de la competencia.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"id":3731,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/03/YouTube-Thumbnail-1024x575.avif" alt="" class="wp-image-3731"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://web.archive.org/web/20251117020158/https://shadowdragon.io/wp-content/media/YouTube-Thumbnail.png" target="_blank" rel="noreferrer noopener">acá.</a></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>OSINT es utilizado en diversas áreas, incluyendo la seguridad nacional, la ciberseguridad, la investigación de mercado, la inteligencia empresarial y la investigación criminal. La ventaja de OSINT es que se basa en información accesible y legal, lo que permite a los analistas obtener datos valiosos sin necesidad de recursos clandestinos o ilegales. Básicamente es similar a lo que se hace en el bando contrario con el famoso doxing, que de hecho fue muy popular años atrás en el que, con pocos datos podías obtener gran cantidad de información sobre un individuo o una organización.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lo nuevo acá es que, en ese mapeo salen aplicaciones de las que se consideraban "seguras" al menos poco loables a ser recopiladas, dentro de ellas: Signal.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cito una parte del artículo "<a href="https://www.404media.co/the-200-sites-an-ice-surveillance-contractor-is-monitoring/" target="_blank" rel="noreferrer noopener">Los más de 200 sitios que monitorea un contratista de vigilancia de ICE</a>" de José Cox:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Un contratista del Servicio de Inmigración y Control de Aduanas (ICE) y muchas otras agencias gubernamentales de EE. UU. ha desarrollado una herramienta que facilita a los analistas la extracción simultánea de datos públicos de una persona objetivo de una amplia gama de sitios web, redes sociales, aplicaciones y servicios, incluyendo Bluesky, OnlyFans y varias plataformas Meta, según una lista filtrada de sitios obtenida por 404 Media. La lista incluye más de 200 sitios de los que el contratista, llamado ShadowDragon, extrae datos y los pone a disposición de sus clientes gubernamentales, lo que les permite rastrear la actividad, los movimientos y las relaciones de una persona.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La noticia llega después de que el <a href="https://www.404media.co/columbia-protestor-arrested-by-ice-moved-to-louisiana-detention-facility/" target="_blank" rel="noreferrer noopener">Servicio de Inmigración y Control de Aduanas (ICE) detuviera el sábado a Mahmoud Khalil </a>, un destacado manifestante de la Universidad de Columbia y residente permanente legal de Estados Unidos con tarjeta de residencia permanente (Green Card), con la intención de deportarlo. También se produce cuando, según informes, el secretario de Estado, Marco Rubio, está lanzando una iniciativa de "Captura y Revocación" basada en inteligencia artificial para escanear las cuentas de redes sociales de decenas de miles de titulares de visas de estudiante, en busca de lo que Axios informó como extranjeros que parecen apoyar a Hamás u otros grupos terroristas".</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Lastimosamente el artículo como tal es de pago, por lo que no se puede acceder a el completamente, pero las listas han sido difundidas por otros medios, puedes verla: <a href="https://docs.google.com/spreadsheets/d/1VyAaJaWCutyJyMiTXuDH4D_HHefoYxnbGL9l02kyCus/htmlview#gid=0">acá.</a> En la que se destacan Signal, Protonmail, Wire, DuckDuckGo, BlueSky, WhatsApp, VirusTotal, Telegram, Pastebin, las principales redes sociales rusas, sitios porno bien conocidos, sitios de donaciones, Gab, Minds y el Fediverso en general. ¡Están por todos lados! Si no cifras nada realmente privado y utilizas alguna de esas aplicaciones, ya estás en su gran base de datos; de hecho, confirman lo que sospeché hace mucho: el Fediverso ha sido integrado en el ojo del Gran Hermano y, hasta que no integren el cifrado de extremo a extremo, será un sitio potencialmente inseguro.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Respecto a esto, leía un interesante <a href="https://xcancel.com/AlexLembergerx/status/1900913688044790158#m" target="_blank" rel="noreferrer noopener">cuestionamiento de un usuario en la red:</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>No controlas la plataforma (en la mayoría de los casos); incluso los cárteles lo entienden, por lo que usan mensajeros personalizados en teléfonos personalizados <a href="https://www.bbc.com/news/articles/clyljpygxgjo" target="_blank" rel="noreferrer noopener">bbc.com/news/articles/clyljp…</a> y eso no los salvó. Incluso considerando que la aplicación, por ejemplo, Signal de código abierto, descargada de la App Store, la aplicación que no compilaste 🤡 es segura, no tiene puertas traseras y es segura (quién sabe, quizás sí). ¿Cómo puedes estar seguro de que tu teléfono de 12-16 GB/1 TB no crea una instantánea discreta y la envía por la red 5G de GBits a su antojo? ¿Qué te hace pensar que nada intercepta los APN o la alternativa de Android?</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Probablemente estemos subestimando la capacidad de cómputo y almacenamiento de los grandes estados. Para ponerlo en perspectiva, OpenAI logró rastrear internet para entrenar sus modelos de IA; la empresa literalmente no existía hace una década. Bueno, la NSA tiene 72 años, hasta 50 mil empleados, acceso a la infraestructura de internet y posiblemente a cientos de plataformas que les proporcionan datos en tiempo real. A esto hay que sumarle las competencias de análisis de datos de Palantir y otras corporaciones menos conocidas.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Simplemente busca en Google qué son las CNN, date cuenta de la pequeña cantidad de vértices que se necesitan para reconocer tu rostro, súbelo a una de esas aplicaciones de reconocimiento facial y luego cuenta todas las cámaras que encuentras en un día (teléfonos, portátiles, cámaras de vigilancia en el ascensor, la entrada de casa, en la calle, parpadeos, timbres, etc.).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Incluso con todo súper seguro de tu lado, nunca sabes qué hay del otro lado. <strong>- Alex Lem</strong></li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Tiene datos interesantes que cobran mucho sentido, aunque otros no tanto, de hecho el fundador de Brave le respondió referente a la afirmación de OpenIA y es que estos llevan bastante tiempo, aunque muy bajo perfil.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Conclusión</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lo más importante es no 'alarmarse' y esperar las diferentes declaraciones por parte de los entes que se ven envueltos en esta 'filtración', si se le puede llamar así. Aunque también hay que tener en cuenta el método de obtención de los datos, bajo el modelo OSINT del que ya expliqué líneas arriba cómo es su proceder. Por lo tanto, no han 'afectado' como tal a ninguna plataforma; son datos a los que cualquiera, minuciosamente y con el conocimiento y el software indicados, puede acceder. Sin embargo, en este caso, ellos, por medio de un tercero, han automatizado todo este proceso para generar un mapa de conectividad entre sí en más de 200 plataformas. Esa es la cuestión: el cómo van de avanzados en este material y a saber qué más tienen de manera confidencial.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ya veo a mucha gente criticando las diferentes organizaciones sin entender mucho el cómo y el por qué sucede esto. Además, hay que tener en cuenta el grado de culpabilidad de las diferentes plataformas. Desde ya he visto a quiénes andan recomendando migrar de Signal a otras plataformas europeas. De hecho, ayer escribí sobre las alternativas europeas, que muchas aún no le llegan a los talones de Signal. Recientemente, <a href="https://tuta.com/es/blog/swedish-armed-forces-require-signal-encrypted-messages" target="_blank" rel="noreferrer noopener">la agencia estadounidense CISA y luego las Fuerzas Armadas suecas</a> han recomendado fuertemente su adopción ¿Por qué? Porque han entendido la importancia de poseer un mensajero seguro debido a tanto enemigo en línea, piratas informáticos de diferentes naciones representando a un patrón, que efectivamente lleva una bandera; gana quién conozca más del otro.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Recientemente también me hago eco de que <a href="https://www.computerworld.com/article/3850597/signal-threatens-to-leave-france-if-encryption-backdoor-required.html" target="_blank" rel="noreferrer noopener">Signal amenaza con abandonar Francia si se requiere una puerta trasera de cifrado</a>… y miren que he escrito recientemente sobre la doble moral de Francia con su "alternativa segura" Olvid, de la que sacan pecho, en ser la única mensajería certificada en el país (auto echarse flores ja ja) y aclaro, que Olvid no es precisamente una alternativa estatal, solo proviene de allá, pero lo parecen con las tácticas que han manejado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En fin, cómo dicen en mi tierra "amanecerá y veremos"… no afirmes nada y cuestiona todo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>¡Muchas gracias por leer! Quedo atento a cualquier corrección y/o aporte; saludos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3730,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/03/bb-final-1024x179.avif" alt="" class="wp-image-3730"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://opulix.s3-accelerate.amazonaws.com/wp-content/uploads/2016/06/29102004/bb-final.png" target="_blank" rel="noreferrer noopener">acá.</a></figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

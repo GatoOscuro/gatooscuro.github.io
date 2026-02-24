@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Qué es y cómo usar PGP | Principiante - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Qué es y cómo usar PGP | Principiante</h2>
+            <p class='meta'>Publicado el 15/08/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Seguramente el caso más mencionado en el que se haya utilizado PGP, fue: Cuando Edward Snowden y Laura Poitras lograron ponerse en contacto y burlar a las agencia de seguridad estadounidenses y sus aliados gracias a que una de sus primeras comunicaciones fue encriptada. En ese correo electrónico Snowden le pedía a Poitras (<a href="https://www.wired.com/2014/10/snowdens-first-emails-to-poitras/" target="_blank" rel="noreferrer noopener">https://www.wired.com/2014/10/snowdens-first-emails-to-poitras/</a>) que aumentara el nivel de seguridad de su correo con una nueva llave más segura ya que la NSA es capaz de generar un trillón de contraseñas por segundo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>No se trata de hacer más difícil a la NSA saber qué dices, se trata de proteger cualquier tipo de información personal de cualquier otra persona, organización o sistema exterior que intenta espiarte.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sin colocarnos técnicos: PGP (Pretty Good Privacy/<strong>privacidad bastante buena</strong>), es un programa desarrollado por Phil Zimmermann y cuya finalidad es proteger la información distribuida a través de Internet mediante el uso de criptografía de clave pública, así como facilitar la autenticación de documentos gracias a firmas digitales.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Cómo funciona?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PGP es un criptosistema que cifra el contenido de un texto comprimiéndolo buscando patrones repetitivos en el texto, de la misma forma que por ejemplo la compresión de un archivo JPEG busca patrones repetitivos en la imagen para hacer más ligero el archivo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Por qué cifrar tus comunicaciones?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No se trata de que tengas algo que esconder, si no de que tienes comunicaciones que no tienen por qué ser escuchadas o leídas por otras personas. El cifrado de mensaje hoy por hoy es un poco complicado, pero poco a poco hay más aplicaciones y servicios que ponen la seguridad por delante y más fácil de entender.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Noten que estoy siendo muy resumido en cuanto a las explicaciones, y esto es porque la mayoría de sitios que hablan sobre PGP y sus derivados, complican las cosas a tal punto que un usuario promedio o básico no entenderá un carajo. Además no me puedo meter mucho en datos técnicos porque no soy un profesional en ello (todavía) y no podría darte esa clase de definición.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Cómo usarlo?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hay muchas formas de utilizar este tipo de cifrado, pero hoy les vengo a mostrar la más sencilla que conozco para que cualquiera pueda probar y no morir en el intento. Más adelante pueden experimentar por su propia cuenta con alternativas más complicadas, igual al final dejaré una serie de herramientas para tener de guía.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Nota:</strong> 20/03/2021</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Este artículo data de 2018, pese a su antigüedad y el querer actualizar la guía me encuentro con que el sitio donde originalmente me base para proyectar a los principiantes NO existe ya, pero no todo es malo… de 2018 a 2021 todo se ha vuelto muy sencillo, prácticamente es llenar casillas y guardar la información, ahora todo el tema del cifrado PGP para principiantes lo hace el navegador de forma automática, por lo tanto está guía solo será para referenciar aquellos sitios y enseñarles los conceptos que más arriba explicaba, sólo eso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li><a href="https://youritmate.us/pgp/" target="_blank" rel="noreferrer noopener">https://youritmate.us/pgp/</a></li><li><a href="https://pgptool.org/#" target="_blank" rel="noreferrer noopener">https://pgptool.org/#</a></li><li><a href="https://webencrypt.org/openpgpjs/" target="_blank" rel="noreferrer noopener">https://webencrypt.org/openpgpjs/</a></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>En esos tres sitios tendrás las herramientas suficientes para generar las claves PGP con los parámetros seleccionados. Además de poder utilizarlas en cualquier tipo de servicio/aplicación sin ningún problema porque puedes migrar tu clave secreta a cualquier lado <strong>¿Aún no entiendes lo de las llaves?</strong> Básicamente la llave pública es la que contiene la información cifrada con base en tu llave secreta que corresponde a los datos ofrecidos en los parámetros para crear dicha clave, por lo tanto la clave secreta solo la tendrás tú y en un lugar seguro porque con ella podrás descifrar todos los mensajes que sean cifrados con tu clave pública la cual es la que proporcionas al público para que te contacte. Espero haber sido bastante claro.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Otras aplicaciones de cifrado</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No solo existe el método que les mostré, pero es sin duda la más fácil de entender en cuanto a cifrado PGP se refiere. Pero si eres una persona que quiere usar otras aplicaciones o plugins, atento a esta lista.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>GPGTools: Para OS X es la mejor solución, se integra con Apple Mail (<a href="indice.html" target="_blank" rel="noreferrer noopener">https://gnupg.org/download/index.html</a>).</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Esta es una pequeña selección de aplicaciones que permiten cifrar el contenido de tus comunicaciones. Existen muchas más, recuerda que puedes recomendarlas en los comentarios.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://uh.gsstatic.es/sfAttachPlugin/918145.jpg" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

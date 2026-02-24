@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Los dos grandes errores de Telegram - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Los dos grandes errores de Telegram</h2>
+            <p class='meta'>Publicado el 06/07/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Telegram es una aplicación de mensajería segura y libre (gran parte de su código esta abierto). Además es la mejor alternativa a otras aplicaciones de mensajería como WhatsApp y Messenger, esto por su enfoque a la privacidad, productividad, seguridad, libertad y etc.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sabiendo un poco de los mejores datos positivos de Telegram ¿qué podría salir mal? Solo dos cosas, desde mi punto -cabe aclarar- y son los siguientes:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>No tener el cifrado end-to-end por defecto</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Básicamente la excusa oficial y en resumidas cuentas es: «Poder hacer respaldos y tener todos tus chats en cualquier momento y en cualquier dispositivo gracias a la nube. Además de ser aceptada en amplios círculos, no sólo por activistas o disidentes, y que de este modo el hecho de usar Telegram no marque a los usuarios como objetivos de una mayor vigilancia en ciertos países». Esta es la excusa oficial por parte de Telegram, es válida pero no tanto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El problema es que para poder tener un cifrado end-to-end y enviar mensajes seguros tienes que dirigirte especialmente a un chat secreto con el receptor. Además de que esta opción solo esta disponible desde el móvil y no desde el ordenador (no aun en el cliente oficial), esto hace que en repetidas ocasiones puedas cometer el error de enviar el mensaje confidencial por el canal normal en vez del chat secreto o viceversa; un lío enorme.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La parte de la excusa que me parece sobrante es: donde dice que lo hacen para que los usuarios no sean objetivos de una mayor vigilancia en ciertos países, lo peor es que sin tener los chats end-to-end por defecto ya ha sido prohibida en ciertos países y bastante vigilada en x territorio; una excusa sobrante. Por otro lado, es el punto que no me molesta tanto y lo pensé mucho en si agregarlo o no porque a la hora de la verdad para algo bastante confidencial he de recurrir a otra aplicación. Además entiendo el argumento de tener todo a la mano y en cualquier dispositivo, algo que se agradece y esta bastante bien.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Bots no tan seguros</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Es quizás la característica más atractiva de Telegram y la más espeluznante (relativamente en cuanto a privacidad) en resumen: es un arma de doble filo ¿Por qué? Vamos a ver por donde comienzo… hace un tiempo buscando entre gran cantidad de bots para x funcionalidad veía que algunos tenían cierto comportamiento extraño, no parecían del todo automatizados y lo que faltaba, un amigo de Telegram AlienGendro me comento sobre aquella funcionalidad y era usar un bot como un intermediario o bueno, hacerse pasar por bot pero en realidad ser tú ¿Cómo es esto? Fácil, ir al BotFather y «crear» un bot con el cual obtendremos el token de dicha API para bots, luego simplemente toca descargar un cliente adaptado con el que puedas ingresar como bot con el acceso token, un ejemplo de ello es el cliente PWRTelegram, ese fue el cliente que use para probar y comprobar que fuera cierto lo que me mencionaba aquel amigo y si, funciono.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Esto me lleva a la siguiente conclusión: Es una arma de doble filo como he mencionado al principio, pero va más allá, puede ser una vulnerabilidad que se puede aprovechar fácilmente para fines no correctos ¿Ejemplos? Qué tu bot sea uno más del montón que tiene como finalidad x funcionalidad y para ello se necesite cierta información que previamente el usuario va a facilitar y obviamente estará cayendo en una trampa. Ese quizás sea un ejemplo bastante exagerado, vamos con uno más fácil de creer, ser usado para capturar chat/información ¿Cómo? Ingresar ese bot malicioso a determinado grupo y listo, dejarlo allí, todo lo que se envié (texto y multimedia) quedará guardado en el bot; esto para una conversación «confidencial» puede ser una gran molestia porque se puede filtrar información y ni idea de quién fue. Además de que hay grupos que no tienen protección (bots moderadores) y esto permite ingresar este tipo de bots maliciosos a aquellos grupos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Desde que se está información desconfió de cualquier bot en Telegram ya que no sabes a quién le estás facilitando tus datos, la solución es usar solo bots reconocidos y con su código libre (hay varios para moderación que tienen toda la documentación correcta). Por otro lado, parece ser que Telegram sabe que tener la API de bots abierta se puede aprovechar para ciertas cosas maliciosas y esto es lo que dicen en su página oficial: «Naturalmente, cualquier bot tiene que ser tratado como un extraño; no les entregues tus contraseñas, códigos de Telegram o números de cuenta de bancos, aunque pidan esos datos amablemente».</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Aun así solo son dos problemas que a la hora de la verdad no son un problema (si, un poco loco lo que acabo de escribir) simplemente quería documentar estas dos características que me parecen un poco negativas, pero aun así Telegram sigue teniendo infinidad de cosas positivas y es por ello que lo uso día a día. Además de dejar las fuentes pertinentes, dejó también dos artículos para saber lo mejor de Telegram.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Nota</strong> Es un pequeño resumen en donde salen las dos grandes desventajas, pero en realidad tiene muchisismas más como su servidor propietario y que no lo liberen por temor a que se modifique el código para el mal (sólo excusas) y muchas más promesas qué solo quedarán por ahi… por ello, apostar a XMPP o Matrix.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://i2.wp.com/hipertextual.com/wp-content/uploads/2015/09/bots-telegram.jpg?resize=610%2C471&amp;ssl=1" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

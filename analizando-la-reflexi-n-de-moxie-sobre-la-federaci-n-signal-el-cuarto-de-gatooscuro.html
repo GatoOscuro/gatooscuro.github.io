@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Analizando la reflexión de Moxie sobre la federación (Signal) - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Analizando la reflexión de Moxie sobre la federación (Signal)</h2>
+            <p class='meta'>Publicado el 12/06/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Durante mucho fui gran seguidor del proyecto Signal, me pareció que sus papeles en la escena era de lo que mejor había, prácticamente tenías una organización que "exponía" los problemas de la privacidad con el pasar de los tiempo y a su vez aportaba con su gran proyecto que es Signal, para conversaciones de que por medio de la criptografía se haría un intercambio seguro ¿hasta qué punto? Eso ya es otro tema que no tocaré, pero al menos intenta ser lo más seguro de fábrica. Referencia de seguridad (https://write.privacytools.io/gatooscuro/por-que-no-voy-a-recomendar-signal-nunca-mas).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La cuestión acá es que de un momento a otro perdí ese amor que le tenía y todo por como se manejaba el proyecto, decían ser los más abiertos posibles y luego notabas que la colaboración entre desarrolladores no era lo más factible y más con ideas "revolucionarias"/"novedosas" como lo es la interoperabilidad, incluso podían llegar al punto de rechazar públicamente dicha idea… todo bajo el mando de su creador, Moxie. Acá un vistazo a uno de sus artículos más conocidos escritos en el año 2016.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Artículo en cuestión: (https://signal.org/blog/the-ecosystem-is-moving/).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Como desarrollador de software, envidio a escritores, músicos y cineastas. A diferencia del software, cuando crean algo, realmente lo hacen, para siempre. Un álbum grabado puede ser el mismo 20 años después, pero el software tiene que cambiar.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Totalmente de acuerdo. El tema del software es demasiado interesante, constantemente tiene que adaptarse al tiempo y aún peor, al feedback que lanza su comunidad para estar al "día" no suficiente con la adaptación a la máquina (nivel binario); un software viejo tiende a ser lo más vulnerable posible, por ende, debe ser desechado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>El software existe como parte de un ecosistema y el ecosistema se está moviendo . La plataforma cambia por debajo de ella, las redes evolucionan, las amenazas de seguridad y las contramedidas cambian constantemente, y el lenguaje colectivo de UX rara vez se queda quieto. A medida que se ha invertido más dinero, tiempo y atención en el ecosistema, más rápido ha comenzado a viajar todo.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>El dinero lo mueve todo y más cuando el usuario empieza a convertirse en el "producto", si tomas como ejemplo las redes propietarias notaras ese común denominador, en que, según la factura y el manejo de sus cuentas (valor monetario) tendrá una interacción en particular de cara los usuarios o usados como diría el maestro Richard Stallman. En este caso en particular, debo resaltar que ninguna red libre debe tomar como imagen dicho modelo de negocio de las redes propietarias; <strong>nunca la cantidad será lo mejor ante la calidad.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Una de las cosas controvertidas que hicimos con Signal al principio fue construirlo como un servicio no federado. Ninguno de los protocolos que hemos desarrollado requiere centralización; Es completamente posible construir un mensajero federado basado en el Protocolo de señales, pero ya no creo que sea posible construir un competitivo mensajero federado .</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Demasiado fatalista la visión que posee el Sr. Moxie frente al panorama social de las aplicaciones de mensajería federadas y más, cuando resaltan que ninguno de sus protocolos que han desarrollado requieren centralización, pero ¿por qué Signal si es la excepción? En ese caso tomaron esa decisión y el mismo lo subraya de "controvertida" y dice "al principio" ¿es que acaso federa? Se supone que una vez forkearon el repositorio de Signal para crear una alternativa descentralizada, pero luego Moxie les mando una negativa, por lo tanto, dichos desarrolladores prefirieron cerrar su idea (así dicen que sus servicios no dependen de la centralización).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Fuentes: - (https://github.com/LibreSignal/LibreSignal)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>(https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217211165)</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>En algunos círculos, esta no ha sido una opinión popular. Cuando alguien me preguntó recientemente sobre la federación de una plataforma de comunicación no relacionada en la red de Signal, les dije que pensaba que sería poco probable que alguna vez nos federamos con clientes y servidores que no controlamos. Su respuesta fue "eso es tonto, ¿hasta dónde habría llegado Internet sin protocolos interoperables definidos por terceros?"</p><p>He pensado en ello. Llegamos a la primera versión de producción de IP y durante los últimos 20 años hemos intentado cambiar a una segunda versión de producción de IP con un éxito limitado. Llegamos a la versión 1.1 de HTTP en 1997 y nos hemos quedado atascados allí hasta ahora. Del mismo modo, SMTP, IRC, DNS, XMPP, todos están igualmente congelados en el tiempo alrededor de finales de la década de 1990. Para responder a su pregunta, eso es lo lejos que llegó Internet. Llegó a finales de los 90.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Tendrá algo de razón referente al atasco en el tiempo de dichos protocolos, pero siendo sinceros ¿acaso no han sido lo suficiente estables y que han satisfecho nuestras necesidades? Yo creó que si, a pesar de que en la actualidad muchos de ellos se vean ya desaparecidos (Ftp, http, smtp y etc) en su momento fueron los que domino la red, eran lo suficiente "robustos" como para mantener dicha constancia de supervivencia, al final, fueron relevados ¡cómo debe ser! Aun así, aún quedan protocolos de aquellas épocas que aún siguen siendo mejor que posibles alternativas ¿por qué? Porque se centran en hacer solo una cosa bien y es su principal función, no es como proyectos como Systemd que quiere abarcarlo todo y tener problemas en su ejecución.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Agrego:</strong> Gran ejemplo es el protocolo XMPP el cual a pesar de ser 1999, aún se mantiene en el tiempo y mejor aún, cumpliendo con su misión, dando por hecha una federación sin errores y más que todo una comunicación fluida, abierta y segura ¿no lo ves? Sí que le falta modernización y a pesar de que no tenga el Material Desing como el resto de aplicaciones de mensajerías, sí que se ha intentado "mantener" el nivel incorporando sistemas para llamadas, videollamadas, notas de voz y demás funciones que ahora en día son lo primordial para mantener una conversación completa. En la actualidad aún lo utilizo de forma constante y pues, hasta que no llegue un relevo con ese mismo nivel de seguridad y fluidez, no lo reemplazaré, en ese caso esperamos demasiado de la red Element/Matrix.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Eso nos ha llevado bastante lejos, pero es innegable que una vez que federas tu protocolo, se vuelve muy difícil hacer cambios. Y en este momento, a nivel de aplicación, las cosas que se detienen no funcionan muy bien en un mundo en que el el ecosistema se está moviendo.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Esto ha quedado firmemente desmentido con el gran ejemplo del protocolo de federación más conocido que incorporan redes sociales de microblogguin como lo es Pleroma, Misskey, Peertube, Mastodon y demás, el cual es <strong>ActivityPub</strong>(https://activitypub.rocks/). No hay mejores ejemplos que este, prácticamente ya es un estándar para las redes sociales descentralizadas, entre ellas Friendica, Mastodon, Peertube, Misskey, Pleroma, PixelFed y un largo etc ¿quieres más? Recomendado por la W3C (referente a estándares de Internet y demás) (https://activitypub.rocks/news/activitypub-reaches-w3c-recommendation.html).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>De hecho, convertir un protocolo de capa de aplicación federado en un servicio centralizado es casi una receta segura para un producto de consumo exitoso en la actualidad. Es lo que hizo Slack con IRC, lo que Facebook hizo con el correo electrónico y lo que WhatsApp hizo con XMPP. En cada caso, el servicio federado está estancado en el tiempo, mientras que el servicio centralizado puede iterar en el mundo moderno y más allá.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Al parecer eso es lo único que le importa a Moxie, el falaz "éxito" y no como las buenas prácticas de Internet reflejan. Es demasiado fácil colocar como ejemplos dichas aplicaciones propietarias, pero si nos vamos a un análisis en profundidad, todo se cae en el negocio de perfilación y minado de datos (el usuario es el producto) este básicamente esta diseñado para darte lo que "quieres" y así mantener a sus usados mucho más tiempo en línea, por lo tanto, no tienen nada de "novedoso" y más cuando la persona promedio solo acepta lo que se le recomienda o se le señala de primera mano, cosa que es sencillo por parte del gran hermano Google, en donde en un teléfono Android suele venir preinstalado Facebook, WhatsApps y demás redes sociales basuras, que entre sí, detienen a la persona promedio para escapar de su vil realidad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nuevamente decae Moxie en el falaz número de cantidad por encima de la calidad… claramente no significa que sea mejor/superior.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Entonces, si bien es bueno poder alojar mi propio correo electrónico, esa es también la razón por la que mi correo electrónico no está encriptado de un extremo a otro, y probablemente nunca lo estará. Por el contrario, WhatsApp pudo introducir el cifrado de extremo a extremo a más de mil millones de usuarios con una sola actualización de software. Mientras la federación signifique estancamiento mientras que la centralización signifique movimiento, los protocolos federados tendrán problemas para existir en un clima de software que exige movimiento como lo hace hoy.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Gran ejemplo en colocar a WhatsApp de referencia frente al encriptado de extremo a extremo, cuando no es un cifrado completo o al menos, ni siquiera podemos comprobar que esté haciendo el trabajo adecuado porque su código es cerrado, aun así, sin ver su código ¿qué pasa con sus llaves? Obviamente quedan guardadas en los mismos servidores de WhatsApp donde se descifran ¡qué gracioso! ¡Cuanta seguridad! Pero ellos te dominan. Además es curioso como un experto como Moxie en seguridad informática apoya a dicho proyecto ¡Ah, pero si es que colaboran! Si, exactamente, WhatsApp se basó en el protocolo de cifrado creado por Moxie, el mismo que utiliza Signal, pero la versión "lite" que se supone que sigue siendo igual de robusta y pues, según la Electronic Frontier Foundation, WhatsApp solo cumplía 2 de las 7 grandes condiciones de un buen sistema de cifrado… ahora se supone que cumple todas, menos la del código abierto (https://www.eff.org/secure-messaging-scorecard).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Agrego: Con el resto de comentario no puedo criticarlo mucho porque es un artículo de 2016 y tampoco es mago para adivinar que sucedería en el futuro, pero bueno, en la actualidad tenemos todo lo contrario a lo que él menciona y se llama Element/Matrix. Además este sí que va cifrado de extremo a extremo con tus llaves guardadas en local y de forma descentralizadas ¿más? Paso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>XMPP es un ejemplo de protocolo federado que se anuncia a sí mismo como un "estándar de vida". Sin embargo, a pesar de su capacidad para "extensiones" de protocolo, es innegable que XMPP todavía se parece en gran medida a un protocolo síncrono con soporte limitado para rich media, que no se puede implementar de manera realista en dispositivos móviles. Si XMPP es tan extensible, ¿por qué esas extensiones no lo han actualizado rápidamente con el mundo moderno?</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>En este caso coincido totalmente porque muchos de los pros que se anuncian de XMPP es la extensibilidad que este adquiere, incluso ellos mismo se autodenominan demasiado extensibles, pero cuando vas a ver la realidad, queda poco práctico con: extensiones obsoletas, desactualizadas, incompatibles, con errores y un largo etc. Además todo tiene que coincidir con el launcher o cliente, el cual en ocasiones se hace tedioso porque sino partes de "x" cliente, puede que tus mensajes cifrados jamás lleguen a dicho destinatario porque aquel posee un cliente que no soporta OMEMO o OTR (me ha pasado en la actualidad y por ello prefiero Matrix).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Un beneficio potencial de la federación es la capacidad de elegir qué proveedor tiene acceso a sus metadatos. Sin embargo, como alguien que aloja mi correo electrónico, eso nunca se ha sentido particularmente relevante, dado que todos los correos electrónicos que envío o recibo parecen tener Gmail en el otro extremo de todos modos. Los servicios federados siempre parecen fusionarse en torno a un proveedor que utiliza la mayor parte de la gente, con una larga cola de pequeños autohospedajes dispersos en Internet. Eso tiene sentido, porque ejecutar un servicio confiable no es fácil, pero es un resultado que, lamentablemente, es el peor de ambos mundos.</p><p>Dado que los servicios federados siempre parecen fusionarse en torno a un proveedor que utiliza la mayoría de las personas, la federación se convierte en una especie de amenaza implícita. Nadie realmente quiere ejecutar sus propios servidores, pero saben que podría ser posible si su host actual hace algo lo suficientemente atroz como para que valga la pena el esfuerzo.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Tiene sentido, aunque siempre tienes la elección de no decaer en el mismo "host" como si suele pasar en la redes propietarias. Además ante mayor diversidad, tus datos (según tus preferencias de red) no serán dispersos por todas partes, en otros casos, repartirse para hacerle frente a la censura (lo más común) por ello todas transfieren datos entre sí para sostener ese muro y jamás ser derrumbados; todo ello es simplificado según la red, como lo es Mastodon con sus "instancias, como lo es Diaspora* con sus "pods" o GNU Social con sus "nodos".</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>¿Nadie quiere ejecutar sus propios servicios? Realmente no sé la tendencia que hay ahora, en donde todos quieren ser dueños de sus datos ¡cómo debe ser! Siendo estos quienes autoalojan sus propios servicios sin tener que pedirle permiso a nadie, eso marca una gran diferencia y queda remarcado en la historia de Internet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://news.cyberfreakz.com/wp-content/uploads/2018/05/signal-hacking-exploit.png" alt="Signal"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>En fin, demasiado Signal y Moxie por hoy. Es una visión demasiado fatalista de lo que es la descentralización y protocolos anexos, quizás en la actualidad ya haya "cambiado" porque dicho artículo proviene del año 2016 y pues, ahora la diferencia se nota, ya los protocolos descentralizados no están verdes como en sus inicios, incluso, para aquella fecha apenas se lanzaba Mastodon como una red descentralizada que fuera lo contrario a Twitter y ahora es lo que debe ser en día. Agrego: estas son mis reacciones como un usuario con algo de conocimiento frente a un experto en criptografía y seguridad informática, de verdad que no planeo compararme o pararme a su nivel, claro que no, es solo un análisis particular sobre su visión fatalista de un trayecto en donde se han visto grandes cambios y promete más, mucho más.</p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

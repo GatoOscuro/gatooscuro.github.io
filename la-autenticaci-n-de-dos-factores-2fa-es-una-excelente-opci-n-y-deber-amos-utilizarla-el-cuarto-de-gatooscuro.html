@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>La autenticación de dos factores (2FA) es una excelente opción y deberíamos utilizarla - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>La autenticación de dos factores (2FA) es una excelente opción y deberíamos utilizarla</h2>
+            <p class='meta'>Publicado el 18/12/2022</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Llegar a este artículo es una historia demasiado larga, pero lo voy a resumir: prácticamente desde el comienzo de la estandarización de los 2FA he sido escéptico con su adopción, tanto porque existen formas de evitarle o aprovechar una vulnerabilidad x qué explicaré más adelante. Además, nos ha faltado tiempo para que todas las plataformas conocidas hicieran su adopción real, cuestión que en su momento únicamente podía ser aplicado a tres o cuatro servicios, entre ellos los de Google con su alternativa propia qué no es tan buena (otro tema a tocar) <strong>¿Y entonces?</strong> Actualmente, muchos de esos “obstáculos” ya no lo son y por ello hago este artículo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2><strong>¿Qué es la autenticación de dos factores (2FA)?</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los artículos en sí deben ser inclusivos y entiendo que hay quién puede llegar a este sin nulo conocimiento de que es el 2FA, lo <a href="https://es.wikipedia.org/wiki/Autenticaci%C3%B3n_de_m%C3%BAltiples_factores" target="_blank" rel="noreferrer noopener">voy a citar a continuación a la Wikipedia:</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>“La autenticación de dos factores (A2F), también usada la sigla inglesa 2FA (de two-factor authentication), es un método que confirma que un usuario es quien dice ser combinando dos componentes diferentes de entre: 1) algo que saben; 2) algo que tienen; y 3) algo que son.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La autenticación en dos pasos o verificación en dos pasos es un método de confirmar la identidad de un usuario utilizando algo que conocen (contraseña) y un segundo factor distinto a lo que sean o posean. Un ejemplo de un segundo paso es que el usuario tenga que introducir algo que le sea enviado a través de un medio alternativo, o que tenga que introducir una serie de dígitos generados por una aplicación conocida por el usuario y el sistema de autenticación”.</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Partiendo de lo anteriormente mencionado, debemos conocer qué un factor de autenticación múltiple puede constar de un medio físico en posesión del usuario (llave, USB, tarjeta), algún secreto conocido (contraseña, pin) o características biométricas del usuario (huellas dactilares, iris, voz u otro patrón definido).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Antes de continuar, he de aclarar que el método de doble autenticación que utilizo es por medio de una aplicación móvil, solucionando así todas las vulnerabilidades conocidas frente al 2FA tradicional, en donde algunas de ellas son:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Pueden ser interceptados (SMS inseguros).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Tienes que tener señal todo el tiempo para que pueda llegar el pin.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Proporcionar el número móvil a quién presta el servicio (nula privacidad).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Demora en la entrega del pin (retraso en el sistema de envío o en la latencia).</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Esas son algunas de las más conocidas vulnerabilidades del 2FA tradicional, de cómo se comenzó y que en la actualidad algunos servicios, incluyendo a Google lo aplican, en este debes confirmar el ingreso por medio de un PIN que hacen llegar a tu móvil por medio de SMS.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ahora bien, la autenticación móvil de dos factores fue creada para proporcionar un método alternativo que evitara los problemas derivados de usar un token físico. Esta aproximación utiliza dispositivos móviles como teléfonos móviles para servir como algo que el usuario posea. Si los usuarios se quieren autenticar, pueden emplear su licencia de acceso personal —por ejemplo, algo que solo el usuario individual sabe— más una contraseña de un solo uso y no reutilizable constituida por varios dígitos. El código puede ser enviado a su dispositivo móvil por SMS o a través de una aplicación especial; esta última siendo la más ideal, aunque no deja de ser vulnerable a fallas por parte del usuario, sea qué se apague el móvil, sea que te lo roben u otro daño físico que te impida acceder a él para posteriormente bloquear tu acceso a x plataforma.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Se dice que dicho método será de suma obligación en las plataformas digitales a partir de 2023, al menos en <a href="https://github.blog/2022-05-04-software-security-starts-with-the-developer-securing-developer-accounts-with-2fa/" target="_blank" rel="noreferrer noopener">Github lo confirmaron</a>, en <a href="https://www.tomsguide.com/news/google-forcing-2fa-users" target="_blank" rel="noreferrer noopener">Google lo hicieron en algunas cuentas desde el 2021</a> y también existe <a href="https://ec.europa.eu/newsroom/fisma/items/658958" target="_blank" rel="noreferrer noopener">legislación que obliga al público general a usarla en determinados ámbitos,</a> como la Directiva de Servicios de Pago de la Unión Europea de 2015; estos hechos confirman así que será un protocolo que veremos de forma más cotidiana en diferentes hábitos que requiera pasos extra de seguridad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://www.fortytwo.com/wp-content/uploads/2015/10/2-factor.jpg" alt=""/><figcaption class="wp-element-caption">Autenticación dos factores</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2><strong>¿Es seguro 2FA? ¿Deberíamos habilitarlo?</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En anteriores líneas les he explicado los métodos más conocidos para vulnerar el 2FA y todos ellos en su mayoría son basándonos en el tradicional 2FA que no todos utilizan, qué es por medio de SMS, en donde dependes de la seguridad de la operadora, el servidor y otras cuestiones en ese transcurso de llegada “seguro” que claramente no lo es. Además de reducir drásticamente la privacidad porque dicho empleador que proporciona dicho servicio debe conocer si o si tu número al que debe llegar el PIN.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En realidad, el problema en sí no es el 2FA, sino la versión extraña y restringida de esta función de seguridad proporcionada por algunas grandes plataformas, y con ello me refiero a cuando la plataforma NO proporciona el 2FA de manera sólida, sino más bien que proporciona otros métodos de autenticación en caso de que se falle este, siendo este prácticamente vulnerado por el propio sistema, ejemplo:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>>Un atacante intenta ingresar a tu cuenta de Google que tienes previamente asegurada con 2FA, pero falla en el intento de ingreso con esta, posteriormente el sistema le proporciona otros métodos de verificación, no contando con que el atacante previamente tenía secuestrado el correo electrónico, pudiendo utilizar este como un método de autenticación y así obtener TODO el resto de servicios sin ningún problema.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Lo anterior fue un ejemplo que puede aplicar a cualquier servicio que sirva varios métodos de autenticación.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por ahora, no existe manera de eludirlo. Es posible cambiar el software y los servicios o, en un enfoque menos radical, usar un dispositivo que este 100% dedicado para 2FA. Sin embargo, parece demasiado restrictivo y dudo seriamente que logre convertirse en una tendencia.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Frente a la última pregunta de si deberíamos habitarlo: definitivamente si, aunque teniendo en cuenta el tema de la SEGURIDAD por encima de la USABILIDAD, de ahora en adelante siempre tendremos que verificarnos en nuestras cuentas cómo si fuéramos extraños, son pasos extras que nos pueden hacer tardar, aunque nos proporciona la seguridad de que seremos los únicos que ingresemos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Para finalizar el tema de “vulnerabilidades” voy a enlazar un excelente artículo por parte del servid<a href="https://hackwise.mx/mejores-tecnicas-para-atacar-la-autenticacion-de-2-factores/" target="_blank" rel="noreferrer noopener">or Hackwise el cual menciona 6 técnicas en las que podrían atacar dicho protocolo</a>, ten en cuenta que el artículo fue escrito en 2020 y muchos de esos errores fueron corregidos/evitados o sólo aplica para un caso de 2FA en concreto (sea el de SMS, el físico u otro).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2><strong>¿Qué software utilizar? Aegis es el mejor</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Llevo usando Aegis desde que comencé a usar los 2FA y de verdad que NO me ha fallado en ninguno de los casos, es lo mejor que he encontrado en dicho sector y mejor aún, es software libre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ahora sí, debo de profundizar en dicho proyecto para que sea más extendido:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Aegis Authenticator es una aplicación 2FA gratuita, segura y de código abierto para Android. Su objetivo es proporcionar un autenticador seguro para sus servicios en línea, mientras que también incluidas algunas funciones que faltan en las aplicaciones de autenticación existentes, como cifrado y copias de seguridad. Aegis es compatible con HOTP y TOTP, lo que lo hace compatible con miles de servicios.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":1830,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2022/12/screenshot1-512x1024.png" alt="" class="wp-image-1830"/><figcaption class="wp-element-caption">Aegis</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>Características a destacar:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>-<strong>Es Software Libre</strong> bajo la licencia GPL-3.0</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>-Cifrado: </strong>Todas sus contraseñas de un solo uso se almacenan en una bóveda. Si tú elija establecer una contraseña (muy recomendable), la bóveda cifrarse mediante criptografía fuerte. Si alguien con la intención maliciosa se apodera del archivo de la bóveda, es imposible para ellos recuperar los contenidos sin saber la contraseña. Introduciendo tu contraseña cada vez que necesites acceder a una contraseña de un solo uso puede ser engorroso. Afortunadamente, puedes también habilité el desbloqueo biométrico si su dispositivo tiene datos biométricos sensor (es decir, huella digital o desbloqueo facial).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>-Organización: </strong>Con el tiempo, probablemente acumulará decenas de entradas en su bóveda. Aegis Authenticator tiene muchas opciones de organización para hacer que encontrar el que necesita en un momento particular sea más fácil. Establezca un icono personalizado para una entrada para que sea más fácil de encontrar. Busque por nombre de cuenta o nombre de servicio. ¿Tener un montón de una sola vez contraseñas? Agréguelos a grupos personalizados para facilitar el acceso. Personal, Trabajo y Social pueden tener cada uno su propio grupo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>-Copias de seguridad: </strong>Para asegurarse de que nunca perderá el acceso a su cuenta en línea cuentas, Aegis Authenticator puede crear copias de seguridad automáticas de la bóveda a una ubicación de su elección. Si tu nube El proveedor es compatible con Storage Access Framework de Android (como lo hace Nextcloud), incluso puede crear copias de seguridad automáticas para la nube. La creación de exportaciones manuales de la bóveda también es soportado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Fuente oficial del proyecto: <a href="https://getaegis.app/" target="_blank" rel="noreferrer noopener">acá </a>y el r<a href="https://github.com/beemdevelopment/Aegis" target="_blank" rel="noreferrer noopener">epositorio de Github.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Dejad de usar el maldito Google Authenticator </strong>y <a href="https://youtu.be/i-KpVEnkt3o" target="_blank" rel="noreferrer noopener">acá les enlazo un vídeo de un experto</a> del tema que trata el cómo dicha aplicación es lo más insegura dentro del apartado del 2FA, para ahorrarles el ver el vídeo: relata cómo no tiene cifrado dicha bóveda, si tienes el móvil puedes acceder sin problemas. Además de que Google registra todo y otras cuestiones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gracias por leerme, les deseo una Feliz Navidad por si no alcanzo a desearselas a tiempo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

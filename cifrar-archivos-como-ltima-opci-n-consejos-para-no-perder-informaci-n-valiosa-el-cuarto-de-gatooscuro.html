@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cifrar archivos, como última opción: consejos para no perder información valiosa - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Cifrar archivos, como última opción: consejos para no perder información valiosa</h2>
+            <p class='meta'>Publicado el 18/02/2025</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p><strong>En esencia, no tengo miedo a equivocarme; casi todo lo que sé, lo aprendí perdiendo.</strong></p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>No hay frase que me identifique mejor que la anteriormente descrita y, si me preguntan a quién pertenece, la verdad es que no lo sé. La he leído en tantos sitios y reproducida de tantas formas diferentes que no sabría realmente cuál es su origen. Tanto es así que también decidí modificarla para mi caso en particular<strong>. La cuestión es que he aprendido a mantener mis datos de la peor forma: perdiéndolos.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Seguramente, quienes me conozcan desde hace tiempo sabrán que tengo unos límites de paranoia medianamente altos, al menos en tiempos pasados, cuando comencé a introducirme en el mundo de la privacidad y seguridad en línea. De ahí que definiera mi modelo de amenaza como alto desde los inicios, porque quería aplicar lo mejor posible todo lo que solía escribir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Desde el principio, me caractericé por exigir que todas mis instalaciones de GNU/Linux tuvieran cifrado de disco completo. Esto era fundamental, ya que en caso de que mi dispositivo cayera en manos no deseadas, nadie podría acceder a la información almacenada bajo ninguna circunstancia. Con el tiempo, empecé a experimentar con volúmenes cifrados y volúmenes ocultos, buscando aplicar técnicas de negación pausible en caso de ser forzado a revelar mis contraseñas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3668,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/02/e3c237d899fe96161b1eaa69e195476d-1024x616.avif" alt="" class="wp-image-3668"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://i.pinimg.com/originals/e3/c2/37/e3c237d899fe96161b1eaa69e195476d.jpg" target="_blank" rel="noreferrer noopener"> acá.</a></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>En este contexto, <strong>la negación pausible se refiere a una técnica utilizada en cifrado de discos que permite ocultar un volumen adicional dentro de un volumen cifrado principal. </strong>Esta estrategia es especialmente útil en situaciones donde un usuario podría ser coaccionado para revelar la contraseña de su volumen principal<strong>. Con un volumen oculto, aunque un atacante logre obtener la contraseña del volumen principal, no podrá acceder a los datos del volumen oculto, ya que este tiene su propia contraseña distinta y es completamente invisible sin ella.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>La clave de la negación pausible es poder negar, </strong>de manera creíble, la existencia de datos secretos, incluso cuando se está bajo presión. Si alguien me obligara a revelar la contraseña del volumen principal, podría decir, de forma convincente, que no hay ningún volumen oculto, sin que el atacante pueda refutarlo fácilmente. Esto es posible porque, <strong>al no existir ninguna prueba directa de la existencia del volumen oculto, la negación resulta creíble.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Este enfoque me permitió aplicar una capa adicional de protección a mis datos. El volumen oculto, aunque accesible solo con una contraseña diferente, permanecería a salvo incluso si el volumen principal fuera comprometido. La negación pausible se convierte, entonces, en una medida clave de seguridad para proteger información sensible en situaciones de vulnerabilidad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A pesar de ser un protocolo de primer nivel en seguridad, sí resta bastante usabilidad. Esto se debe a que, constantemente, tu equipo está realizando operaciones paralelas para garantizar que todo lo que se mueva, copie o integre quede cifrado de manera completa (con el cifrado de disco completo). Como resultado, en el proceso se pierde tiempo, sin mencionar la gestión de los volúmenes ocultos, que requiere paciencia y conocimiento. Un mal movimiento y podrías perderlo todo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cabe aclarar que dicha gestión ha mejorado considerablemente con el tiempo, tanto en lo que fue TrueCrypt, como en su sucesor, VeraCrypt, en la actualidad. Ahora bien, hay otro punto importante: el mantenimiento de este software, que en algunos momentos genera algo de desconfianza en la comunidad. Al no estar respaldado por una organización grande, suelen surgir demasiados interrogantes en el camino. Otro aspecto a considerar es el ritmo de actualizaciones: la última versión estable de VeraCrypt fue lanzada el 1 de octubre de 2023, lo que deja una brecha importante en cuanto a lo que puede o no suceder (y saben a qué me refiero). Aunque ha tenido auditorías (aunque no tan rigurosas), sigue siendo considerado uno de los mejores proyectos para garantizar la seguridad. Tal vez, hasta que surja algo mejor. Y no, no me mencionen BitLocker de Microsoft.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Al final me pregunté: ¿Tanto para qué? Así que decidí dejar de utilizar dicho método para centrarme en el cifrado de disco de las distribuciones que utilizaba, siendo LUKS el que usa AES (Advanced Encryption Standard) como el algoritmo de cifrado por defecto, con una clave de 256 bits. Sin embargo, LUKS permite la configuración de otros algoritmos de cifrado, aunque AES es el más comúnmente utilizado debido a su balance entre seguridad y rendimiento. Siendo un estándar en todas las distribuciones que implementan el gestor de instalación Calamares, uno creería que es la mejor opción, y así lo fue por mucho tiempo, hasta que un día tuve un fallo en mi sistema relacionado con un corte de energía. Cuando traté de recuperar los datos, no pude hacer nada; todo estaba corrupto. ¿Cumplió su cometido? Puede ser, pero fue decepcionante.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Mi salvación: la regla de Backup 3-2-1</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La regla de Backup 3-2-1 es una estrategia de respaldo de datos que se utiliza para garantizar la protección y recuperación de información importante en caso de pérdida, corrupción o desastre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>¿Qué es la regla 3-2-1? <strong>La regla 3-2-1 establece lo siguiente:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>3 copias de tus datos: Debes tener tres copias de tus datos importantes. Esto incluye la copia original y al menos dos copias de respaldo.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>2 tipos de medios de almacenamiento diferentes: Las copias de respaldo deben estar almacenadas en dos tipos diferentes de dispositivos. Por ejemplo, una copia en un disco duro interno, y otra en un servicio de almacenamiento en la nube o un disco duro externo. Esto asegura que, si un dispositivo falla, aún haya una copia de los datos en otro medio distinto.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>1 copia fuera del sitio: Al menos una de las copias de respaldo debe almacenarse en un ubicación diferente, preferiblemente fuera de tu sitio físico. Esto puede ser una copia en la nube o en un disco duro ubicado en una ubicación remota (por ejemplo, un centro de datos o una unidad de almacenamiento en una ubicación geográfica diferente). Esto es fundamental para proteger tus datos contra desastres físicos, como incendios o robos.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Este es el mejor método existente para garantizar que tus datos jamás desaparezcan, es lo que he venido aplicando todo este tiempo para evitar grandes perdidas porque sí, las he tenido, hay datos "sensibles" que nunca he respaldado por temor a que caigan en manos de quién no pertenecen, pero al final, jamás he podido volver a contar con ello.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Generalmente siempre veo mucha gente dentro de la comunidad de la privacidad y seguridad en línea desaconsejando energicamente la utilización de los servicios de la nube, qué sí, finalmente es un ordenador y/o centro de datos de alguien más, pero en mi caso, con lo que he vivido puedo decirles una cosa: no hay nada más refrescante que sabe que algo que perdiste, lo tienes respaldado en alguno de esos servicios y puedes obtenerlo cuantas veces quieras ¿Qué donde queda la seguridad? Pues, desaconsejo respaldar en la nube contenido demasiado sensible o si lo vas a hacer, hazlo de manera cifrada o por partes (comprimes el archivo en dos partes diferentes y ambas partes las respaldas en dos diferentes servicios, cuando lo necesites es solo unir esos dos y listo) es la forma en que la seguridad no es un impedimento para la usabilidad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Es demasiada responsabilidad mantener grandes cantidades de información. Si lo piensas bien y analizas tu disco, con los años las gigas van sumando y sumando: entre programas y basura informática, ahí yacen nuestras fotos, nuestros escritos, nuestra música, documentos de estudio y trabajo, en fin, toda una historia de vida que solo está ahí, nuestro mayor tesoro, del que debemos garantizar que siempre nos acompañe en nuestra estancia en este plano de vida.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por lo tanto, <strong>aunque no se puede delegar esta responsabilidad a una sola nube (que también tiene riesgos de exposición y pérdida de datos), mi visión ha cambiado hacia el uso de múltiples servicios.</strong> Paralelamente, mantener toda esa documentación en diferentes servicios en la nube me da una opción de recuperación por si yo fallo (lo cual he comprobado que estoy demasiado propenso a hacer). Así, si llegara a fallar, tendré una forma de reincorporarme, y qué mejor que confiar esa información en alguien más. Al menos tendré algo a lo que señalar y echar la culpa, lo cual no recaerá solo en mí.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Espero que estén captando el punto. Más allá de la informática, esto tiene un valor filosófico de aceptación y otros dogmas que demuestran que, más allá de nuestros esfuerzos, pueden existir causas externas que nos imposibiliten alcanzar nuestros objetivos (neutralizar la frustración).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3669,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/02/Rubber-Ducky-1240x775-1-1024x640.avif" alt="" class="wp-image-3669"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://cdn.geekwire.com/wp-content/uploads/2016/08/Rubber-Ducky-1240x775.png" target="_blank" rel="noreferrer noopener">acà.</a></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Conclusión</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Muchas veces, menos es más</strong>, y aquí podemos ver cómo se puede garantizar, de cierta forma, esa "seguridad" sin perder la usabilidad de nuestro sistema. Además, debemos tener muy en cuenta interrogantes como: ¿Cuál es nuestro límite? ¿Vale la pena?<strong> Es importante definir conscientemente nuestro modelo de amenaza, </strong>porque realmente no vale la pena utilizar el protocolo de cifrado más avanzado del mundo para asegurar tres fotos de gatos que fácilmente puedes encontrar en la red. En definitiva, <strong>debe haber un sentido que justifique todo el esfuerzo para asegurar tal información.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por otro lado, se debe asegurar dicha información con protocolos que conozcas bien, que sepas cómo funcionan y cuáles son sus pros y contras, para que, en caso de algún fallo, sepas cómo regresar atrás sin grandes daños. Esto me ocurrió en su momento con <strong>Kubuntu</strong>, cuando estuve probando el cifrado <strong>CryFS</strong>, el cual me parece lamentable. Se suponía que estaba bien probado y, por ende, fue integrado en la versión estable. Decidí cifrar todos mis datos en sus "cajas", pero un día, después de un reinicio, encontré todos los datos corruptos. Después de intentar mil cosas para recuperarlos, basándome en la documentación oficial, me di cuenta de que era una pérdida de tiempo. Al preguntar directamente a su desarrollador en <strong>GitHub</strong>, lo único que me respondió fue: "Ups…". Me di cuenta de que había otros usuarios a quienes también les había sucedido lo mismo, entre cambios de versiones. De ahí que cargara directamente contra ellos y los desarrolladores principales<strong>: ¿Por qué integran versiones no estable</strong>s? Esto interrumpe la rama actual por la que se va, <strong>lo cual carece totalmente de sentido.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>De ahí a que <strong>ahora cifro menos y respaldo más;</strong> si quiero seguridad procedo a respaldar todo en un disco externo y listo.</p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

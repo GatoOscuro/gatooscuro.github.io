@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ZoogVPN: análisis realista de un servicio intermedio entre privacidad y practicidad - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>ZoogVPN: análisis realista de un servicio intermedio entre privacidad y practicidad</h2>
+            <p class='meta'>Publicado el 13/08/2025</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p><strong>Actualización del 22 de Agosto de 2025:</strong> <em>Al final del artículo anexaré la respuesta dada por los encargados de ZoogVPN referente a lo que expuse en este artículo, por ende, por importante leer y tenerlo en cuenta con el contexto del mismo. </em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hace unas semanas me escribió un representante de<a href="https://zoogvpn.com/?utm_source=zoog_affiliate&amp;utm_medium=revshare&amp;utm_campaign=aff68a83ec4e3ed9&amp;a_aid=68a83ec4e3ed9" target="_blank" rel="noreferrer noopener"> ZoogVPN</a>, interesados en mi blog y en el tipo de contenido que produzco. El correo, en esencia, era una invitación a probar su servicio y escribir un poco sobre él. Contesté a los días. Al principio creí que se trataba de algún correo spam que se me había filtrado, además de que andaba bastante ocupado con temas de trabajo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Les respondí dejando claro que me interesaba la propuesta, siempre y cuando me ofrecieran detalles de su servicio que fueran poco accesibles para el usuario común, información que yo pudiera indagar y contrastar, para determinar si —dentro de la media— eran más responsables y “seguros” que la masa de VPNs que pululan en la red. <strong>¿Qué observé?</strong> Ya les cuento.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>ZoogVPN se presenta como una llave maestra para abrir todas las puertas cerradas de Internet. En su fachada digital, promete proteger la privacidad con un cifrado<strong> “de grado bancario”</strong>, saltar cortafuegos en países donde la libertad de expresión es una palabra prohibida, y ofrecernos anonimato con la calma de quien guarda un secreto en una caja fuerte sin llave a la vista.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Algunas de sus características:</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Protocolos VPN confiables:</strong> Compatibilidad con IKEv2 y OpenVPN por defecto, además de PPTP, L2TP/IPSec.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>IKEv2 y OpenVPN son los protocolos más recomendados por ZoogVPN: el primero destaca por su velocidad y estabilidad, mientras que el segundo es el más versátil y seguro para diversos entornos. L2TP/IPSec y PPTP quedan como alternativas menos seguras o más lentas, útiles solo en casos específicos como evitar bloqueos geográficos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Interruptor de emergencia:</strong> Bloquea la conexión a Internet si el VPN se interrumpe inesperadamente.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>No creó que está sea necesario explicarla, básicamente la poseen la mayoría de VPNs actuales; bloquea el acceso a Internet si la conexión VPN se interrumpe, evitando que se filtre la IP real. Agrego de qué al inicio verifiquen bien de activar está opción antes de comenzar a navegar, me paso de que se me desconecto durante la prueba (antes de activar el interruptor) lapso que puede ser mortal en algunos casos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Ancho de banda ilimitado:</strong> Tráfico sin restricciones en el plan Premium.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Shadow:</strong> Técnicas para evadir cortafuegos en países con alta censura.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Shadow es la función de ZoogVPN diseñada para evadir la censura extrema, camuflando el tráfico VPN para que parezca tráfico HTTPS común y evitando así bloqueos por inspección profunda de paquetes. Compatible con Windows y Android, permite conectarse incluso en países como China, Irán o Turquía mediante servidores oscurecidos e IPs manuales proporcionadas por soporte técnico.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Cifrado de grado bancario:</strong> AES-256 y clave de 2048 bits para máxima seguridad.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>ZoogVPN protege el tráfico con cifrado AES-256 y clave hash de 2048 bits en sus servidores Premium, ofreciendo un nivel de seguridad comparable al usado por gobiernos para información ultrasecreta. En sus servidores gratuitos emplea AES-128, igualmente robusto, capaz de resistir ataques de fuerza bruta durante más tiempo del que ha existido el universo (la diferencia entre uno y otro es qué, el primero aun es seguro en la actualidad, pero el segundo está pensado para proteger incluso a futuro, con el tema de la computación cuántica y demás).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Servidores P2P:</strong> Soporte para torrents en servidores optimizados.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Política sin registros:</strong> No guarda datos de actividad ni IPs, con protección contra fugas DNS.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Una VPN sin registros no guarda información sobre lo que haces en internet, evitando que tus datos puedan ser rastreados o vendidos. ZoogVPN asegura privacidad total al no almacenar nada y operar desde un país fuera de alianzas de intercambio de inteligencia. Está parte me parece demasiado buena porque literal, <strong>puedes usar una dirección desechable para activar tu registro o en el plan gratuito ni siquiera utilizar cuenta </strong>(por este lado gana demasiados puntos a favor).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>VPN para streaming:</strong> Acceso a catálogos globales de Netflix, Disney+, Hulu, BBC iPlayer, entre otros.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Alta velocidad y estabilidad:</strong> Servidores verificados para baja latencia y rendimiento constante.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Y lo curioso es que, en buena medida, cumple… pero con matices que a veces resultan más elocuentes que su propio discurso comercial.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lo probé. Me paseé por sus túneles encriptados, viajé desde “servidores” en Nueva Zelanda que, al final, resolvían DNS en Estados Unidos. Un detalle menor para algunos, pero para quienes llevamos la paranoia como brújula, es el tipo de grieta que invita a preguntarse: ¿es esto diseño consciente o descuido disfrazado de estrategia? Zoog dirá que es “balance de carga” o “ubicaciones virtuales”, pero lo cierto es que la geografía digital también deja huellas, y no siempre son las que uno quiere dejar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":3916,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/08/DNS1-589x1024.avif" alt="" class="wp-image-3916"/><figcaption class="wp-element-caption"><strong>Primer prueba.</strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":3915,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/08/DNS2-508x1024.avif" alt="" class="wp-image-3915"/><figcaption class="wp-element-caption"><strong>Segunda prueba con otra dirección.</strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":3914,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/08/DNS3-537x1024.avif" alt="" class="wp-image-3914"/><figcaption class="wp-element-caption"><strong>Primer prueba.</strong></figcaption></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p>En su apartado de <a href="https://zoogvpn.com/es/network/" target="_blank" rel="noreferrer noopener">servidores,</a> dejan claro que son servidores dedicados con miles de IPs en más de 55 países, por lo que no me queda claro frente a dicha estabilidad porque sus revolvedores DNS van apuntando a otros lugares, en diferentes pruebas que hice, en sitios diferentes, me marcaban siempre en sitios contrarios a los que indicaba la dirección principal; ejemplo desde Nueva Zelanda se conectaba su IP, pero su DNS conectaba en su mayoría con Estados Unidos, Singapore y Argentina. Quiero pensar qué es lo siguiente y no una fuga de DNS:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Algunas VPN usan <strong>servidores virtuales</strong>, donde la <strong>IP que te asignan pertenece a un país (por ejemplo, Nueva Zelanda)</strong>, pero el <strong>servidor físico o los DNS están ubicados en otro país (por ejemplo, EE. UU.)</strong>. Esto se hace por varias razones:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Optimización de infraestructura y rendimiento:</strong> Mantener servidores físicos en todos los países es costoso; usando un servidor virtual, se puede “simular” que estás en un país lejano mientras el tráfico real se enruta por un nodo más rápido.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Balanceo de carga:</strong> Algunos proveedores asignan DNS en ubicaciones distintas para mejorar velocidad de resolución y estabilidad de la conexión.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>No necesariamente es una fuga de DNS,</strong> pero puede revelar información geográfica diferente a la de la IP asignada, lo que disminuye la coherencia geográfica y la privacidad percibida.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Qué no es del todo grave, pero… <strong>¿Recuerdas que dicen utilizar servidores dedicados? </strong>Por ende sería propaganda, qué muchos de los otros grandes también suelen utilizar para confundir a los menos expertos, cuestión que a la final si está mal.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Dicen tener una política estricta de no-logs, basada en Grecia, lejos de las garras de los 14 Ojos. Dicen. No hay auditorías que lo respalden, y en este mundo, la confianza sin verificación es como navegar sin kill switch: bonita hasta que se cae.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>No es el titán que se planta frente a la NSA o al GCHQ, pero tampoco es el amateur que tropieza en la primera curva. Juega en una liga intermedia: precio bajo (US$ 2.49/mes), apps simples que cualquiera instala sin manual, y funciones suficientes para quienes buscan escapar de la vigilancia casual, no de la sistémica.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Me agrada bastante de que me hayan confirmado la existencia de su <a href="https://zoogvpn.com/vpn-warrant-canaries/" target="_blank" rel="noreferrer noopener">Warrant Canary</a> (Qué es básicamente es un método legal que…La empresa puede utilizarla para revelar si ha recibido algúna orden judicial o citación secreta): en este caso ganan puntos con ello, aunque su última actualización fue en<a href="https://zoogvpn.com/warrant-canary/" target="_blank" rel="noreferrer noopener"> Octubre de 2024,</a> por lo que tienen que ponerse al día y crear su sección más visible en algun enlace en la pagina principal, es poco accesible para el público.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Otro dato interesante: sección <strong>4(b) Conduct de los <a href="https://zoogvpn.com/terms/" target="_blank" rel="noreferrer noopener">términos y condiciones</a>:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>“Your use of the Service is subject to all applicable local, state, national and international laws and regulations. You agree: (1) to comply with all United States and United Kingdom laws, rules and other regulations applicable in connection with the Service; …”</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Específicamente, ZoogVPN <strong>te obliga a cumplir las leyes de EE. UU. y Reino Unido</strong> en el uso de su servicio. No dice explícitamente que van a revisar tu tráfico, pero al estar sujetos a esas leyes, en teoría podrían verse obligados a actuar si detectan un uso que consideren ilegal. Es un matiz de <strong>cumplimiento legal</strong>, no de vigilancia directa constante.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Si me preguntan si recomiendo ZoogVPN, la respuesta es que sí… pero sólo si entiendes que esta no es el escudo definitivo para estar 100% seguro, te cubre, pero no vas a estar anónimo, es suficiente para el común denominador, sí y necesaria para esos lugares donde la represión abunda, quedando así como un punto intermedio entre las soluciones existentes. Agradezco por su mensaje y darlos a conocer. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Respuesta de los encargados de ZoogVPN</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>El viernes 22 de Agosto de 2025</strong> siendo las 9:58 recibí la siguiente respuesta por parte del personal de ZoogVPN con quién ya había intercambiado mensajes anteriormente, en este caso para aclarar puntos referentes a mi reseña anteriormente escrita:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Sobre la cuestión de DNS: </strong>Nuestro desarrollador comentó que sería útil saber exactamente a qué servidor te conectaste y desde qué aplicación. En general, no tenemos fugas de DNS. Por ejemplo, si te conectas desde Ucrania a cualquier servidor fuera de Ucrania, tus servidores DNS locales ucranianos nunca aparecen. A veces, las pruebas de DNS pueden mostrar servidores de un país distinto al que te conectas, pero no son los de tu ISP ni de tu país de origen. ¿Podrías compartir también qué herramienta o servicio de prueba utilizaste? Esto nos ayudaría a replicar y confirmar tus hallazgos.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Warrant Canary: </strong>Gracias por esta observación — lo hemos actualizado y nos aseguraremos de mantenerlo visible y relevante en adelante.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Términos de servicio, Sección 4(b): </strong>Para aclarar, nuestro servicio opera bajo la jurisdicción de Grecia y cumplimos con las leyes de Grecia y de la Unión Europea. No estamos sujetos a requisitos de divulgación de EE. UU. ni del Reino Unido. Sin embargo, debemos enfatizar que ZoogVPN no fomenta, promueve ni respalda ninguna actividad ilegal mediante el uso de nuestro servicio. Al usar ZoogVPN, los usuarios aceptan cumplir con las leyes del país donde residen o se encuentran. Es responsabilidad de cada usuario garantizar que su uso sea legal en su ubicación. Tampoco avalamos la infracción de derechos de autor, la piratería, el acoso ni ningún otro uso indebido del servicio.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>También aprovecho para corregir un detalle importante en tu reseña: </strong>Protocolos: Actualmente ofrecemos IKEv2, OpenVPN, WireGuard, L2TP/IPSec, PPTP y el protocolo Shadow (ya no se llama ZoogShadowing). Shadow es nuestra tecnología para evadir censura en países con restricciones extremas, como China, Irán o Turquía. (Curioso es que aun en su pagina oficial sale con tal nombre,<strong> seguro la versión en español no ha sido actualizada</strong>).</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Teniendo en cuenta lo anteriormente mencionado, de agradecer la calidad de su representante quién estuvo intercambiando mensajes conmigo desde antes de la reseña y después de la reseña; se corrige el detalle descrito en los protocolos en cuanto al nombre, se brindan detalles solicitados sobre la revisión y se actualiza la respectiva para quienes van a conocer el servicio por primera vez. Gracias por leer, quedo atento a cualquier duda e inquietud; saludos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gracias por leer, quedo atento a cualquier duda e inquietud; saludos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3917,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/08/Untitled-design-1-1803802080.avif" alt="" class="wp-image-3917"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fzoogvpn.com%2Fwp-content%2Fuploads%2F2024%2F10%2FUntitled-design-1.png&amp;f=1&amp;nofb=1&amp;ipt=8ab162123e60c72181bf54c4c6d9773a22418c71b689247a215e47a2034cef4b" target="_blank" rel="noreferrer noopener">acá.</a></figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

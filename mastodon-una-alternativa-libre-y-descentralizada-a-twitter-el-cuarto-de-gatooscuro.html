@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mastodon una alternativa libre y descentralizada a Twitter - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Mastodon una alternativa libre y descentralizada a Twitter</h2>
+            <p class='meta'>Publicado el 14/07/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p><strong>Nota</strong>: Escrito en 2018 durante la gran migración desde Twitter a Mastodon.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Actualización 2021:</strong> He escrito un nuevo artículo referente a mi historia en Mastodon y lo transcurrido en Quey.org por si quieres leer: https://write.privacytools.io/gatooscuro/quey-org-volvera</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Últimamente se ha visto un flujo increíble de usuarios que se han pasado a Mastodon, el problema de todo esto es que no se informan por lo mínimo antes de entrar a algo completamente desconocido (no tanto para los que ya han usado Tweetdeck) <strong>¿La razón de este cambio?</strong> Como era de esperarse la mayoría llega desde Twitter proclamando mayor libertad y un lugar donde sus opiniones no se vean infestadas de Haters, Trolls y etc (personas tóxicas) algo que se ha vuelto muy común en Twitter.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Este artículo está enfocado a todas esas personas nuevas en Mastodon y las que faltan por llegar, también como no, contarles un poco de mi experiencia allí.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Comenzamos con <strong>¿Qué es Mastodon?</strong> Mastodon es una red social libre y descentralizada de microblogging, similar a Twitter, lanzada en octubre de 2016 bajo el dominio principal mastodon.social.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Se diferencia de Twitter en ser una federación descentralizada de servidores, ejecutando software de código abierto (licencia Affero General Public License), y su código y documentación está disponible en el repositorio github (<a href="https://github.com/tootsuite/mastodon" target="_blank" rel="noreferrer noopener">https://github.com/tootsuite/mastodon</a>). Eso significa que los usuario están esparcidos en diferentes comunidades autónomas e independientes llamadas «instancias» (servidores) cuya red es llamada fediverso (juego de palabras entre federación y universo) pero aun así unificados por medio de la posibilidad de interactuar entre sí.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Un dato curioso: La red social fue desarrollada a partir de GNU Social.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Las ventajas de Mastodon</h1>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Al ser autónomas, cada instancia es gestionada por administradores, generalmente su creador, quien o quienes deciden las políticas de uso, la gestión de recursos, las cuentas permitidas, y cuáles cuentas son mostradas en el historial federado. Además, regulan las interacciones con otras instancias principalmente debido a los conflictos culturales que conlleva la libertad de expresión.</li><li>Se pueden mantener y generar conversaciones de manera ágil y fluída.<br>-No hay censura (es relativo porque cada instancia maneja sus normas, por lo tanto van a ver una más permisivas que otras frente a la "libertad de expresión".</li><li>Es una potente red de difusión.</li><li>Hace uso y promueve el software libre.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>En pocos puntos he podido resumir todas las ventajas de Mastodon (espero no olvidarme de nada).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Cómo se crea una cuenta o como funciona?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Un usuario elige la instancia dentro de las listas (https://instances.social/list#lang=&amp;allowed=&amp;prohibited=&amp;min-users=&amp;max-users=) desde la cual crear su cuenta, la identificación es similar al correo electrónico: alias +@ +instancia. Por ejemplo @GatoOscuro@mastodon.la (mi cuenta) sirve para comunicarse desde cualquier instancia, en cambio dentro de la misma instancia usar @GatoOscuro es suficiente. Y en el cliente web el URL se refencia «instancia/@usuario» -según el ejemplo- como mastodon.la/@GatoOscuro.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El usuario puede establecer si permite ser seguido públicamente o previo consentimiento. Además, se puede bloquear a los contactos para que las publicaciones no se muestren, excepto las republicaciones de otros usuarios y las menciones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por cierto, si buscan apps para abrir Mastodon desde el móvil: (<a href="https://joinmastodon.org/apps" target="_blank" rel="noreferrer noopener">https://joinmastodon.org/apps</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Lo que debes conocer para entender esta red social</h1>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li><strong>Toot:</strong> Es lo equivalente a un tuit.</li><li><strong>Retoot</strong> Es equivalente a un retuit en Twitter.</li><li><strong>Historial local</strong> (símbolo de personajes): Toots de personas de la misma instancia (tú instancia).</li><li><strong>Historial federado</strong> (símbolo del mundo): Toots de todas las personas de cualquier instancia existente.</li><li><strong>Código de conducta:</strong> Son las reglas de cada instancia, por lo general son reglas como: No insultar, no al racismo, no porno (tiene que ser bajo etiqueta de advertencia), no homofobia y un sin fin de reglas básicas para la buena convivencia.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Lo anterior que he mencionado es lo más común que pregunta la gente nueva en Mastodon y lo sé porque soy moderador y he respondido a cada una de aquellas preguntas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Algo a tener en cuenta es que en Mastodon no existen rangos, cuentas verificadas o demás; todos son tratados por igual.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Quizás la duda que surja ahora es <strong>¿En qué instancia me debo registrar?</strong> La verdad es que cualquier instancia es recomendable y claro, también hay que darle la oportunidad a instancias con pocos usuarios para que las instancias principales no se saturen como paso con el mastodon.social que se saturo y terminó cerrando sus puertas. Además muchos entraron a romper las reglas directamente porque no le echaron un vistazo al código de conducta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por mi parte les recomiendo la instancia en la que soy moderador porque es un espacio bastante amigable entre sus miembros. Además no está saturada de cuentas inactivas o cuentas tóxicas, la instancia es: https://quey.org si no sabes como registrarte sigue este tutorial: (https://nuevastecsomamfyc.wordpress.com/2018/01/16/mi-nueva-cuenta-en-mastodon/) <strong>Actualización:</strong> Ya Quey.org no existe, por lo tanto, no soy moderador, ahora soy un usuario corriente en mastodon.la</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Mi experiencia</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Mi experiencia con Mastodon ha sido un poco corta, estuve registrado en la instancia principal desde mitad de año, pero por cuestiones que mencionaré más adelante fue que termine eliminando aquella cuenta y pasándome a otra instancia (en la que soy moderador actualmente).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>He encontrado mucha gente interesante, pero también me he topado con uno que otro hater, tóxico y sin sentido (al final terminan bloqueados y reportados como se debe).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Desde que soy moderador en la instancia Quey.org solo he tenido que responder a 3 reportes y ello demuestra la tranquilidad de este lugar, aunque cuando llegó el desembarco de Twitter hace unos días tuve que estar muy pendiente y respondiendo a muchos nuevos como se usaba esta potente herramienta. Por otro lado y enlazando tema, el mismo desembarco de Twitter que hubo hace unos días fue el mismo que hizo cerrar mi antigua cuenta porque la verdad la instancia principal se llenó de bastante gente tóxica, mirabas y eran insultos de españoles y su famosa «colonización» algo que no fue para nada del agrado del fundado Eugenio y de muchos otros antiguos usuarios de Mastodon.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por el momento todo ha transcurrido con mucha tranquilidad y muchas instancias siguen recibiendo gente de habla hispana (algo que es bastante bueno) siempre y cuando no lleguen haters y gente tóxica, a esos les digo que se queden en Twitter el cual es su hogar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Espero haber dejado todo muy claro y como no, haber espantado las dudas de cualquiera que quiera unirse a Mastodon; ¡sean bienvenidos a una red sin censura!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Mastodon_Mascot_%28Alternative%29.png" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

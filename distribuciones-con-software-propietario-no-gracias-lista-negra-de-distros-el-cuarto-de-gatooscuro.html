@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Distribuciones con Software Propietario, no gracias – Lista Negra de distros - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Distribuciones con Software Propietario, no gracias – Lista Negra de distros</h2>
+            <p class='meta'>Publicado el 05/06/2022</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Hace unos días publique un artículo en <a href="https://gatooscuro.xyz/el-bloatware-sigue-siendo-una-condena-en-windows-y-xiaomi-como-eliminarlo-y-gnu-linux/" target="_blank" rel="noreferrer noopener">referencia a todo el Bloatware</a> que se encuentra en el día a día de plataformas cómo es Windows o Android, también hice una breve mención del mismo caso pero en el ecosistema GNU/Linux explicando que existe, pero es tan controlable que NO es necesario clientes y herramientas de terceros para eliminar por cantidad dicho bloatware como si sucede en Windows y Android.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En el día de hoy les vengo a comentar algo muy reciente que sucedió y nos dejo a más de uno con la boca abierta, porque si, es sorprende. Se trata nada más y nada menos que de la distribución de GNU/Linux<strong> Linux Lite en su versión 6.0</strong> que han decidido reemplazar por defecto el uso del navegador Firefox por el de Google Chrome<strong> ¿por qué? </strong>Según comenta su desarrollador:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>“Ahora que Firefox viene como un paquete Snap de Ubuntu, y que los usuarios de Windows necesitan manejar el menor número posible de gestores de paquetes, Chrome era la opción obvia de reemplazo. Enorme cuota de mercado, familiaridad con Windows, casi todo lo que se le echa encima funciona, todo ello con el respaldo de una empresa poco conocida llamada Google. Los navegadores web son muy subjetivos, todo el mundo tiene su favorito y todo el mundo tiene una opinión. No se puede complacer a todo el mundo, pero lo que sí podemos hacer es centrarnos en nuestro público objetivo y eso es exactamente lo que hemos hecho. También incluimos un escáner de virus integrado en Chrome suministrado por Virus Total (desactivado por defecto). Ahora Chrome te preguntará si quieres que un archivo sea escaneado antes de abrirlo. Para activar esta función, basta con activarla en las extensiones de Chrome”. <a href="https://www.linuxliteos.com/forums/release-announcements/linux-lite-6-0-final-released/"></a><a href="https://www.linuxliteos.com/forums/release-announcements/linux-lite-6-0-final-released/" target="_blank" rel="noreferrer noopener">Fuente.</a></p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>A mi sinceramente me parece una broma tal anuncio, ni siquiera está a la altura de una distribución conocida como lo es Linux Lite, de hecho se podría tomar con sarcasmo la forma en se presento a Chrome ante el publico, eso de “ empresa poco conocida llamada Google” no me jodas, ¿es esto un anuncio o un foro de shitposting? No lo sé, dejo mucho que desear. Además agregando, de que no tiene sentido que hayan elegido a Google Chrome como navegador por defecto, ni siquiera una versión de código abierto desligada de Google como Brave, ni tampoco un navegador con un 4% de código cerrado como Vivaldi, sino el de Google, el que, si les viene en gana, activa funciones qué se pueden catalogar directamente como spyware (más telemetría).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>De verdad que pareciera que se están ahogando en un vaso de agua por decisiones tan apresuradas para algo tan poco trascendental cómo lo es Firefox en Snap ¿acaso no lo puedo compilar y mantener ellos mismos? Bueno, ni siquiera tienen que hacer eso porque Debian aun lo mantiene y estos al basarse en Ubuntu que a su vez se basa en Debian no tienen que hacer muchos esfuerzos, es que aun, les respeto que se quieran deshacer de Firefox por “x” o “y” motivo, pero ¿Por qué no elegir algun fork de Firefox? Hay tantos con tantos cambios/mejoras que cuesta elegir uno, yo en este caso utilizo LibreWolf y va de perlas. Además es bastante privado, aun asi, asimilando de que no quieran mantener nada relacionado a Firefox ¿entonces por qué no se fueron por Brave? Ni lo uno ni lo otro, escogieron a Google Chrome.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¡¡¡Ni siquiera Chromium que es libre!!! Agregaron literal, el Spyware de Google.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por esta razones Linux Lite pasa a mi lista negra de distribuciones GNU/Linux que no se deben tocar ni con un palo, a metros. Agrego que hay usuarios que me han comentado acerca de está decisión en la red social Mastodon que fue donde lo discutí y me decían algo en concreto, cómo: no es una distribución comunitaria, también está enfocada a usuarios provenientes de Windows, que así nos pese Google Chrome es el navegador más utilizado en el mundo, qué quizás nos plantearemos el si dejar todo el software libre/código abierto proporcionado por Google y Microsoft y otras cosas más… cuestión qué, respondería: La critica es acá qué es una distribución GNU/Linux dentro de un ecosistema dejos del Software Privativo y licencias privativas, quizás los que tengamos recorrido en este ecosistema sabremos a cual entrar o no, pero el usuario más despistado al ser una derivada de Ubuntu de un salto del que quizás se arrepienta más adelante, de ser así, distribuciones con Software Privativo ¿por qué no utilizar directamente Windows? Y no es que me cierre al purismo del Software Libre sino más bien por la compatibilidad nativa que hay, técnicamente lo es.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lista blanca de<a href="https://www.gnu.org/distros/free-distros.html" target="_blank" rel="noreferrer noopener"> distribuciones GNU/Linux avaladas por la FSF </a>de 100% Libres ancladas en el hipervínculo. Agrego: no te preocupes si tu distribución no sale ahí, el purismo de la FSF es grande y hay <a href="https://www.gnu.org/distros/common-distros.html" target="_blank" rel="noreferrer noopener">distribuciones que no han sido aceptadas</a> por cuestiones mínimas (que a la larga son grandes) cómo en el caso de Debian por uno de sus repositorios o Mint <strong>qué es la que uso</strong> por blogs binarios privativos, códecs propietarios y no tener una política en contra de la inclusión de software privativo (la mayoría pierde en ser avalada por está última cuestión) así que no debería darte dolor de cabeza sino más bien mejorar la distribución en la que te encuentras, en mi caso uso Mint con el Kernel Linux-Libre para evitar los blogs binarios cerrados, no utilizo códecs privativos y mantengo cerrado el repositorio nonfree de Debian.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Distribuciones que al margen de posible firmware propietario incluyen basura privativa por defecto, y por lo tanto insultan al software libre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>GNU/Linux distributions that bring proprietary applications by default.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En este índice irán aquellas distribuciones supuestamente GNU/Linux que por defecto vienen programas privativos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por favor, usar los comentarios si conocéis distros que utilizan esta práctica.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Linux Lite (Google Chrome).</li><li>4MLinux (Dropbox, Skype)</li><li>Abalar (Flashplugin, Google Earth)</li><li>AlfheimLinux (Google Chrome)</li><li>Archman (Flashplugin)</li><li>Arcolinux (Vivaldi)</li><li>BeFree (WPS, Spotify, Chrome, TeamViewer, Steam)</li><li>Bentoo (Spotify, Steam)</li><li>Bluestar (Skype)</li><li>Bodhi (Steam)</li><li>BrOS (Google Chrome, FreeOffice, NVIDIA)</li><li>Calculate (Adobe Flash)</li><li>Chakra (Drivers NVIDIA)</li><li>Condre OS (Chrome, Steam, Vivaldi, Skype, Teamviewer, drivers NVIDIA)</li><li>Duzeru (Chrome)</li><li>Elive (Google Chrome, Skype)</li><li>Endeavour (NVIDIA)</li><li>Endless (Skype, Chrome)</li><li>Extix (Skype, Spotify)</li><li>Feren OS (Vivaldi, WPS)</li><li>Grey Cat 2020 (Adobe Reader, Adobe Flash, AnyDesk, Vivaldi, MegaSync)</li><li>Kaos (Skype, NVIDIA)</li><li>Kubuntu (NVIDIA)</li><li>Instant OS (Google Chrome, FreeOffice)</li><li>Linspire (Distro comercial con muchos programas privativos)</li><li>Linux FX (Anydesk, Steam, Skype, Google Chrome)</li><li>Mageia (Drivers Nvidia en ISO)</li><li>Makulu (Opera, WPS)</li><li>Manjaro (Steam)</li><li>Mint Linux (Drivers Nvidia en ISO)</li><li>Mint LMDE (NVIDIA en ISO)</li><li>Modicia OS (Google Chrome, MS Office online, Skype, Master PDF Editor, Resilio Sync)</li><li>MX Linux (Adobe Flashplugin)</li><li>Netrunner (Skype)</li><li>PakOS (Crossover, suite WPS)</li><li>PCLinux (Spotify, Teamviewer)</li><li>Peach OSI (Skype, Adobe Flashplugin)</li><li>Peppermint (Enlaces a MS Office online en el menú)</li><li>Q4OS (Google Chrome)</li><li>Reborn OS (NVIDIA)</li><li>Redcore (Steam)</li><li>Simplicity (Google Chrome)</li><li>Steam (Plataforma privativa de juegos, Skype)</li><li>Swift-Linux (Adobe Flashplayer)</li><li>Ufficio Zero (Dropbox, Teamviewer, Sublime Text)</li><li>Ubuntu (Drivers Nvidia en ISO)</li><li>Ubuntu Budgie (Drivers Nvidia en ISO)</li><li>Ubuntu DDE (Drivers NVIDIA en ISO)</li><li>Ubuntu MATE (Drivers Nvidia en ISO)</li><li>Ubuntu Unity Remix (NVIDIA)</li><li>Vitalinux (Google Chrome)</li><li>Zorin OS (NVIDIA en ISO)</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>PD: está lista es sólo una referencia en dicho artículo, seguramente la coloque en alguna parte de mi blog e irla actualizando, lo pensaré… si decido hacerlo aparecerá el enlace a dicho apartado acá: <a href="https://yopad.eu/p/LISTANEGRA-365days" target="_blank" rel="noreferrer noopener">https://yopad.eu/p/LISTANEGRA-365days</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":1524,"width":769,"height":769,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://gatooscuro.xyz/wp-content/uploads/2022/06/drake-hotline-bling-jacket-moncler.png" alt="" class="wp-image-1524" width="769" height="769"/><figcaption>No gracias, distribuciones que incluyen software privativo por defecto.</figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

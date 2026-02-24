@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Olvid | Otra promesa de la mensajería segura - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Olvid | Otra promesa de la mensajería segura</h2>
+            <p class='meta'>Publicado el 07/04/2024</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>La era Post-Snowden es una realidad, y con cada año que pasa, se puede evidenciar cómo se van haciendo ecos nuevas alternativas "seguras" en cuanto a la comunicación en línea y también de otros apartados de interés. En este caso, en específico, siempre resulta de bastante interés comparar una alternativa de gran referencia vs las nuevas alternativas que van surgiendo, ejemplo: "<strong>¿Cuál es más segura XYZ vs. Signal?</strong>" Y etcétera. En pocas palabras, hay dos respuestas:<strong> siempre puede ser un gran descubrimiento o una gran decepción.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Al momento en que escribo este artículo, puedo afirmar que la documentación de Olvid parece estar muy completa, aunque solo está oficialmente disponible en dos idiomas, el inglés y el francés. Por lo tanto, toda la información recolectada y el entendimiento en este artículo se basan en las traducciones artificiales correspondientes, las cuales no pueden ser tan fiables.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">¿Qué es Olvid?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No hay explicación más completa qué la oficial, por lo que me remito a plasmar la traducción hecha de la <a href="https://olvid.io/assets/documents/2020-12-15_Olvid-specifications.pdf" target="_blank" rel="noreferrer noopener">documentación:</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Olvid es una aplicación segura de mensajería instantánea que comparte funcionalidades con otras aplicaciones populares como WhatsApp, Signal y Citadel. Su arquitectura se compone de dos módulos independientes: un motor criptográfico encargado de todas las operaciones criptográficas y una solicitud (la interfaz de usuario de mensajería instantánea) que trabaja sobre este motor, permitiendo el intercambio de mensajes de texto y archivos adjuntos de cualquier tipo. Este motor es "genérico", lo que significa que su API podría utilizarse para cualquier tipo de comunicación entre personas. La capa de aplicación no implementa ninguna forma de operación criptográfica, por lo que está fuera del alcance de este documento. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Olvid permite a los usuarios crear claves criptográficas, intercambiar material de claves (utilizando varios métodos), utilizar este material para enviar mensajes de forma segura y crear canales seguros que pueden ser utilizados por la capa de aplicación.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La arquitectura de Olvid se basa en un modelo de confianza entre usuarios y en la conexión/relación en el mundo real, sin asumir ningún tercero de confianza. Los mensajes intercambiados entre usuarios transitan a través de servidores, similar al protocolo SMTP utilizado en el correo electrónico. Cada usuario utiliza un servidor Olvid específico para recibir mensajes, pero varios servidores Olvid pueden coexistir. A diferencia de SMTP, los mensajes de un usuario determinado se cargan directamente a su servidor Olvid y no se transmiten a través de varios servidores. Los servidores de Olvid actúan como "buzones" donde cualquiera puede depositar mensajes de forma anónima, notificando al destinatario cuando hay un nuevo mensaje disponible. La seguridad de Olvid se basa en los protocolos criptográficos implementados en el motor criptográfico y en la confianza entre usuarios.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Las principales hipótesis del modelo de seguridad de Olvid incluyen:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Los dispositivos del usuario (teléfono inteligente, computadora, etc.) en los que se ejecuta la aplicación Olvid son saludables y se puede confiar en que ejecutarán los protocolos criptográficos tal como se implementaron.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Los usuarios que intercambian mensajes a través de Olvid tienen una conexión/relación en el mundo real y tienen cierto nivel de confianza entre ellos. Dependiendo de la naturaleza de esta conexión, se implementan diferentes protocolos para iniciar una comunicación segura en Olvid.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Los servidores son en su mayoría "honestos pero curiosos". Esto significa que los servidores no son de confianza, se les considera adversarios, pero aún así se comportan como se espera la mayor parte del tiempo, intentando aprender todo lo que puedan sobre los usuarios y lo que intercambian, pero tratando de pasar desapercibidos y operar el servicio normalmente la mayor parte del tiempo. <strong>NOTA: </strong>Está parte hace énfasis en que no se debe de confiar en ningun servidor, por lo que bajo su modelo el servidor nunca conoce la información y la relación de la misma. </li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">En cristiano, por favor</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Bueno, realmente leyendo toda la documentación oficial y los datos técnicos, puedo sacar una conclusión la cual transmitir de una forma más simple para las personas no técnicas, por lo cual destaco en viñetas las partes más importantes:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Su clientes de las diferentes plataformas d<a href="https://github.com/olvid-io/olvid-android" target="_blank" rel="noreferrer noopener">isponibles son software libre </a>(AGPL- 3.0).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Sus servidores son cerrados, según bajo el argumento de qué, quedarían más expuestos a ataques de denegación de servicio y otras vulnerabilidades. Además, la naturaleza de la plataforma hace que no sea necesario confiar en el servidor, debido a que este se encarga de solo colocar el mensaje encriptado en espera hasta que se conecte el remitente para entregarle el mensaje y posteriormente borrarse del servidor, por lo que no guarda ningún dato o relación directa con el usuario; agregan de qué en un futuro apenas se tenga controlada más la API de la plataforma y sus protocolos de seguridad, abrirán los servidores.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Su modelo de financiación está basado<a href="https://olvid.io/pricing/en/" target="_blank" rel="noreferrer noopener"> en planes,</a> por lo que, el plan gratuito es sustentado por los planes de pago, generando una plataforma autosustentable y sin dependencia financiera de terceros. Al momento de comparar las características gratuitas vs las de pago, puedo concluir qué la diferencia no es mucha y es aceptable, se puede aplaudir este modelo, las únicas limitaciones son; qué en el plan gratuito solo puedes recibir llamadas de audio seguras, no puedes tú realizarlas, tampoco tienes derecho a mantener tu conexión simultanea en diferentes dispositivos a la vez, de resto todo lo normal (Mensajes ilimitados, archivos adjuntos ilimitados, discusiones grupales seguras, cancelar envío y editar mensajes, eliminación remota, mensajes efímeros , múltiples perfiles , mención de usuario , markdown , Olvid Web).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Cuenta con múltiples <a href="https://olvid.io/technology/en/#certifications" target="_blank" rel="noreferrer noopener">certificaciones</a> y un equipo de criptógrafos muy preparados… aunque, muchas de esas auditorias según lo que entiendo es de su mismo equipo, por lo que, no sé, no lo considero tan imparcial. Además, el <a href="https://www.eldiario.es/tecnologia/grandeur-mensajeria-francia-obliga-ministros-sustituir-whatsapp-aplicacion-francesa_1_10742350.html" target="_blank" rel="noreferrer noopener">gobierno francés ha sacado el pecho por ellos</a> al ser una alternativa local, lo cual me hace pensar demasiado acerca de su doble moral, cuando en otros casos han tratado de <a href="https://www.eldiario.es/tecnologia/francia-propone-prohibir-tor-publico_1_2304902.html" target="_blank" rel="noreferrer noopener">proponer debilitar el cifrado</a>, lo cual no es muy acorde, pero es solo mi opinión, que al no ser local no puedo interpretar al 100% realmente cómo el gobierno se inclina hacia la seguridad de los datos y la privacidad, de si toda una bancada de ministros están en contra o solo unos pocos.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lanzado en mayo de 2019 por Thomas Baignères, Matthieu Finiasz, Jacques-André Bondy y Cédric Sylvestre.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>No depende de leyes <a href="https://olvid.io/enterprise/en/#issues" target="_blank" rel="noreferrer noopener"><strong>extraterriotriales</strong></a>: "</strong>Corresponde a cada individuo responder según la naturaleza de sus actividades y el grado de confidencialidad de los temas que trata".</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>En cuanto a la criptografía Post- Cuántica dicen: "La criptografía simétrica utilizada hoy en Olvid ya es resistente a este tipo de máquinas, pero no es el caso de las primitivas de clave pública. La razón es que, a día de hoy, no existe ningún estándar "post-cuántico".</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Mis primeras impresiones</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Realmente está alternativa me gusto bastante, no entiendo cómo no la conocí antes a pesar de que se lanzo desde hace varios años, ahora es que puedo ver que nuevamente se está haciendo eco (desde hace 6 meses en Reddit). La documentación y los datos técnicos que poseen son muy completos, se puede llegar a entender muy bien el cómo opera la plataforma y cuales son sus inclinaciones, a pesar de que la licencia de los servidores no es abierta, ¡qué debería!, para realmente sumar más confianza al proyecto y confirmar que realmente cumple lo que dice, pues, siguiendo sus narrativas, el servidor nunca suma/resta en cuestiones de seguridad, al no quedarse con nada o identificar al usuario.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Me gusta que el proyecto parece ser una combinación de otras alternativas destacadas, como tener una combinación entre Signal y SimpleX Chat. El poder crear cuantos perfiles se desee con datos mínimos (nombre y listo) es una característica muy destacable. Además, el tema de la verificación es una cuestión que poco he visto en otras mensajerías. Es que, a pesar de que agregas a tus amigos por medio de ID, este pide a ambos usuarios confirmar un código que solo puedes confirmar si realmente estás comunicándote con la persona que dice que es. Es un paso extra de verificación que es intuitivo, fácil y que suma bastante a la seguridad. Y sí, me dirán que eso mismo ya existe hace demasiado en Matrix, pero allí es mucho más engorroso cuando no tienes la persona físicamente para confirmar el QR o para acertar los emojis random que te salen visualmente en pantalla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En lo único que creó que deberían de mejorar es en el aspecto visual, si es demasiado opaco gráficamente comparado a otras alternativas, no por ser robusto en seguridad significa que tiene que ser feo jaja, el caso, es que es discutible, para los reyes del minimalismo puede que les encante, otra costa discutible es el tema del plan gratuito y es qué ¿Cómo no poder realizar una llamada de voz segura? Eso de solo poder recibir me parece un poco pasado y el no poder tener la cuenta en múltiples dispositivos a la vez también, es una característica que se ve nativamente en otras mensajerías sin problemas, acá no debería ser la excepción.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">¿XYZ es mejor que Signal?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Destaco una <a href="https://www.reddit.com/r/signal/comments/17706mj/comment/k4qj7hg/" target="_blank" rel="noreferrer noopener">publicación de un usuario en Reddit</a> que nos deja una gran enseñanza referente a este tipo de comparativas que les encanta a muchos internautas:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Donde XYZ es una aplicación de la que nunca había oído hablar (esta semana es Olvid) siempre es "No" por dos razones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La primera es que nadie está usando una aplicación de la que nunca ha oído hablar, por lo que incluso suponiendo que XYZ fuera tan seguro o más seguro que Signal, sería mucho menos probable que pudieras cambiar tus conversaciones a ese chat sin convencer básicamente a todos. contacto individual (que también puede ser el caso con Signal, para ser justos, pero al menos es algo de lo que probablemente hayan oído hablar y asocian con privacidad/protección y no una aplicación aleatoria que suena como si fuera una marca de productos sin lactosa). productos lácteos).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La segunda es que nadie está realmente revisando un producto lácteo sin lactosa al azar; disculpe, me refiero a una aplicación de mensajería encriptada de la que nunca han oído hablar, para asegurarse de que realmente haga lo que dice o de que no haya llegado la última versión, con un error que accidentalmente socava su seguridad o lo que sea, mientras que Signal, debido a su popularidad, recibe mucha atención tanto de los entusiastas que prueban cada versión como de las revisiones periódicas por parte de profesionales de la seguridad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En fin, muchas gracias por leer; quedo atento a cualquier corrección o surgerencia; saludos. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3184,"sizeSlug":"full","linkDestination":"none","align":"center","style":{"color":{"duotone":"unset"}}} -->
+<figure class="wp-block-image aligncenter size-full"><img src="https://gatooscuro.xyz/wp-content/uploads/2024/04/olvid2-1024x901-1.jpg" alt="" class="wp-image-3184"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2022/05/olvid2-1024x901.jpg?resize=1024,901&amp;key=9b709522" target="_blank" rel="noreferrer noopener">acá</a></figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

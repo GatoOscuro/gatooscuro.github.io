@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>¿Cómo cifrar la conexión con Obfsproxy? - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>¿Cómo cifrar la conexión con Obfsproxy?</h2>
+            <p class='meta'>Publicado el 29/04/2022</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Usualmente si queremos ocultar nuestro trafico utilizamos una VPN o en casos más mínimos/simples un proxy, pero ¿qué sucede cuando geográficamente bloquean las VPNs? Y si, dichas herramientas no son infalibles para ser bloqueadas por parte de cualquier ISP, por ejemplo: incluso hay gobiernos que pueden obligar a las operadoras a filtrar el tráfico SSL y con ello hacer dicha identificación. La cuestión es que, por ello se creó este tipo de herramientas, está en especial es<a href="https://blog.torproject.org/obfsproxy-next-step-censorship-arms-race/" target="_blank" rel="noreferrer noopener"> subproyecto que pertenece a Tor.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Básicamente es similar a navegar a través de una VPN o del navegador Tor, ya que el fin es el mismo: ocultar la dirección IP y cifrar la información que transferimos al navegar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Aunque inicialmente fue creado para Tor, cuenta con características que pueden ser aprovechadas por los desarrolladores para diseñar, implementar y probar capas de ocultación de tráfico que nada tienen que ver con Tor. De esta forma, también comenzó a usarse para ocultar tráfico a través de OpenVPN y asi eludir el llamado <strong>DPI.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Entonces teniendo como base esa premisa de evitar que determinado gobierno de un país clasifique el tráfico de Internet por protocolos y saber cuál es (HTTPS, HTTP, SSL, VPN...) es ahi donde entra Obfsproxy con su módulo denominado "Obfs2" Este módulo lo que hace es agregar un contenedor de cifrado alrededor del tráfico, ya sea a través de SSL, VPN o Tor. Lo va a cubrir en una capa HTTPS y de esta forma aparentar ser otra actividad cotidiana de Internet, así disminuyendo cualquier sospecha por parte de la ISP en caso contrario de lo que si genera la VPN, claro está en un país donde "x" VPN este bloqueada geográficamente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Obfsproxy es posible usarlo tanto en OpenVPN como en Wireguard. Para usarlo, es necesario contar con un servidor OpenVPN en funcionamiento. Puede ser uno de nuestra propiedad o de un tercero.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Cómo utilizarlo? </strong>En ese caso les enlazo un excelente sitio donde he podido realizar la prueba, especialmente para ordenadores bajo Debian>Ubuntu GNU/Linux y ojo, bajo OpenVPN como base, también funciona con la mezcla de Wireguard. <a href="https://www.oilandfish.com/posts/openvpn-obfsproxy.html" target="_blank" rel="noreferrer noopener">Artículo de Oil and Fish.</a> Es de los manuales de uso más actuales (2020-09) los proporcionados por el Proyecto Tor ya no están disponibles, me imagino que es porque básicamente facilita todo ello con la integración en su navegador especializado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Es suficiente la “seguridad” con dicho elemento? NO. </strong>mi consejo siempre será seguir las buenas practicas para tener una conexión segura, confianza cero, en donde tengamos en cuenta cual y que función cumple cada proceso de nuestro ordenador, también las conexiones que se realizan, hacia donde y con que fin. Además de lo más superficial como el Software original de “x” proyecto con los parches de seguridad al día y dudando con todo lo que interactuemos de la gran red, son muchas cosas que nos pueden hacer identificar en la red… puede que tengas todos los sistemas privados, pero si los utilizas para entrar a Facebook será un punto de partida para identificarte :)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":1481,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://gatooscuro.xyz/wp-content/uploads/2022/04/obfsproxy-usage-2012-02-15-4.png" alt="" class="wp-image-1481"/><figcaption>Fuente del proyecto Tor frente a la adopción.</figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

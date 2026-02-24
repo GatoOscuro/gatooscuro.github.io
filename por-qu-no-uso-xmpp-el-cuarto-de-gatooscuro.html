@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>¿Por qué no uso XMPP? - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>¿Por qué no uso XMPP?</h2>
+            <p class='meta'>Publicado el 03/12/2023</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>En ocasiones puedo ser un poco incendiario y lo reconozco ja ja. Hace un día hice una publicación en Mastodon acerca de XMPP y un problema que afectaba a dos servidores de dicha red, en el que escribía lo siguiente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"¿Dónde están los que apoyaban a XMPP? Siempre consideré que era un protocolo viejo que jamás evolucionó y mis razones tenía.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Edit: Aunque el fallo no es directamente del protocolo, anexo mi desacuerdo en el respaldo que ha mantenido este protocolo heredado, mi mayor razón es la de incompatibilidad entre sí en clientes y protocolos de cifrado, siendo también un riesgo latente".</p>
+<!-- /wp:paragraph --><cite><strong>No anexo fuente porque pasado 7 días automáticamente se borrara la publicación, así prefiero mantener mi Mastodon. </strong></cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Y sí… el edit me toco colocarlo minutos después debido a las discusiones que se tornaron conforme a la publicación y bueno, acá vengo a escribir un artículo serio y a explicar por qué no uso XMPP y de cierta forma por qué no lo respaldo, con fuentes e información que se puede verificar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Recapitulemos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El 28 de Octubre de 2023 fue publicado un artículo en The Hackers News qué decía lo siguiente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Investigadores descubren espionaje en servicio de mensajería instantánea basado en XMPP.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Se interceptó tráfico desde jabber[.]ru, un servicio de mensajería instantánea basado en XMPP, a través de servidores alojados en Hetzner y Linode en Alemania. El ataque se descubrió debido a la expiración de un certificado MiTM, y se estima que duró seis meses. Los usuarios del servicio deben asumir que sus comunicaciones de los últimos 90 días están comprometidas y cambiar sus contraseñas (...)". <a href="https://web.archive.org/web/20240111042209/https://thehackernews.com/2023/10/researchers-uncover-wiretapping-of-xmpp.html?m=1" target="_blank" rel="noreferrer noopener">Fuente.</a></p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p><strong>PD:</strong> Gracias a mi amigo Cristian, quien fue el que me dio a conocer la nota.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Debido a ese artículo, hice tal publicación en Mastodon. Qué bueno, admito que no es correcto generalizar una falla en dos servidores para todo un servicio descentralizado. Aunque deja en evidencia un cuestionamiento que se ha sabido siempre sobre XMPP y qué me permito resaltar a continuación debido a que por mucho tiempo se recomienda cómo un 'protocolo seguro' o un lugar para realizar comunicaciones seguras. Pero hay un pequeño inconveniente de por medio, lo cual genera una mera sensación de seguridad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>XMPP es un protocolo de mensajería instantánea que puede presentar varias fallas debido a las incompatibilidades entre los diferentes protocolos de cifrado y los diferentes clientes. Estas incompatibilidades pueden generar desacuerdo para la correcta utilización de la criptografía y asegurar los chats, siendo más precisos:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><strong>Incompatibilidad de protocolos de cifrado</strong>: XMPP soporta varios protocolos de cifrado, y la elección de uno sobre otro puede generar incompatibilidades. Por ejemplo, OpenPGP para XMPP (OX) es un protocolo de cifrado que ha sido criticado por sus problemas de diseño de seguridad y <a href="https://wiki.xmpp.org/web/XMPP_E2E_Security" target="_blank" rel="noreferrer noopener">se recomienda no implementarlo.</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Incompatibilidad entre clientes (referente a la aceptación e integración de los protocolos mencionados)</strong>: Los diferentes clientes de XMPP pueden no ser compatibles entre sí, lo que puede generar problemas de seguridad. Por ejemplo, OTR (Off-the-record Messaging) es un protocolo de cifrado diseñado para proteger las conversaciones de mensajería instantánea. Sin embargo, su uso en XMPP no está estandarizado y <a href="https://wiki.xmpp.org/web/XMPP_E2E_Security" target="_blank" rel="noreferrer noopener">se recomienda no implementarlo a menos que</a> sea necesario para la compatibilidad con clientes heredados.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Configuraciones de seguridad</strong>: La seguridad de XMPP depende en gran medida de las configuraciones del servidor. Por ejemplo, un servidor XMPP<a href="https://wiki.xmpp.org/web/Securing_XMPP" target="_blank" rel="noreferrer noopener"> se considera seguro cuando está configurado para no permitir ninguna comunicación en texto plano</a> entre servidores y conexiones de clientes. Sin embargo, si estas configuraciones no se realizan correctamente, puede haber problemas de seguridad.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Atacantes aprovechando la superficie de ataque de XMPP</strong>: Los atacantes pueden aprovechar las características de XMPP<a href="https://bishopfox.com/blog/xmpp-underappreciated-attack-surface" target="_blank" rel="noreferrer noopener"> para recuperar datos sensibles</a>. Por ejemplo, XEP-0055: Jabber Search puede proporcionar información valiosa para los atacantes sobre una organización (Quizás en la actualidad haya muchos menos servicios vulnerables a esto debido a que se descubrió y se difundió el problema en el año 2021).</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"id":2844,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/12/XMP-Protocols-1024x522.png" alt="" class="wp-image-2844"/><figcaption class="wp-element-caption"><strong>Lista de protocolos de cifrado con pros y contras.</strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>En realidad, todos estos problemas tienen una solución:</strong> que todos los clientes de XMPP sean compatibles entre sí, elegir un protocolo de cifrado compatible y configurar correctamente el servidor XMPP. Pero, de la teoría a la práctica, es muy complicado. En mis tiempos que tuve cuenta en XMPP, siempre tuve fallas con esta situación. Todavía hay un usuario que usan clientes y protocolos heredados por amor y así se les recomienda migrar, no lo hacen porque son reacios al cambio. Además, todas las salas públicas estaban sin cifrado, lo que por supuesto abre una brecha de seguridad más. Es cuando cobra sentido el artículo de la vulnerabilidad expuesta más arriba y con la que le argumentaba a quienes aportaron conocimiento en Mastodon: <strong>si no hay seguridad en el transporte y mucho menos en los datos, ¿dime cómo quedas? </strong>Tal cual y cómo viniste al mundo, ese fue mi ejemplo frente a dicha situación.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A pesar de que solo fueron dos servidores los afectados, no significa que sea exclusivo de ellos. También puede suceder en otros servidores. Al tener la mala costumbre de emplear el cifrado como segunda opción, al darse este tipo de vulnerabilidades, como la MiTM, por supuesto, quedarás totalmente expuesto. En ese caso, colocaría como ejemplo a Telegram. Es que al dejar el cifrado de forma opcional, produce en masa una sensación de seguridad que se ha evidenciado por mucho tiempo. Gente y medios han recomendado Telegram como una 'mensajería segura', cuando fuera de sus chats secretos podría quedar casi igual a Messenger de Facebook. Agrego el 'casi igual' porque Telegram implementó su propio cifrado para asegurar la información en la nube, qué bueno... tampoco convence a la mayoría de criptógrafos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">El caso de Tor Messenger</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Este caso en particular fue uno que me hizo cambiar la perspectiva que tenía hacia XMPP y es que, durante el<a href="https://blog.torproject.org/tor-messenger-beta-chat-over-tor-easily/" target="_blank" rel="noreferrer noopener"> 2015 el proyecto Tor había anunciado</a> su programa multiplataforma que pretendía ser seguro de forma predeterminada enviando todo su tráfico a través de Tor y aplicando conversaciones individuales cifradas mediante la agrupación y el uso de OTR (Off-the-Record) en XMPP, por supuesto <strong>¿qué paso? </strong>Tiempo después hicieron un artículo titulado "<a href="https://blog.torproject.org/sunsetting-tor-messenger/" target="_blank" rel="noreferrer noopener">Puesta de sol en Tor Messenger</a>" en el que anunciaban la detención del desarrollo de Tor Messenger dando varias razones, entre ellas la detección del proyecto Instantbird en el cual se basaban, también comentaban acerca de los escasos recursos con los que contaban para continuar desarrollando el mismo y eso no es todo, una de las razones que quiero destacar textualmente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>&nbsp;"El problema de los metadatos</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Como se describió anteriormente, una arquitectura cliente-servidor centralizada sufre fugas de metadatos y Tor Messenger hereda esos problemas sin poder mitigarlos. Los metadatos filtran información sobre los participantes y sus gráficos sociales, y aunque no revelan los datos reales, pueden revelar patrones sobre tu comunicación: quiénes son tus amigos, cuándo hablas con ellos, cuánto hablas con ellos, etc".</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>De ahí a que pasaron a recomendar otras mensajerías… eso ya deja mucho que decir y no me voy a extender más en ello, cada quien debería sacar su conclusión.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Posible solución</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No quiero que malinterpreten, no quiero que esto parezca un artículo desprestigiando al proyecto XMPP y a sus desarrolladores, para nada, creó que ellos y su comunidad han sabido resistir los años y han estado siempre muy unidos. Además, que aún siguen manteniendo ese espíritu comunitario que después de tantos años se hace difícil mantener para algunos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Es muy importante destacar el modelo de amenaza, si tu nivel de amenaza no es alto, no deberías porque preocuparte y salir corriendo de XMPP, no para nada, <strong>¿qué hay alternativas mejores?</strong> Sí, <a href="https://gatooscuro.xyz/simplex-chat-la-aplicacion-de-mensajeria-que-todo-entusiasta-de-la-privacidad-deberia-utilizar/" target="_blank" rel="noreferrer noopener">SimpleX Chat </a>parece ser la gran promesa de toda la red, pero XMPP aún hoy en día sigue siendo una alternativa, a pesar de todo y casi parecer un protocolo heredado, pues se ha sabido mantener. De hecho, han estado<a href="https://xmpp.org/2023/11/the-xmpp-newsletter-october-2023/" target="_blank" rel="noreferrer noopener"> organizando eventos</a> oficiales en los que planean discutir tal situación e incluso un talentoso desarrollador, el Sr. Stephen P. Weber (singpolyma) <a href="https://certwatch.xmpp.net/" target="_blank" rel="noreferrer noopener">publicó un sitio</a> para verificar el monitoreo de Machine-in-the-middle lo cual servirá de gran ayuda para mitigar ese tipo de ataques.&nbsp;&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2845,"width":"968px","height":"auto","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/12/Captura-1024x233.png" alt="" class="wp-image-2845" style="width:968px;height:auto"/><figcaption class="wp-element-caption"><strong>Cogí un server al azar y vean, certificado caducado... es un ejemplo de lo que les decía.</strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>En fin... no hay una verdad absoluta y si tienes un aporte mejor, adelante, ¡hazlo! Se agradece cualquier corrección y aporte al mismo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mis mayores agradecimientos a Aperales, C3po, Cristian, Niko quienes se unieron a la discusión y aportaron información relevante al tema.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2843,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/12/jabber-xmpp-1lmp4-1024x769.jpg" alt="" class="wp-image-2843"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://www.teltarif.de/img/app/instant-messenger/jabber-xmpp-1lmp4.jpg" target="_blank" rel="noreferrer noopener">acá.</a></figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

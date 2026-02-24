@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Los mejores servicios en la nube para sincronización de datos compatible con GNU/Linux - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Los mejores servicios en la nube para sincronización de datos compatible con GNU/Linux</h2>
+            <p class='meta'>Publicado el 21/05/2025</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>He perdido tantas veces mis datos que he empezado, desde hace un año, a tomar medidas mucho más serias para evitar volver a pasar por esas incómodas situaciones. De hecho, ya he escrito varios artículos aconsejando diferentes formas de mantener tus datos a salvo, que hasta el momento me han resultado muy efectivos (<a href="https://gatooscuro.xyz/cifrar-archivos-como-ultima-opcion-consejos-para-no-perder-informacion-valiosa/" target="_blank" rel="noreferrer noopener">Cifrar archivos, como última opción: consejos para no perder información valiosa</a>) en uno de esos consejos menciono el hacer uso de la nube, que sí, tal y como afirmaba el maestro Stallman: <strong>'la nube es el computador de alguien más'</strong>. Grandes datacenters, etc. Pero, obviamente, según tu modelo de amenaza, implementarás una medida tras otra. El caso es que en este apartado mencionaré esos servicios que yo utilizo y considero convenientes de implementar según su necesidad. Además, también son compatibles con GNU/Linux.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>PD: </strong>Quizás leas nombres ya muy conocidos, este no es el tipo artículo de "alternativas en la nube" aunque guarda relación, esto va enfocado a la funcionalidad de sincronización constante entre servidor-equipo, sea un enfoque personal o laboral. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Nextcloud</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es? </strong>Para los que no quieren depender de nadie más, ni de Google, ni de empresas, ni de sus políticas arbitrarias. Para los que aman romperse un poco la cabeza pero tener el control total.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es? </strong>Para los que buscan una solución plug &amp; play sin tocar una terminal. <strong><em>NOTA:</em></strong><em> Aclaro que para la instalación básica no es necesaria tocar la terminal o realizar configuraciones complejas, yo tengo dicho servicio autoalojado y para la base con todos los servicios esenciales es fácil de instalar, luego si que toca meterle mano para servicios extras.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://nextcloud.com/" target="_blank" rel="noreferrer noopener">Nextcloud </a>no es solo una nube, es prácticamente un ecosistema completo de trabajo colaborativo, privado y modular. Lo instalás donde quieras (en tu servidor, en una Raspberry Pi, o hasta en un hosting compartido) y de ahí en adelante sos tu propio Google.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito:</strong> Lo que te quepa en tu servidor.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar:</strong> Depende de tu experiencia. Fácil no es, pero está bien documentado.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros: </strong>Control total, software libre, comunidad activa.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras:</strong> Puede ser un dolor de cabeza si algo falla. Requiere mantenimiento (muy pendientes de las actualizaciones y no excederse con los plugins).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad: </strong>Nadie te mete mano en los archivos. Todo queda en tu máquina o servidor.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Syncthing</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es?</strong> Para usuarios técnicos que quieren sincronizar entre dispositivos sin depender de terceros.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es?</strong> Para los que quieren una nube tipo Google Drive con acceso web y respaldo permanente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://syncthing.net/" target="_blank" rel="noreferrer noopener">Syncthing</a> no es una nube en sí, sino un sistema P2P de sincronización. Tus archivos nunca tocan servidores externos. Ideal para paranoicos, desarrolladores y nerds sin remedio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito:</strong> Ilimitado (depende de tus discos).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar:</strong> No es plug &amp; play, pero tampoco es oscuro.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros:</strong> Totalmente descentralizado, libre, seguro.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras:</strong> No sirve como respaldo si tus equipos están todos apagados.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad:</strong> 10/10. Nada sale de tus dispositivos.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Un detalle que me señalaron —y con razón— es que Syncthing, aunque presume de ser P2P, no está 100% aislado de servidores externos. Usa algunos nodos públicos como puente cuando no hay conexión directa entre tus dispositivos. Eso sí, esos servidores no ven absolutamente nada: son ciegos, como un cartero que entrega sobres sellados. Pero si sos de los que no se fía ni de su sombra (y te entiendo), podés correr tus propios servidores de descubrimiento y relay, y así cerrar aún más tu ecosistema (gracias a <strong><a href="https://interlan.ec/" target="_blank" rel="noreferrer noopener">drk0027</a></strong> por el aporte).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">MEGA</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es? </strong>Para los que quieren buena capacidad gratuita y "cifrado" sin pensarlo demasiado. Para los que descargan y suben mucho contenido.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es? </strong>Para paranoicos que desconfían incluso del cifrado que no pueden auditar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Realmente, mi historia con <a href="https://mega.io/" target="_blank" rel="noreferrer noopener">MEGA</a> es de amor y odio. En su momento, llegué a ser muy fan porque estuve prácticamente desde sus inicios, después de la muerte de Megaupload. Todos manteníamos la esperanza de que, como sucesor, conservara esas ventajas del anterior que parecía casi invencible. Pero, con los años, fueron agregando restricciones que posteriormente quitaron al ver que su cuota de mercado caía en favor de Mediafire. Además, siempre ha tenido a los servicios de inteligencia husmeando, a pesar de que prometen un fuerte cifrado. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En mi caso personal, ya sucedió una situación que me hizo sospechar de inmediato. En su momento (estoy describiendo algo que ocurrió hace muchos años), recibí una advertencia por uno de mis documentos, según por piratería. <strong>Me advirtieron fuertemente de que mi cuenta había sido marcada por las autoridades y que sería fuertemente sancionada por obtener y "distribuir" tal contenido</strong> (no recuerdo muy bien si era una película, música o un juego).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p> El caso es que, desde eso, dejé de usar MEGA porque era claro que habían revisado mis contenidos y tenían acceso a todo. Pero, las cosas han cambiado; ya no son tan turbias. Después de años, he vuelto y veo que la situación ha "mejorado". Aun así, no confío en ellos, por lo que cifro mis documentos personales y sí, mantengo una sincronización constante. Lo elegí por las ventajas del espacio y por la calidad de su cliente multiplataforma (mi nube de Nextcloud tiene un problema con el cifrado, así que la tengo en segundo plano, para quienes les genere dudas sobre por qué uso de tal forma). Ahí va mi sincera recomendación.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito</strong>: 20 GB, aunque puede reducirse si no cumplís sus condiciones.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar:</strong> Instalás el cliente y listo.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros: </strong>Interfaz bonita, cifrado de extremo a extremo, buen rendimiento.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras:</strong> Almacenamiento inestable, el cliente oficial puede tener glitches en algunas versiones de GNU/Linux.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad: </strong>Cifrado sí, pero ellos siguen teniendo el poder sobre tus claves (aunque no lo admitan del todo).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Controversias: </strong><a href="https://en.wikipedia.org/wiki/Kim_Dotcom" target="_blank" rel="noreferrer noopener">Kim Dotcom</a>, el fundador de MEGA, se desvinculó del servicio en 2015 y ha expresado preocupaciones sobre su seguridad y control. Además, MEGA ha enfrentado críticas por posibles vulnerabilidades en su cifrado.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">pCloud</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es? </strong>Para quienes quieren una nube estable, usable y con una interfaz moderna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es?</strong> Para los que exigen cifrado gratuito o más de 10 GB sin pagar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://my.pcloud.com/" target="_blank" rel="noreferrer noopener">pCloud</a> tiene un enfoque más tradicional pero con buena reputación. Funciona bien, es bonito, no se cae. Pero si queréis privacidad real, vas a tener que pagar por ella… y es gracioso que la privacidad/seguridad sea tomada cómo un negocio, pero bueno, admito que este servicio lo tengo por defecto en el móvil, al menos para las carpetas de interés que debo mantener al día porque sí que su aplicación funciona muy bien.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito: </strong>10 GB.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar: </strong>Cliente oficial y funcional en GNU/Linux.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros:</strong> Rapidez, apps móviles decentes, opción de pagar una vez y olvidarte.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras: </strong>pCloud Crypto (cifrado real) cuesta dinero.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad:</strong> Bien para usuarios promedio. Para paranoicos, no tanto.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Controversias: </strong>Usuarios han señalado que pCloud podría tener acceso a los datos de los usuarios para fines de marketing, lo que ha <a href="https://proprivacy.com/cloud/review/pcloud" target="_blank" rel="noreferrer noopener">generado preocupaciones</a> sobre su política de privacidad.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Proton Drive</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es? </strong>Para quienes buscan privacidad como filosofía, no solo como marketing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es? </strong>Para quienes necesitan un cliente de escritorio ya mismo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://drive.proton.me" target="_blank" rel="noreferrer noopener">Proton </a>lleva años cultivando buena fama con su correo y VPN, y ahora con su nube se perfila igual: privado, ético y suizo. Eso sí, todavía le falta madurez.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>PD: </strong>Acá hago una pequeña excepción, aunque aun no haya cliente para GNU/Linux, técnicamente es compatible como tal, lo he probado con Wine y funciona el cliente de Windows, con algunos gliches pero funciona. Además, lo anexo porque si le doy usabilidad en el ordenador de la oficina.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito:</strong> 5 GB.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar:</strong> Muy bien desde el navegador, cliente de escritorio en camino.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros:</strong> Filosofía sólida, cifrado serio, interfaz limpia.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras:</strong> Le faltan funciones aún. El cliente para GNU/Linux no existe (todavía).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad:</strong> Excelente. Si ellos te decepcionan, probablemente ya no quede nadie confiable.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Controversias:</strong> Algunos usuarios han r<a href="https://tech.yahoo.com/general/articles/7-common-proton-drive-problems-005010355.html" target="_blank" rel="noreferrer noopener">eportado problemas de sincronización y velocidad,</a> pero no se han identificado controversias significativas en cuanto a privacidad.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Dropbox</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>PD: </strong>lo anexo cómo última opción y para recordar sus controversias, que no faltará quién lo recomiende.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es?</strong> Para usuarios clásicos que ya están acostumbrados o que solo necesitan algo básico.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es?</strong> Para quienes valoran la privacidad por encima de todo o quieren más de 2 GB gratis.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.dropbox.com/" target="_blank" rel="noreferrer noopener">Dropbox</a> fue pionero, pero se quedó atrás y se volvió cada vez más restrictivo. Funciona, sí. Pero tiene ese aire a producto corporativo que se vendió al sistema hace rato.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito:</strong> 2 GB.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar:</strong> Instalación sencilla, cliente oficial para Linux.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros:</strong> Estable, funciona bien, integración sólida con apps.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras:</strong> Poco espacio gratuito, privacidad dudosa.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad:</strong> Cifrado sí, pero las llaves las tienen ellos. No es opción para los desconfiados.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Controversias:</strong> <a href="https://proton.me/blog/dropbox-security-issues" target="_blank" rel="noreferrer noopener">Dropbox ha enfrentado múltiples brechas de seguridad,</a> incluyendo un incidente en 2012 donde se comprometieron 68 millones de contraseñas. Además, ha sido criticado por compartir datos de usuarios con investigadores sin consentimiento explícito.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Google Drive (con rclone)</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es?</strong> Para quienes ya viven dentro del ecosistema Google y quieren extenderlo a sus sistemas GNU/Linux corporativo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es?</strong> Para quienes quieren privacidad o integración nativa en GNU/Linux.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://workspace.google.com/intl/es-419/products/drive/" target="_blank" rel="noreferrer noopener">Google Drive</a> es poderoso y popular, pero en GNU/Linux la cosa se complica. No hay cliente oficial, así que toca armarse de paciencia con rclone o clientes no oficiales.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>PD: </strong>Yo lo uso para el trabajo diariamente, así que en este caso es muy efectivo, eso sí, traten siempre de asegurar la información, ofuscandola, comprimiendola con contraseña o lo que sea para no ponérselas tan fácil, ya sabes cómo es Google, aunque en velocidad y espacio no hay otro igual.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito:</strong> 15 GB (compartido con Gmail y Fotos).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar:</strong> Requiere terminal y seguir pasos con rclone.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros:</strong> Espacio decente, integración con Docs.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras:</strong> Cliente nativo inexistente, privacidad cero.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad:</strong> Google escanea y analiza todo. Sos el producto, no el usuario.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Controversias:</strong> Google ha sido objeto de críticas por su modelo de negocio basado en la recopilación masiva de datos de usuarios, lo que ha generado preocupaciones significativas sobre la privacidad.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Koofr</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es?</strong> Para quienes quieren una solución sencilla, sin complicaciones, con interfaz limpia y sin sorpresas raras. Ideal si no sos ni purista ni fan de las Big Tech.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es?</strong> Para quienes quieren cifrado privado por defecto, o capacidades avanzadas de sincronización en GNU/Linux.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://koofr.eu/" target="_blank" rel="noreferrer noopener">Koofr </a>es uno de esos servicios que pasan bajo el radar, pero que sorprenden por lo bien que están hechos. Es europeo (Eslovenia, nada mal), lo que ya te da cierto alivio con respecto al RGPD y la privacidad. No es el más robusto, ni el más libre, pero cumple lo que promete: almacenamiento accesible, multiplataforma y con una interfaz agradable.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito:</strong> 10 GB (de entrada te dan 2 GB, pero podés ampliarlo hasta 10 con invitaciones y otras tareas simples).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar:</strong> Tiene cliente web, de escritorio y móvil. El de GNU/Linux existe, pero es más bien limitado: no tiene sincronización continua tipo Dropbox, sino subida manual.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros:</strong> Buen soporte para conectarse a otras nubes (Google Drive, Dropbox, OneDrive), buena app móvil, interfaz minimalista y sin anuncios.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras:</strong> Cliente GNU/Linux poco funcional para sincronización continua. No tiene cifrado de extremo a extremo en la versión gratuita.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad:</strong> Al ser europeo cumple con GDPR, lo cual es mejor que nada. Pero, el cifrado privado solo está disponible si cifrás manualmente (ellos pueden acceder a tus archivos técnicamente).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Controversias:</strong> No hay grandes escándalos registrados. Pero ha recibido críticas por no incluir cifrado de extremo a extremo en planes gratuitos, y porque su sistema de recompensas por referidos fue acusado de ser algo agresivo en ciertos foros.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Zoho WorkDrive</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién es?</strong> Para quienes trabajan en equipo, buscan una suite "todo en uno" tipo Google Workspace, pero con un enfoque un poco más serio (y sin el tufillo constante de Google rastreándote). Ideal si necesitás colaborar con otras personas y tener una nube integrada a herramientas de productividad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Para quién no es?</strong> Para quienes buscan algo minimalista, libre o completamente privado. Esto es más “corporativo”, con todo lo bueno y lo malo que eso implica.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://workdrive.zoho.com/" target="_blank" rel="noreferrer noopener">Zoho WorkDrive</a> es parte del ecosistema de Zoho, esa especie de <em>Google alternativo</em> que la mayoría conoce pero pocos usan a fondo. Aunque muchas de sus herramientas apuntan a empresas, también tiene una versión gratuita para usuarios individuales o pequeños equipos, que viene bastante bien si sabés lo que estás buscando.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Almacenamiento gratuito:</strong> 5 GB.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fácil de configurar:</strong> Tiene clientes para Windows, macOS, iOS, Android y acceso web.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Pros:</strong> Interfaz muy pulida, excelente integración con otras herramientas de Zoho (como Zoho Docs, Mail, Sheets), buen control de versiones y auditoría para equipos. Permite colaboración en tiempo real, y eso no es menor.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Contras:</strong> Cifrado en tránsito y en reposo pero <strong>no</strong> de extremo a extremo, y el enfoque comercial puede sentirse abrumador para quien solo quiere guardar archivos y listo.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Privacidad:</strong> Zoho promete no vender datos ni rastrear a sus usuarios, y cumple con GDPR y otras normativas internacionales. Pero, nuevamente: <strong>no tiene cifrado de extremo a extremo</strong>, y como pasa con todo servicio basado en la nube que no sea E2EE, hay que tener cuidado.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Controversias:</strong> <a href="https://www.reddit.com/r/Zoho/comments/eto8zz/i_was_100_zohonow_its_one_of_my_biggest_regrets/" target="_blank" rel="noreferrer noopener">Zoho ha tenido algunos roces públicos </a>por suspensiones de cuentas sin previo aviso y temas de reembolso, siempre ha generado dudas pero sale bien parada en estadísticas.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Es curioso cómo algo tan etéreo como “la nube” se ha vuelto una necesidad tan concreta. Hoy por hoy, tener sincronizados nuestros archivos no es solo comodidad, es también una forma de respirar tranquilos, de sentir que, pase lo que pase, nuestras cosas <em>están ahí</em>. Pero claro… ¿dónde es <em>ahí</em> exactamente?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Entre gigas “gratis”, interfaces amigables y promesas de cifrado, es fácil olvidarse de que muchos de estos servicios siguen una lógica muy distinta a la nuestra: la del capital, el control, el análisis de datos. Por eso, aunque uno se apoye en la nube, no puede entregarse por completo. Sería como dejar la llave de tu casa a un desconocido porque te cae simpático.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cada servicio mencionado tiene sus luces y sombras. Algunos se plantan desde el software libre con honestidad brutal (aunque a veces torpe). Otros hacen malabares para parecer privados sin serlo del todo. Y otros directamente nos miran desde el confort del “sí, te espío, ¿y qué?”. La decisión, como siempre, está en el balance entre lo que necesitás, lo que estás dispuesto a ceder y lo que no podés permitirte perder.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Desde este rincón alternativo, donde aún creemos que el control de tus datos <strong>debería seguir siendo tuyo</strong>, solo queda decir: usá la nube, sí. Pero con cabeza. En lo posible, cifrá tus archivos antes de subirlos. No pongas toda tu vida en un solo servidor. Diversificá. Sos el administrador de tu vida digital, no el usuario final de un sistema que ni entendés.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y por supuesto, seguí explorando, rompiendo, probando... porque si algo nos enseña el software libre es que siempre hay otra forma de hacer las cosas. Aunque no salga en la primera página de Google.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nos vemos en el siguiente artículo, de esos que se escriben sin patrocinadores ni likes, pero con ganas reales de compartir algo útil.<strong>– GatoOscuro</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3778,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/05/4a9c936d1d570b405d82e220786d8953.avif" alt="" class="wp-image-3778"/><figcaption class="wp-element-caption"><strong>Qué no les pase la del meme jaja. Sacada de <a href="https://www.meme-arsenal.com/memes/4a9c936d1d570b405d82e220786d8953.jpg" target="_blank" rel="noreferrer noopener">acá.</a></strong></figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

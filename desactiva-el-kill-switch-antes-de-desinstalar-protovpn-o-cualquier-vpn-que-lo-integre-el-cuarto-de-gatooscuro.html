@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Desactiva el Kill Switch antes de desinstalar ProtoVPN (o cualquier VPN que lo integre) - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Desactiva el Kill Switch antes de desinstalar ProtoVPN (o cualquier VPN que lo integre)</h2>
+            <p class='meta'>Publicado el 07/04/2023</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Otra vez por aquí, de nuevo. Esta vez no planeo extenderme demasiado (como siempre prometo jaja). Vengo a traer un tutorial algo básico que no tuve en cuenta hace alrededor de un año cuando empecé a probar la integración del<a href="https://protonvpn.com/support/what-is-kill-switch/" target="_blank" rel="noreferrer noopener"> Kill Switch en ProtonVPN</a> y tuve un grave problema.<br><br><strong>¿Y qué es el Kill Switch?</strong> Básicamente, es un interruptor de apagado que protege tu dirección IP en caso de que pierdas inesperadamente la conexión a un servidor de ProtonVPN. Funciona de tal manera que, apenas se caiga la red, el interruptor automáticamente<strong> bloquea todo el tráfico de la red externa hacia y desde tu dispositivo</strong>. Permanecerá bloqueado hasta que la conexión se restablezca de nuevo con el mismo servidor de VPN.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Este es un excelente protocolo extra de seguridad para resguardar nuestra IP verdadera y <a href="https://protonvpn.com/support/dns-leaks-privacy/" target="_blank" rel="noreferrer noopener">consultas de DNS</a> mientras se produce el corte, qué puede ser ocasionado o surgido de forma natural; en lo posible habilitarlo SIEMPRE que se pueda, independientemente de la VPN de donde te encuentres.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":2174,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/04/linux-app.png" alt="" class="wp-image-2174"/><figcaption class="wp-element-caption">Kill Switch visual desde GNU/Linux</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Ahora bien, este protocolo de seguridad es bastante fuerte. Sin embargo, si en algún momento no desactivaste el Kill Switch de manera visual en su ventana tradicional y desinstalaste el programa por X o Y motivo, tal y como me pasó a mí, tendrás que recurrir a los<a href="https://protonvpn.com/support/official-linux-vpn-debian/" target="_blank" rel="noreferrer noopener"> siguientes pasos</a> o jamás podrás conectarte nuevamente a internet, sin importar lo que hagas (para GNU/Linux):</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><strong>A) Identifique los nombres de conexión de Proton VPN ejecutando el comando:</strong></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>nmcli connection show --active</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Esto mostrará una lista de todas las conexiones activas de su sistema.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><strong>B) Busque cualquier conexión con pvpn: esto generalmente incluye pvpn-killswitch y pvpn-ipv6leak-protection , y puede incluir pvpn-routed-killswitch . Elimine todas estas conexiones usando el siguiente comando:</strong></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>nmcli connection delete &#91;nombre de conexión]</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><strong><em>Por ejemplo:</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>nmcli connection delete pvpn-killswitch</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><strong>C) Vuelva a ejecutar el siguiente comando para verificar que las conexiones VPN de Proton se hayan eliminado:</strong></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>nmcli connection show --active</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><strong>Si queda alguna conexión Proton VPN, elimínela como se describe anteriormente.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y eso es todo, de lo contrario, si visualmente lo desactivaste y quieres borrar la VPN, sencillo:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>sudo apt-get autoremove protonvpn y rm -rf ~/.cache/protonvpn  con rm -rf ~/.config/protonvpn  (ambos para eliminar archivos restantes).</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Esto es todo por hoy. Mi motivación para escribir este artículo fue porque hace un año me paso, mientras hacía pruebas en mi ordenador me quede sin conexión y por más que buscaba no encontraba una solución referente al Kill Switch y en la documentación oficial anda bastante oculta, entonces por si a alguien de casualidad le sucede qué mejor que lo encuentre a la primera.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gracias por leer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2175,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/04/kill-switch-android-2-1024x815.jpg" alt="" class="wp-image-2175"/><figcaption class="wp-element-caption">En Android se presenta de forma diferente.</figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

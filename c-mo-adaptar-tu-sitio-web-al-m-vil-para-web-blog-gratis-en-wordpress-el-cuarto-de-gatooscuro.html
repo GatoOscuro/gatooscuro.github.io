@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cómo adaptar tu sitio web al móvil (para web/blog gratis en WordPress) - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Cómo adaptar tu sitio web al móvil (para web/blog gratis en WordPress)</h2>
+            <p class='meta'>Publicado el 14/06/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p><strong>Nota</strong> Artículo escrito en 2018 mientras alojaba mi humilde blog en WordPress.com, lo resubo porque sé que es una guía importante para quienes alojan sus blogs allí y no encuentran nada en español.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Debido al auge actual del uso de móviles y dispositivos portables para acceder a Internet y su inevitable crecimiento, es necesario para los desarrolladores y todos los que publican artículos en Internet, buscar alternativas para lograr que las páginas web creadas se muestren correctamente en cualquiera de estos medios y por supuesto también en las computadoras de escritorio y Laptops.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cada vez son más los que acceden a nuestros sitios utilizando sofisticados dispositivos, que soportan las últimas especificaciones de HTML, CSS y Javascript, su gran limitación es lo reducido de su pantalla que en algunos casos puede ser de solo 320 pixeles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ya que es tan reciente este auge, la gran mayoría de los CMS, es decir software en la red que permiten crear páginas web, ninguno de ellos está debidamente actualizado para lograr que las páginas generadas sean compatibles con los dispositivos móviles. A continuación vamos a ver cómo optimizar tu sitio WordPress gratuito para que sea visualizado sin ningún problema en cualquier móvil (no importa el tema base con el que fue creado):</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lo primero que tenemos que hacer es acceder a las configuraciones de administrador… para entrar solo tienen que agregarle a la url de su sitio <strong>wp-admin/</strong> un ejemplo mi sitio <strong>https://gatooscuro7.wordpress.com/wp-admin/</strong>; Luego solo tendremos que seguir los siguientes pasos:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Dale clic al icono de la brocha (de apariencia).</li><li>Seleccionar Apariencia.</li><li>Seleccionar el apartado "móvil".</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Si no los identificas puedes entrar accediendo a <strong>wp-admin/themes.php?page=mobile-options</strong> que debes agregar a la url de tu sitio, ejemplo "https://gatooscuro7.wordpress.com/wp-admin/themes.php?page=mobile-options"</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Luego activaremos las opciones de <strong>"activar tema móvil"</strong> y actualizar. Por último solo verifica que se vea correctamente desde el móvil.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.opensourcecms.com/wp-content/uploads/wordpress-admin-panel.png" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

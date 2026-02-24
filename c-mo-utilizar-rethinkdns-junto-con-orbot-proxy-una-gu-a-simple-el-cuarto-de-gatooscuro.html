@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cómo utilizar RethinkDNS junto con Orbot Proxy: una guía simple - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Cómo utilizar RethinkDNS junto con Orbot Proxy: una guía simple</h2>
+            <p class='meta'>Publicado el 08/07/2023</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Noche a noche la comunidad pro-privacy suele formar grandes debates en torno a la seguridad en línea y decidir cuáles son las herramientas predilectas para alcanzar un tope de privacidad considerable, sumando algo de anonimato, suelo referirme de formas parciales, ya que por totalidad nunca podemos asegurar nada, <strong>no hay nada 100% garantizado.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La fusión de dos herramientas notables como <a href="https://rethinkdns.com/" target="_blank" rel="noreferrer noopener">RethinkDNS</a> y <a href="https://guardianproject.info/archive/orbot/" target="_blank" rel="noreferrer noopener">Orbot proxy</a> puede ofrecer una serie de cambios notables y ventajas significativas en términos de seguridad y privacidad en línea. RethinkDNS es una herramienta de seguridad y control de DNS (Domain Name System) que permite a los usuarios bloquear anuncios, rastreadores y contenido no deseado en sus dispositivos. Por otro lado, Orbot proxy es una aplicación de enrutamiento de tráfico que permite a los usuarios ocultar su identidad en línea y acceder a Internet de manera más segura a través de la red Tor. Al fusionar estas dos herramientas, se pueden lograr cambios notables y ventajas en cuanto a mayor privacidad al ocultar la dirección IP y cifrar el tráfico de internet, bloqueo de anuncios y rastreadores, también el acceso a contenido restringido geográficamente o bloqueado al enrutar el tráfico a través de la red Tor obteniendo así todas las ventajas que ofrece la misma. Es importante destacar que los beneficios y cambios notables pueden variar según el uso y configuración específica de cada usuario, en este caso mostraré una que ha sido extendida en los subredes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ya hecha la anterior introducción en cristiano, paso al tutorial que es muy breve.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":2434,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/07/app-firewall-app-484x1024.jpeg" alt="" class="wp-image-2434"/><figcaption class="wp-element-caption">Imagen de cómo luce uno de los servicios de RethinkDNS, sacada del sitio oficial.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center"><strong>Configuración de Rethink para trabajar con Orbot Proxy (Modo Manual)</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><!-- wp:list-item -->
+<li>Inicie Orbot (no lo inicie en el modo VPN).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Fíjate en lo que dice Orbot en los campos "SOCKS5" y "HTTP" de su pantalla de inicio. Son números de puerto.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Entra en la aplicación RethinkDNS, iníciala y ve a Configuración.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Habilite HTTP Proxy e introduzca el número de puerto HTTP (como se ve en Orbot) si desea que sólo los navegadores utilicen el puente Tor de Orbot.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Habilite SOCKS5 (TCP) Proxy e introduzca el número de puerto (del paso 2), elija App (como Orbot), opcionalmente habilite Bloquear todo el tráfico UDP excepto DNS para dejar de filtrar UDP (las llamadas de WhatsApp, Zoom, Chromecast pueden dejar de funcionar; Orbot no soporta UDP).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Nota:</strong> El campo de dirección IP a configurar en RethinkDNS es 127.0.0.1 para ambos proxies (para Orbot).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Excluya Orbot de la misma pestaña de configuración RDNS para que Orbot haga la transferencia de conexiones.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Visite <a href="http://dnsleaktest.com" target="_blank" rel="noreferrer noopener">dnsleaktest.com</a>. No debería ser capaz de decir de dónde eres y tampoco mostrar tu IP real.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Acá mismo enlazaré el vídeo de un<a href="https://github.com/PaulSonOfLars" target="_blank" rel="noreferrer noopener"> contribuidor hacktivista </a>de la comunidad pro-privacy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":2435,"align":"center"} -->
+<figure class="wp-block-video aligncenter"><video controls src="https://gatooscuro.xyz/wp-content/uploads/2023/07/video_2023-07-08_10-55-37.mp4"></video></figure>
+<!-- /wp:video -->
+
+<!-- wp:image {"align":"center","id":2436,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/07/suck.png" alt="" class="wp-image-2436"/><figcaption class="wp-element-caption">Todo sea por evadir el gran hermano.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>El modo automático va de la siguiente forma, en vídeo:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":2437} -->
+<figure class="wp-block-video"><video controls src="https://gatooscuro.xyz/wp-content/uploads/2023/07/video_2023-07-08_11-03-08.mp4"></video></figure>
+<!-- /wp:video -->
+
+<!-- wp:paragraph -->
+<p>Dicho proyecto lo tenía bajo observación desde hace algún tiempo, ya que me fue recomendado ampliamente. Al parecer, es considerado el mejor en cuanto a cortafuegos, administración y filtrado de DNS. Es importante destacar que fue desarrollado por un grupo de expertos que anteriormente trabajaron en empresas como AWS, IBM y Scientific Games. Estos ingenieros decidieron crear esta solución debido a su descontento con la economía de la vigilancia y su frustración por la falta de aplicaciones de seguridad fáciles de usar para los 2 mil millones de usuarios desprevenidos de Android <strong>¡números, he! </strong>Aun así, siguiendo mis tácticas digitales, he preferido probarlo/utilizarlo bajo el método enlazado hoy, mismo que lo tengo de manera opcional porque con la VPN que poseo tengo esas características ya cubiertas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Acá el trasfondo <a href="https://github.com/theorchidproject/rethink-dns" target="_blank" rel="noreferrer noopener">explicado de forma oficial</a>:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p><strong>"La censura de Internet (a veces impuesta por el ISP y muchas veces por el gobierno), la vigilancia constante (por parte de casi todas las empresas y aplicaciones) nos llevó a este camino. Los tres compañeros de clase de la universidad, Mohammed , Murtaza y <a href="https://www.linkedin.com/in/santhosh-ponnusamy-2b781244/" target="_blank" rel="noreferrer noopener">Santhosh,</a> nos reunimos a fines de 2019 en la tranquila ciudad de Coimbatore, India, para hacer algo al respecto. Nuestra principal queja era que había todas estas herramientas maravillosas que la gente podía usar pero no podía, ya sea por el costo o por la incapacidad de asimilar la jerga específica de la computadora. Han pasado muchas cosas desde que empezamos y han cambiado muchas cosas, pero nuestro enfoque siempre ha estado en Android y sus 2B+ usuarios desprevenidos. La idea actual ha estado en proceso desde mayo de 2020, con la pandemia descarrilando un poco el progreso y un poco de error al abandonar nuestra versión anterior a favor de la bifurcación actual, de la que aún no estamos orgullosos, pero es un comienzo Todo está bien ahora que hemos ganado una subvención del <a href="https://builders.mozilla.community/" target="_blank" rel="noreferrer noopener">programa Mozilla Builders MVP</a> para seguir adelante y construir esto que queríamos... hacerlo más rápido... y no simplemente dormir durante la ejecución. Espero que estés emocionado, pero no tanto como nosotros, de que renuncies a tus trabajos por esto como lo hicimos nosotros".</strong></p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Otra alternativa RethinkDNS es <a href="https://blokada.org/" target="_blank" rel="noreferrer noopener">Blokada, </a>me la han recomendado, aunque no he visto la fusión con respecto a Orbot , por lo que de momento paso, intente hacer una prueba, pero por alguna razón en mi dispositivo no iniciaba, otra de la que se discute bastante en las subredes acerca de su gran efectividad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Eso es todo por hoy, cualquier corrección/agregación o demás, es bienvenida.</strong></p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

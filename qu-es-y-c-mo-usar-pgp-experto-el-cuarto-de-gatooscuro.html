@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Qué es y cómo usar PGP | Experto - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Qué es y cómo usar PGP | Experto</h2>
+            <p class='meta'>Publicado el 15/08/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>PD: Dirigido para todos los usuarios especialmente para los sistemas operativos que soporten Kleopatra, en este caso las capturas proceden de Windows porque fue en su momento donde las capte, pero es lo mismo en GNU/Linux.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hace un tiempo escribí sobre este mismo tema pero enfocado a un público más principiante (<a href="https://gatooscuro.xyz/que-es-y-como-usar-pgp-principiante/" target="_blank" rel="noreferrer noopener">https://gatooscuro.xyz/que-es-y-como-usar-pgp-principiante/</a>). A continuación mencionaré lo más importante que redacte en el artículo pasado y procederé a iniciar/explicar cómo usar dicha herramienta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Seguramente el caso más mencionado en el que se haya utilizado PGP, fue: Cuando Edward Snowden y Laura Poitras lograron ponerse en contacto y burlar a las agencia de seguridad estadounidenses y sus aliados gracias a que una de sus primeras comunicaciones fue encriptada. En ese correo electrónico Snowden le pedía a Poitras que aumentara el nivel de seguridad de su correo con una nueva llave más segura ya que la NSA es capaz de generar un trillón de contraseñas por segundo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>No se trata de hacer más difícil a la NSA saber qué dices, se trata de proteger cualquier tipo de información personal de cualquier otra persona, organización o sistema exterior que intenta espiarte.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sin colocarnos técnicos: PGP (Pretty Good Privacy/privacidad bastante buena), es un programa desarrollado por Phil Zimmermann y cuya finalidad es proteger la información distribuida a través de Internet mediante el uso de criptografía de clave pública, así como facilitar la autenticación de documentos gracias a firmas digitales.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Cómo funciona?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PGP es un criptosistema que cifra el contenido de un texto comprimiéndolo buscando patrones repetitivos en el texto, de la misma forma que por ejemplo la compresión de un archivo JPEG busca patrones repetitivos en la imagen para hacer más ligero el archivo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Por qué cifrar tus comunicaciones?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No se trata de que tengas algo que esconder, si no de que tienes comunicaciones que no tienen por qué ser escuchadas o leídas por otras personas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El cifrado de mensaje hoy por hoy es un poco complicado, pero poco a poco hay más aplicaciones y servicios que ponen la seguridad por delante y más fácil de entender.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Noten que estoy siendo muy resumido en cuanto a las explicaciones, y esto es porque la mayoría de sitios que hablan sobre PGP y sus derivados, complican las cosas a tal punto que un usuario promedio o básico no entenderá un carajo. Además no me puedo meter mucho en datos técnicos porque no soy un profesional en ello (todavía) y no podría darte esa clase de definición.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Cómo usarlo?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hay muchas formas de utilizar este tipo de cifrado, pero hoy les vengo a mostrar una forma muy sencilla y segura.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lo primero que tendrán que hacer es entrar al siguiente sitio (<a href="https://www.gpg4win.org/download.html" target="_blank" rel="noreferrer noopener">https://www.gpg4win.org/download.html</a>) y descargar el programa correspondiente. Me salto el proceso de instalación porque es algo relativamente sencillo y además en Windows con cuatro clicks lo tienes listo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/1.png" alt="Cosmic radiation"><br>(Sitio oficial)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Luego de descargar e instalar vamos a nuestro escritorio y encontraremos un programa que se llama "Kleopatra", lo ejecutamos y pasamos al siguiente punto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/2.png" alt="Cosmic radiation"><br>(Icono del programa)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/3.png" alt="Cosmic radiation"><br>(Programa en ejecución)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Después de todo lo anterior procederemos a crear nuestro par de llaves (pública y privada):</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Archivo</li><li>Nuevo par de llaves</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/4.png" alt="Cosmic radiation"><br>(Creación de nuevo par de llaves)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Crear un par de claves personales OpenPGP</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/5.png" alt="Cosmic radiation"><br>(Opciones que da el programa)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Luego colocaremos el nombre y correo del propietario.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>También podremos darle en "configuración avanzada" y definir ciertos valores</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/6.png" alt="Cosmic radiation"><br>(Detalles de llave)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/7.png" alt="Cosmic radiation"><br>(Detalles extras y configuración avanzada)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Luego siguiente y siguiente; nos saldrá un recuadro para rellenarlo con la contraseña segura que utilizaras para cifrar y descifrar cualquier mensaje/archivo (importante no perder).</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/8.png" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:list -->
+<ul><li>Finalmente tendremos las llaves creadas y con varios pasos a seguir (es opcional).</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/9.png" alt="Cosmic radiation"><br>(Pasos opcionales y final de creación de par de llaves)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Llegando a este punto ya tendríamos el par de llaves creado, pero ¿Qué es lo que sigue? Pues, les mostraré como se cifra/descifra un mensaje y cómo exportar/importar tu clave pública.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Supongamos que alguien me va a enviar su llave para empezar a intercambiar mensajes cifrados con el, entonces tendría que hacer lo siguiente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Seleccionar su llave</li><li>Exportar</li><li>Seleccionar el lugar donde vas a guardar la llave</li><li>Enviar el archivo a tu amigo</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/11.png" alt="Cosmic radiation"><br>(Exportar.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/21.png" alt="Cosmic radiation"><br>(Exportada a la nube de Telegram )</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Listo, ahora pasamos al siguiente punto donde voy a importar esa clave a mis llaves de confianza para empezar a intercambiar dichos mensajes, entonces tengo que hacer lo siguiente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Descargar la llave</li><li>Importarlo a mis llaves de confianza</li><li>Cumplir con lo que nos pide el formulario de confianza y verificación</li><li>Colocar su contraseña maestra para terminar la importación de la llave</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/31.png" alt="Cosmic radiation"><br>(Archivo descargado)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/42.png" alt="Cosmic radiation"><br>(Importar.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/51.png" alt="Cosmic radiation"><br>(Verificando)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/61.png" alt="Cosmic radiation"><br>(Verificando2)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/71.png" alt="Cosmic radiation"><br>(Contraseña maestra)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ahora tienes dos llaves en tu programa; la tuya y la de tu amigo. Ahora proseguiremos con la cifrada de mensaje:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Bloc de notas</li><li>Escribimos el mensaje a cifrar</li><li>Pasamos a "Destinatario".</li><li>Agregamos los valores como en la imagen</li><li>Cifrar (nos pide nuestra contraseña maestra).</li><li>Enviar mensaje ya cifrado a tu amigo para que lo descifre</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/81.png" alt="Cosmic radiation"><br>(Llaves mía y de mi amigo)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/10.png" alt="Cosmic radiation"><br>(Destinatario)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/111.png" alt="Cosmic radiation"><br>(Configuración)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/12.png" alt="Cosmic radiation"><br>(Firmar y confirmación)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/13.png" alt="Cosmic radiation"><br>(Mensaje encriptado listo para enviar)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Luego mi amigo descifro el mensaje (lo descifra en el bloc y con su contraseña maestra) y el resultado fue este:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/20.png" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Esta es la finalización del tutorial, pero creo que todo el proceso quedo muy claro y así mismo como se cifra el mensaje se puede descifrar sin ningún problema. Durante el proceso hay varios cambios e incoherencias como el texto de ejemplo o la llave censurada ¿La razón? Esto lo escribí en el transcurso de varios días y se me olvidaba en que había quedado así que modificaba el contenido, pero siguiendo el proceso de dicho programa y además deje de usar la llave de prueba y empecé a usar mi llave personal (por ello la censura en las capturas), aunque estos pequeños detalles deben ser ignorados porque no afectan en nada al proceso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Qué pienso acerca de la supuesta vulnerabilidad de PGP?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hace un tiempo empezó a circular noticias sobre una vulnerabilidad que había sobre PGP y en resumen esto es lo que opino/y paso: La vulnerabilidad consistía en el cifrado automatizado y con uso en HTML, simplemente no lo usen y listo; hagan todo manual.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por último: Esta es una de las formas más seguras para proteger tus comunicaciones en la actualidad. Seguro algunos se estén preguntando <strong>¿Y los usuarios de GNU/Linux?</strong> Yo que uso aquel sistema operativo no hice el tutorial con la terminal simplemente porque no la controlo aun, prefiero la forma visual… más adelante haré un tutorial para nosotros, lo de GNU/Linux</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PD: Si se me olvido mencionar algo por favor escríbelo en los comentarios.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/snowden-pgp.jpg" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

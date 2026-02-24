@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cómo mantener el contenido de tu blog a salvo - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Cómo mantener el contenido de tu blog a salvo</h2>
+            <p class='meta'>Publicado el 14/06/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:list -->
+<ul><li>Verificar los permisos de tus “socios” -</li><li>Escribir todo en un solo documento -</li><li>Tener una copia en la nube -</li><li>Hacer una copia de seguridad de todo el contenido -</li><li>Nuevamente subir todo a la nube -</li><li>Mucho sentido común -</li><li>Indexar y mirrors -</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Desde mi comienzo en Internet como blogger/bloguero, me han ocurrido un montón de sucesos los cuales terminaban en la perdida del contenido, algo que nadie quisiera que pasara. El contenido de tu blog siempre estará a merced de tu hosting o empresa donde lo tengas alojado/pertenezca, un ejemplo de ello es la empresa a donde pertenecía mi viejo blog el cual es WordPress y en sus términos y condiciones dejan muy claro que pueden cerrar cualquier blog sin previo aviso si se comete alguna falta o alguna razón extraña que ellos encuentren, lamentable, pero cierto (una de las razones para migrar, <strong>free speech</strong>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Así que sin más les dejaré unos pasos que yo siempre utilizo para asegurar mi contenido y quizás le resulte muy útil para personas que comiencen en esto o quizás otros que jamás utilizaron ciertos métodos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Verificar los permisos de tus “socios”</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En muchas plataformas de blogs tenemos la opción de añadir colaboradores o “socios” que te puedan ayudar a escribir artículos o empezar de manera colaborativa a escribir, tienes que verificar muy bien a quien le has cedido los permisos porque puede ser un problema a futuro… en su momento me quede sin blog por un problema en los permisos con alguien.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Esto lo puedes verificar (ejemplo Wordpres): &gt;Panel &gt;Mis sitios &gt;Personas y listo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En el caso particular de plataformas como la que uso actualmente <strong>WriteFreenly</strong> y otras como Tumblr, Plume, Medium y demás, solo constan de que es una persona natural quién maneja la cuenta por lo tanto maneja una credencial individual.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Escribir todo en un solo documento</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Algo que yo siempre hago al escribir cualquier artículo es hacerlo en un documento de texto en varios formatos (actualmente solo PDF porque es un formato general utilizable en cualquier caso) para poder tener el artículo al alcance y solo tener que copiar y pegar en caso de que no se publique correctamente o hacer la sincronización directa con las importaciones que se permita en el sistema de blogs. Además puedo jugar con el siguiente punto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Tener una copia en la nube</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Como mencionaba anteriormente al tener el artículo en un documento tengo la seguridad de que todo quedara guardado en mi ordenador y luego procederé a guardarlo en diferentes servidores, tal el caso de: Nextcloud, MediaFire, pCloud (los que utilizo).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Hacer una copia de seguridad de todo el contenido</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En WordPress hay una opción donde se puede hacer una “copia” de seguridad de todo el contenido de una manera muy fácil para pasarlo a otra cuenta, blog o plataforma sin ningún problema, solo tienes que ir a &gt;Panel &gt;Mis sitios &gt;Ajustes &gt;Exportar contenido y listo, descargar todo (tiene la opción de enviarlo a tu correo), te descargará un archivo comprimido .rar que adentro traerá toda la información y entradas de tu sitio para moverlo fácilmente a otra plataforma, en mi caso tengo mi sitio en otro blog de WordPress (en privado) y uno en Blogspot (en privado) por si necesito alguna vez probar algo o recurrir a una copia como emergencia. <strong>Actualización</strong> Eso fue un ejemplo en su momento, actualmente sólo manejo dos mirrors, uno en la red Tor que sincronizo manualmente y otro en la red superficial que no suelo compartir porque es sólo y exclusivamente como respaldo (Writefreenly solo permite respaldar en formato .txt y jso).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PD: Esta herramienta es muy buena si quieres mover tu contenido de plataforma, pero tienes que tener mucho cuidado de no mover nada o deformar tu sitio en el que andas actualmente y echar a perder todo (me paso).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Nuevamente subir todo a la nube</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ya teniendo la copia de seguridad de todo el sitio hay que proceder a guardarlo en diferentes servidores en la nube por si se tiene algún error en el blog y corregirlo con una copia de seguridad anterior.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Mucho sentido común</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Llegando hasta este punto estás totalmente seguro, pero tienes que salvarte de ti mismo teniendo mucho sentido común como por ejemplo:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Utilizando contraseñas seguras.</li><li>No dando tu contraseña a nadie.</li><li>Evitando enlaces extraños.</li><li>No dejar tu blog abierto en casa de un amigo, familiar, café Internet y demás</li><li>Conociendo todas las herramientas y configuraciones de tu blog perfectamente (conocí a alguien que borro todo su contenido sin querer en un segundo).</li><li>Mantener tú CMS actualizado en caso de autoalojar Wordpress, Ghost y demás CMS que pueden ser vulnerables a atacantes en versiones anteriores.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Indexar y mirros</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Advertencia</strong> paso sólo para paranoicos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Básicamente replicar tus blogs en cuantos medios puedas sincronizar sin morir en el intento, por ejemplo si tienes el blog en WordPress duplicarlo en Blogspot, Medium, Tumblr, Wix , Writefreenly, Plume y un laaaaargo etc de sitios ¿Por qué? Si te censuran en un sitio no será tan fácil o rápido que lo hagan en el resto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Otro paso es utilizar la WaybackMachine (https://archive.org/) en donde podrás indexar tu sitio en la máquina del tiempo, quién con su ingenioso sistema podrá conservan tu pagina/blog por el resto de nuestros días sin temor a la censura, perdurará alli por más que borren/suspendan tu cuenta. Ejemplo mi blog ya respaldado (https://web.archive.org/web/20210311151340/https://write.privacytools.io/gatooscuro/)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Esas seguramente sean muy buenas alternativas para mantener tu contenido seguro o al menos son las “herramientas” o alternativas que utilizo a diario para tener una segunda oportunidad o una llave de confianza que me salve de grandes riesgos que puedan ocurrir por alguna extraña razón, todo puede pasar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.muycomputerpro.com/movilidad-profesional/wp-content/uploads/2015/02/Backup.jpg" alt="Backup"/></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>¿Por qué aún sigo utilizando Android por defecto? ¿GrapheneOS o nada? - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>¿Por qué aún sigo utilizando Android por defecto? ¿GrapheneOS o nada?</h2>
+            <p class='meta'>Publicado el 03/08/2024</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Normalmente, cuando estoy en alguna conversación con usuarios de la gran red y tocamos el tema de los sistemas que solemos utilizar, tanto en ordenador como en móvil, sorprenden las diferencias. Uno podría pensar que, al estar más inmerso en el sector de la privacidad y la seguridad informática, se es bien estricto con la elección de los sistemas operativos. Sin embargo, a pesar de que en el ordenador tenemos 101 de opciones (y eso que es solo un número de ejemplos), en el móvil solo podemos conformarnos con unas pocas alternativas, que realmente no parecen ser una «solución».</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Durante algún tiempo, investigué diferentes alternativas a Android que pudieran ser compatibles con mi móvil o basadas en AOSP. Sin embargo, lo que encontré fueron sistemas carentes de funcionalidades, que ofrecían un «plus» en privacidad y seguridad, pero de manera muy relativa. Así como suman ciertas características, pierden muchas otras que solo son obtenidas por las firmas oficiales.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Android de por sí es un sistema operativo seguro que cuenta con una sólida zona de p<a href="https://source.android.com/security/app-sandbox" target="_blank" rel="noreferrer noopener">ruebas de aplicaciones , arranq</a>ue <a href="https://source.android.com/security/verifiedboot" target="_blank" rel="noreferrer noopener">verificado (AVB) y </a>un sólido<a href="https://developer.android.com/guide/topics/permissions/overview" target="_blank" rel="noreferrer noopener"> sistema </a>de control de permisos. Cada vez que adquieres un teléfono con Android por primera vez, podemos evidenciar que contamos con demasiado bloatware (software preinstalado no deseado), como lo son todos los servicios de Google para cada una de las funciones del celular, tales como: su propia aplicación de contactos, teléfono, galería, sistema de ubicación, SMS, cámara, teclado y un largo etcétera. Es un grave error poner todos los huevos en la misma cesta, especialmente cuando se le proporciona esa confianza a una compañía cuyo modelo de negocio es prácticamente snifar datos con fines comerciales. Además de que todas aquellas aplicaciones instaladas por defecto aumentan la superficie de ataque, también generan un declive en nuestra privacidad, por lo que es aquí cuando muchos intuyen que huir de Android a primeras es la mejor opción.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sin embargo, parece ser la mejor opción, pero no lo es. <a href="https://privsec.dev/posts/android/choosing-your-android-based-operating-system/" target="_blank" rel="noreferrer noopener">Aquí cito el siguiente texto de interés</a>:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Este problema podría resolverse utilizando un sistema operativo personalizado basado en Android que no venga con una integración tan invasiva. Desafortunadamente, muchos sistemas operativos personalizados basados en Android a menudo violan el modelo de seguridad de Android al no admitir funciones de seguridad críticas como AVB, protección de reversión, actualizaciones de firmware, etc. Algunos de ellos también envían userdebug compilaciones que exponen la raíz sobre ADB y requieren políticas SELinux más permisivas para adaptarse a las funciones de depuración, lo que resulta en una mayor superficie de ataque y un modelo de seguridad debilitado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Desafortunadamente, los OEM solo están obligados a admitir el arranque verificado en su distribución estándar de Android. Sólo unos pocos fabricantes de equipos originales, como Google, admiten la inscripción de claves AVB personalizadas en sus dispositivos. Además, algunos derivados de AOSP, como LineageOS o /e/ OS, no admiten el arranque verificado ni siquiera en hardware con soporte de arranque verificado para sistemas operativos de terceros. En la mayoría de los casos, no vale la pena cambiar el arranque verificado por simplemente no tener Play Services" -<a href="https://privsec.dev/posts/android/choosing-your-android-based-operating-system/" target="_blank" rel="noreferrer noopener"> Fuente.</a></p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Aunque he leído en algunas partes de la red (no recuerdo dónde) que, con el tiempo, estas derivadas han estado trabajando en esa característica, es importante tener en cuenta que, aunque estas ROMs pueden soportar el arranque verificado, la capacidad de utilizar esta función depende del hardware específico del dispositivo y de cómo se haya desarrollado la ROM para ese modelo. Además, algunos dispositivos pueden requerir que se mantenga el bootloader bloqueado para que el arranque verificado funcione correctamente, lo que puede limitar la capacidad de instalar ROMs personalizadas (no 100% confirmado).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Otro punto a considerar es el tema de las actualizaciones y parches de seguridad. En Android, como es evidente, suelen llegar mucho más rápido que en el resto de las ROMs y/o derivadas; esto es comprensible. Sin embargo, lo que no es aceptable es que haya derivadas con un retraso de al menos 4 meses, como ha sucedido en casos concretos, dejando una gran brecha de inseguridad frente a las vulnerabilidades que han sido descubiertas y parcheadas durante ese tiempo estimado de actualización. Es un poco paradójico que se tenga ese retraso en parches en derivadas que promueven la seguridad y la privacidad en todos sus aspectos. Esta es una norma general: mantener los sistemas siempre actualizados para evitar vulnerabilidades (valga la redundancia).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por último, lo que me lleva a continuar en Android no es ni siquiera que no me llenen las características que ofrecen estas alternativas, sino más bien su propio elitismo. ¿Elitismo? Sí, leíste bien… La compatibilidad es algo que me parece absurdo en dichas terminales, y es que, mientras en el ordenador tenemos distribuciones de GNU/Linux y *BSD para todo tipo de hardware, en las terminales móviles no. La mayoría de estas alternativas son ofrecidas para modelos muy modestos, como por ejemplo la alternativa CalyxOS, que tiene compatibilidad con el Xiaomi MI A2 (claramente de la línea Xiaomi, que es a donde pertenezco), un celular que hace rato no veo. De hecho, soy poseedor de un Redmi Note 12 y, aun así, me siento rezagado frente a las nuevas versiones. ¿Ven la diferencia? Una terminal del 2018 vs. una del 2023. ¡Ups! Acabo de fijarme que dicha terminal está en las NO soportadas… por lo que ya quedé por fuera. Ahora solo soportan algunos Motorola, Pixels y Fairphone.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por otro lado, si nos vamos a LineageOS, que es quien tiene más terminales compatibles, el más cercano al mío es el Redmi 12C, que según entiendo, es una versión más económica. Y, por último, pasando a GrapheneOS, solo vemos Pixels, mismos que en mi país no son nada baratos. De allí que confirme lo del inicio: elitismo, ya sea por limitación de hardware o por su limitada adquisición en cuanto a modelos disponibles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">En caso de utilizar una derivada ¿Cuál elegir?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Debo agregar que no estoy en contra de las derivadas, a pesar de las realidades que he expuesto anteriormente con referencia a dichas alternativas. Por lo tanto, en el caso hipotético de que yo tuviera un modelo compatible, ¿por cuál me iría? Teniendo a mi disposición GrapheneOS, DivestOS, CalyxOS, iodéOS, /e/ y LineageOS, es aquí donde muchas cosas entran en juego y se debe tener muy en cuenta cuál es nuestro modelo de amenaza. En resumidas cuentas: si buscara seguridad y privacidad, me iría hacia GrapheneOS, ya que parece ser la única alternativa con<a href="https://grapheneos.org/usage#sandboxed-google-play" target="_blank" rel="noreferrer noopener"> sandboxing de Google Play</a>. No vas a tener que desechar funcionalidades y características a costa de la seguridad, funcionando bastante bien (según las reseñas de la red) el entorno de Google Play Services en tales dispositivos asegurados. Tiene asignador de memoria reforzado, permisos de red y sensores, y un<a href="https://grapheneos.org/features" target="_blank" rel="noreferrer noopener"> sinfín de características de seguridad.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://youtu.be/0ic6QK0xUMY","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://youtu.be/0ic6QK0xUMY
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><strong>Agrego:</strong> a mi parecer, si tu modelo de amenaza es demasiado bajo y solo necesitas alejarte un poco de las Gapps y el bloatware en general, es suficiente con permanecer en Android y utilizar un software para borrar todo el bloatware por ADB y pasarte a tiendas alternativas como F-Droid y Aurora Store. Con ello, al menos para mí, es suficiente para limpiar tu terminal móvil de tanta basura. Ha sido mi experiencia de uso durante estos años y, de verdad, no me quejo. No he perdido funcionalidades de mi dispositivo inteligente, a la vez que mantengo mi seguridad y privacidad a un nivel considerable, mucho mayor a la media. Me gustaría estar al mismo nivel de los GrapheneOS, sí… pero ya será en un futuro. De momento, me quedo satisfecho en donde estoy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A continuación les estaré dejando una <a href="https://eylenburg.github.io/android_comparison.htm" target="_blank" rel="noreferrer noopener">comparativa demasiado interesante </a>en la que efectivamente muestran a GrapheneOS cómo el campeón:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed-pdf-viewer/pdf {"id":3393,"title":"ComparaciónROMDeAndroid","description":{"raw":"","rendered":"\u003cp class=\u0022attachment\u0022\u003e\u003ca href='https://gatooscuro.xyz/wp-content/uploads/2024/08/ComparacionROMDeAndroid.pdf'\u003eComparaciónROMDeAndroid\u003c/a\u003e\u003c/p\u003e\n"},"url":"https://gatooscuro.xyz/wp-content/uploads/2024/08/ComparacionROMDeAndroid.pdf","width":975,"height":975} -->
+<figure class="wp-block-embed-pdf-viewer-pdf wp-block-embed-pdf-viewer-pdf__content-wrapper aligncenter"><object class="embed-pdf-viewer" data="https://gatooscuro.xyz/wp-content/uploads/2024/08/ComparacionROMDeAndroid.pdf#scrollbar=1&amp;toolbar=1" type="application/pdf" height="975" width="975"></object><iframe class="embed-pdf-viewer" src="https://docs.google.com/viewer?url=https%3A%2F%2Fgatooscuro.xyz%2Fwp-content%2Fuploads%2F2024%2F08%2FComparacionROMDeAndroid.pdf&amp;embedded=true" frameborder="0" height="975" width="975"></iframe></figure>
+<!-- /wp:embed-pdf-viewer/pdf -->
+
+<!-- wp:paragraph -->
+<p>¡Muchas gracias! Una vez más por leer este artículo y quedo atento a cualquier corrección y/o aporte; saludos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3394} -->
+<figure class="wp-block-image"><img src="https://gatooscuro.xyz/wp-content/uploads/2024/08/NextPit_Android-14-DP1-scaled.avif" alt="" class="wp-image-3394"/><figcaption class="wp-element-caption">Imagen sacada de<a href="https://fscl01.fonpit.de/userfiles/7715851/image/NextPit_Android-14-DP1.jpg" target="_blank" rel="noreferrer noopener"> acá.</a></figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Actualmente el paquete Flatpak de Signal es inestable | Solución - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Actualmente el paquete Flatpak de Signal es inestable | Solución</h2>
+            <p class='meta'>Publicado el 17/10/2024</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Desde hace unas semanas, venía presentando problemas con la versión Flatpak de Signal. Realmente, no le presté mucha atención al error, ya que era "restablecer base de datos" y listo; iniciabas sesión sin ningún problema. Pero luego me di cuenta de lo engorroso que era. Me dispuse a buscar información al respecto y, a su vez, pregunté en el Fediverso para ver si el problema era solo mío o también le sucedía a más personas. ¡Vaya sorpresa! Realmente era un problema generalizado para todos los usuarios de GNU/Linux que usaban la versión Flatpak.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Cómo es y por qué sucede?</strong><a href="https://github.com/flathub/org.signal.Signal/issues/723"> Leyendo</a><a href="https://github.com/flathub/org.signal.Signal/issues/723" target="_blank" rel="noreferrer noopener"> el siguiente hilo en GitHub</a> podemos concluir qué el error que está ocurriendo con Signal en su versión para escritorio (Flatpak) es principalmente relacionado con problemas de cifrado y almacenamiento de datos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El error principal parece ser un problema de cifrado de datos, específicamente al intentar descifrar el contenido proporcionado a <strong>safeStorage.decryptString.</strong> Esto indica que hay un cambio o incompatibilidad en cómo Signal está tratando el cifrado de la base de datos local.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Razones posibles</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Cambios en la API de cifrado: Es posible que haya habido cambios en la forma en que Signal utiliza la API de cifrado, lo que ha causado incompatibilidades entre diferentes versiones.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Problemas con el sistema de keyring: Algunas personas mencionan que podría haber un problema con los permisos del sistema de keyring, aunque esto no está completamente claro.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Cambios en la versión del paquete Flatpak: Los usuarios están reportando que el problema aparece después de actualizaciones del paquete Signal desde FlatHub.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Según se entiende, es por un tema de actualización de Electron y el modo en que se almacenan las claves por parte de Flatpak.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Consecuencias</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Pérdida de historia: Muchos usuarios han informado de que han perdido su historial de mensajes debido a este error.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Imposibilidad de usar la aplicación: La aplicación se vuelve inutilizable en algunos casos.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Soluciones tentativas</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Bajar a una versión anterior: Algunos usuarios han intentado bajar a versiones anteriores usando comandos Flatpak, pero esto no siempre soluciona el problema.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Eliminar la base de datos: Algunos han tenido éxito eliminando la base de datos y volviendo a iniciar la aplicación, aunque esto puede resultar en pérdida de datos.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Usar flags de línea de comandos: Algunos usuarios han intentado usar flags como <kbd>--password-store=gnome-libsecret</kbd> oh <kbd>--password-store=basic-text</kbd>, pero esto no siempre funciona.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>De agregar qué las «soluciones» de momento han sido algo «suaves» diría yo, más que todo cómo para continuar con dicho paquete de manera temporal hasta que se obtenga la corrección total. En cuanto a las versiones afectadas, pues reportan que sucede desde la versión 7.24 y actualmente vamos por la 7.29.9 y aún sucede (está salió hace dos días a la fecha que escribo esto).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Acá<a href="https://community.signalusers.org/t/troubleshooting-guide-database-error-after-flatpak-update-from-flathub/63222" target="_blank" rel="noreferrer noopener"> anexo la fuente de la solución por parte de la comunidad</a>, qué básicamente es borrar las configuraciones qué poseías del paquete Flatpak de Signal, borrar su base de datos y reinstalar para que todo vuelva a «funcionar» como antes, cuestión que no a todos les ha funcionado (me incluyo).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Solución definitiva</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Tal y como salió uno de los mantenedores de Signal a exponer al hilo de error (actualmente no encuentro la respuesta) el problema es el paquete de Flatpak, que actualmente ellos no mantienen, por lo que la solución definitiva al menos para los que usan GNU/Linux base Debian, es tirar del PPA o el paquete proporcionado en la<a href="https://signal.org/download/#" target="_blank" rel="noreferrer noopener"> web oficial de Signal</a> (Gracias a <a href="https://ieji.de/deck/@Lautaro_Ferrero@mastodon.social" target="_blank" rel="noreferrer noopener">Lautaro </a>del Fediverso que también me indico lo mismo) y pues, de esa forma es que actualmente estoy corriendo Signal en el escritorio, no sé para qué me complique la vida o bueno, desde que comencé a usar Flatpak le di preferencia a que la gran cantidad de paquetes de mi S.O fuera de dicha fuente, por sus ventajas en cuestiones de aislamiento y actualizaciones constantes que prácticamente no se sienten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:preformatted -->
+<pre class="wp-block-preformatted"><strong># NOTE: These instructions only work for 64-bit Debian-based<br># Linux distributions such as Ubuntu, Mint etc.<br><br># 1. Install our official public software signing key:<br>wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg<br>cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null<br><br># 2. Add our repository to your list of repositories:<br>echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg]  xenial main' |\<br>  sudo tee /etc/apt/sources.list.d/signal-xenial.list<br><br># 3. Update your package database and install Signal:<br>sudo apt update &amp;&amp; sudo apt install signal-desktop<br></strong></pre>
+<!-- /wp:preformatted -->
+
+<!-- wp:paragraph -->
+<p>Es muy sencillo para la base Debian; para quienes están fuera de ella, realmente no sé cómo se las están apañando de momento. Imagino que con alguna de las soluciones temporales que enlacé más arriba. El caso es que, de verdad, me molesta en lo personal este tipo de actualizaciones, que en vez de mejorar, perjudican la aplicación. Entiendo que no es culpa</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y eso es todo. Espero que con el tiempo se corrija esto. Gracias por leer y quedo atento a cualquier cuestión y/o aporte.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3463,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="https://gatooscuro.xyz/wp-content/uploads/2024/10/Captura-de-pantalla-de-2024-10-17-19-28-39-png.avif" alt="" class="wp-image-3463"/><figcaption class="wp-element-caption"><strong>Captura de pantalla del error.</strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>¿Vale la pena confiar en Cloudflare WARP? ¿Diferencias entre una VPN? Análisis completo - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>¿Vale la pena confiar en Cloudflare WARP? ¿Diferencias entre una VPN? Análisis completo</h2>
+            <p class='meta'>Publicado el 21/07/2022</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Los que me siguen regularmente en mis diferentes redes saben que soy usuario de ProtonVPN todo por considerarlo un excelente servicio, tanto en su apartado gratuito como el de pago, siendo tal que le<a href="https://gatooscuro.xyz/protonvpn-analisis-de-la-mejor-vpn/" target="_blank" rel="noreferrer noopener"> dedique un artículo en su momento</a> siendo usuario gratuito por su nivel de calidad que ofrece. Además de seguir siendo demasiado confiable dentro del ecosistema de la privacidad en línea, a pesar de tener pequeñas dudas al rededor, sigue siendo la mejor parada, <strong>¿qué tiene que ver todo esto? </strong>Pues que antes de ProtonVPN estaba utilizando el proyecto WARP de Cloudflare porque era la que veía mejor posicionada en la red y siendo esta sin costo… ahora bien, hay una realidad detrás por la cual me inspire a crear este artículo, así que vamos al grano.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Empecemos por lo más básico <strong>¿Qué es WARP?</strong> No hace falta explicar a fondo qué es Cloudflare siendo este una referencia top dentro de la industria de la seguridad informática frente a su potente freno a los ataques de denegación de servicio, también a su gran dominio en la web gracias a su sistema de servicios de servidores de nombres de dominio distribuidos, siendo estos los famosos DNS que son fundamentales para no escribir en nuestros buscadores la IP de una página, sino con solo el nombre poder acceder a ella siendo este redirigido como un directorio móvil con el registro de las páginas de la web.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Resolviendo la pregunta de arriba, WARP viene siendo una integración que el equipo de Cloudflare agrego a su potente aplicación móvil de<a href="https://cloudflarewarp.com/es-ES/dns/" target="_blank" rel="noreferrer noopener"> DNS 1.1.1.1</a> siendo este pudiéndose comportar como una VPN sacando el mejor provecho de las ventajas de las DNS de Cloudflare a todo el tráfico de Internet. Se supone que es una VPN centrada en seguridad y fiabilidad, no siendo cómo algunas que solo simulan estar geográficamente en otros lados para saltar los bloqueos locales.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://www.cloudflare.com/img/learning/security/vpn/what-is-a-vpn/what-is-a-vpn.svg" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Según sus palabras bajo el lanzamiento, cito:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>“<strong>Plan supersecreto</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A decir verdad, la aplicación 1.1.1.1 fue en realidad un paso previo hasta hoy. Teníamos un plan para mejorar radicalmente el rendimiento, la seguridad y la privacidad de la internet móvil, mucho más allá del DNS. Para lograrlo, necesitábamos entender las condiciones de la falla cuando una aplicación VPN cambiaba entre celular y WiFi, cuando había una degradación de señal, cuando intentaba registrarse en un portal cautivo, o cuando se encontraba con las diferentes condiciones que experimentan los teléfonos móviles en el campo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Más sobre eso en un segundo. En primer lugar, debemos reconocer que la internet móvil podría ser mucho mejor de lo que es hoy. El protocolo de control de transmisión (TCP), el protocolo esencial de internet, nunca se diseñó para un entorno móvil. Literalmente hace exactamente lo contrario de lo que debería hacer cuando usted está tratando de navegar por internet en su teléfono y alguien que está cerca enciende el microondas o sucede alguna otra cosa que causa la pérdida de paquetes. La internet móvil podría mejorar mucho si tan solo actualizáramos los protocolos subyacentes. Se ha depositado mucha esperanza en la tecnología 5G, pero lamentablemente no se hace nada para resolver el hecho de que la internet móvil todavía funciona con protocolos de transporte diseñados para una red por cable.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Más allá de eso, con nuestros teléfonos móviles realizamos nuestras comunicaciones más personales. Y, sin embargo, ¿qué seguridad tiene usted de que sean tan seguras y privadas? Si bien hay redes privadas virtuales (VPN) móviles que garantizan que el tráfico que se envía desde su teléfono mediante internet está cifrado, seamos francos: las VPN son muy malas, especialmente en los dispositivos móviles. Agregan latencia, agotan la batería y, en muchos casos, están administradas por empresas cuyos objetivos son precisamente opuestos a la idea de mantener la privacidad y la seguridad de sus datos”.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://www.vpnmentor.com/wp-content/uploads/2019/10/Screenshot-at-Apr-05-11-33-22-autoresized86X.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Es curioso cuando mencionan “seamos francos: las VPN son muy malas, especialmente en los dispositivos móviles” <a href="https://www.pchardwarepro.com/cloudbleed-la-amenaza-a-la-seguridad-que-esta-tomando-internet-por-asalto/" target="_blank" rel="noreferrer noopener">Conociendo el transcurso que ha tenido la compañía estadounidense de Cloudflare </a>deja mucho que pensar, siendo estos colaboradores del gobierno indirectamente, sin negar en algún momento cualquier petición para desenmascarar un usuario de la red. En fin, a pesar de situaciones del pasado, toca hacer el “borrón y cuenta nueva” y darles el beneficio de la duda, quizás sus malas prácticas hayan cambiado para centrarse en algo más privado y transparente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>En resumen:</strong> WARP vendría siendo una VPN para las personas que no saben que es una VPN, procediendo por medio del aplicativo DNS 1.1.1.1 su activación a un clic, procediendo a cifrar todas las conexiones salientes y a su vez pasándolas por sus servidores para aumentar mayormente la velocidad y evitar la congestión de las conexiones de la red. Además, lo hicieron basándose en el protocolo WireGuard de VPN moderno y mucho más eficiente que los protocolos de VPN heredados.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"width":742,"height":414,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://www.vpnmentor.com/wp-content/uploads/2019/10/Screenshot-at-Mar-16-19-17-53_censored-autoresized86X.jpg" alt="" width="742" height="414"/><figcaption>Enmascarando correctamente tu dirección</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://www.vpnmentor.com/wp-content/uploads/2019/10/Screenshot-55-autoresized86X.png" alt=""/><figcaption>Tu IP si queda en su registro, temporalmente.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://www.vpnmentor.com/wp-content/uploads/2019/10/Screenshot-58-autoresized86X.png" alt=""/><figcaption>La promesa de registros.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>En el mismo artículo anclado reconocen que son altamente juzgados y que lleva a la comunidad a mirarlos con desconfianza por su renombre, relatando lo siguiente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>“Debemos reconocer que muchas partes de la industria de la VPN para el usuario son realmente espantosas, por lo tanto, es razonable preguntar si tenemos algún motivo oculto. Que muchas empresas de VPN le hagan creer que mantendrán la privacidad de sus datos y que luego los vendan para que a usted le envíen publicidad selectiva es, en una palabra, indignante. Ese no es el modelo de negocio de Cloudflare, y nunca lo será. La aplicación 1.1.1.1 con Warp seguirá teniendo todas las protecciones de privacidad con las que se lanzó 1.1.1.1, lo que incluye lo siguiente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>1. No escribimos los datos de registro de identificación del usuario en el disco;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Nunca venderemos sus datos de navegación ni los usaremos de ninguna manera para que le envíen publicidad selectiva;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>3. No es necesario brindar información personal - su nombre, número de teléfono o dirección de correo electrónico - para poder utilizar la aplicación 1.1.1.1 con Warp; y</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>4. Habitualmente contrataremos auditores externos para asegurarnos de cumplir estas promesas</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Esto parece demasiado bueno para que sea verdad</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Eso es exactamente lo que pensé cuando leí sobre el lanzamiento de Gmail hace hoy exactamente 15 años. En ese momento resultaba difícil creer que pudiera haber un servicio de correo electrónico sin límite de almacenamiento ni cargos. Lo que yo no entendía en ese momento era que Google había hecho tan buen trabajo al descubrir cómo almacenar los datos de manera económica y eficiente, que lo que parecía imposible para el resto del mundo resultara tan obvio para ellos. Por supuesto, la publicidad es el modelo de negocio de Google, no es el modelo de negocio de Cloudflare, por lo tanto, no es una analogía perfecta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Puede resultar algo trillado, pero la razón principal por la que creamos Warp es para ayudar a crear una mejor internet, y la internet móvil no era tan rápida o segura como debía ser y todas las VPN son malas. En repetidas ocasiones, hemos oído decir que internet debería ser mejor si alguien hiciera algo. Estamos en una posición en la que podemos hacer algo, y lo hemos hecho. <a href="https://blog.cloudflare.com/introducing-universal-ssl/" target="_blank" rel="noreferrer noopener">Hemos logrado el cifrado gratis para todos nuestros clientes </a>y al mismo tiempo duplicamos el tamaño de la web, hemos <a href="https://blog.cloudflare.com/always-on-ipv6/" target="_blank" rel="noreferrer noopener">impulsado la adopción de IPv6</a>, hemos <a href="https://blog.cloudflare.com/automatically-provision-and-maintain-dnssec/" target="_blank" rel="noreferrer noopener">facilitado las extensiones de seguridad para el sistema de nombres de dominio (DNSSEC</a>), y fuimos los primeros en <a href="https://blog.cloudflare.com/cloudflares-impact-on-the-http-2-universe/" target="_blank" rel="noreferrer noopener">ascender a HTTP/2”.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Artículo de referencia: <a href="https://blog.cloudflare.com/es-es/1111-warp-better-vpn-es-es/" target="_blank" rel="noreferrer noopener">https://blog.cloudflare.com/es-es/1111-warp-better-vpn-es-es/</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://www.vpnmentor.com/wp-content/uploads/2019/10/Screenshot-at-Mar-16-12-59-45_censored-autoresized86X.jpg" alt=""/><figcaption>Comportamiento frente a los Torrents</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2><strong>Demasiado trillado su discurso, ¿confiar o no confiar?</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Su discurso pareciera sacado de algún monólogo de alguna película, pero bueno, se les aplaude que por lo menos se esforzaron en dejar con mucha claridad sus intensiones o bueno, lo que intentan transmitir, siendo este un contrato social con Internet y sus nulos intereses por snifar nuestros datos, por esa parte todo bien.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ahora bien, si me preguntas a mí que fui usuario de WARP durante mucho tiempo y les di mi voto de confianza, ¿qué me hace sentirme seguro con dicho protocolo proporcionado por Cloudflare? Te respondería de la forma más transparente y sincera posible, basándome en su bonito y color de rosa del artículo más dos sitios de referencia en cuestión de confianza y seriedad frente a los servicios de la red y es <a href="https://developers.cloudflare.com/warp-client/privacy" target="_blank" rel="noreferrer noopener">https://developers.cloudflare.com/warp-client/privacy</a> y <a href="https://www.cloudflare.com/application/privacypolicy/" target="_blank" rel="noreferrer noopener">https://www.cloudflare.com/application/privacypolicy/</a> en donde sus desarrolladores van sin rodeos respondiendo técnicamente lo que hacen y lo que no… agregando mi conclusión por mi cuenta frente a dos preguntas que nos hacemos en este campo y es <strong>¿Qué pasa con Cloudflare, pueden ver mis actividades de red (cuando tengo WARP activado)? ¿Y por qué alguien compraría una VPN en lugar de solo usar Cloudflare WARP?</strong> A lo que respondo:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Técnicamente sí. Tienen registros, pero siguen las mejores prácticas para eliminarlos después de x tiempo. Sin embargo, no venden los registros, ni siquiera por el servicio gratuito. La privacidad fue la razón principal por la que lanzaron esto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El servicio pago hace posible que el servicio gratuito no venda sus datos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cloudflare no oculta su dirección IP si el sitio utiliza Cloudflare.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y, por supuesto, si reciben una orden judicial para sus archivos de registro, tendrían que cumplir, por lo que no hay actividad ilegal.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Me leí tan a fondo <a href="https://www-cloudflare-com.translate.goog/application/privacypolicy/?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=es&amp;_x_tr_pto=wapp" target="_blank" rel="noreferrer noopener">su política de privacidad </a>que de alguna forma me convenció, esos sí, sigo siendo escéptico con que se logre cumplir al pie de la letra. <a href="https://www.authorityhacker.com/cloudflare-review/" target="_blank" rel="noreferrer noopener">Además las auditorias que les han realizando</a> hasta el momento no han desvelado nada “sospechoso”, por otro lado también contrataron a los terceros KPMG para auditar sus sistemas anualmente y de momento parece ir todo bien. Adicionalmente de ser la referencia del sector, superando a Cisco OpenDNS, Google Public DNS, Verisign algo que debe ser tomado en cuenta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por otro lado, según el prestigioso sitio<a href="https://www.vpnmentor.com/reviews/warp-by-cloudflare/" target="_blank" rel="noreferrer noopener"> VpnMentor mostró las características</a> claves con las que se topó en la utilización del servicio, siendo las siguientes:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Las pruebas de velocidad mostraron una gran disminución, pero no sentí la diferencia. Mis velocidades de carga y descarga se redujeron a la mitad, pero el servicio de enrutamiento DNS de WARP mejora el tiempo de carga de la página si su velocidad supera los 10 Mbps.</li><li>Gran cobertura de servidor. Esto significa que siempre está conectado a los servidores más rápidos.</li><li>Interfaz de usuario fácil de usar. La interfaz de usuario es súper simple de usar y solo necesita hacer clic en un botón para que la VPN funcione sin problemas.</li><li>Atención al cliente decepcionante. Tuve una mala experiencia con la atención al cliente, pero las preguntas de la comunidad ayudaron.</li><li>Económico. WARP viene con un plan de suscripción de $0/mes y también tiene una versión paga (WARP+), pero no ofrece ninguna garantía de devolución de dinero.</li><li>Tiene su sede en San Francisco. Cloudflare tiene su sede en los EE. UU., lo que significa que todos los datos registrados se almacenan en territorio estadounidense. Esto no es ideal para la privacidad porque si el gobierno de EE. UU. solicita legalmente sus datos, WARP debe cumplir con la solicitud.</li><li>WARP filtra contenido para adultos. WARP viene con una función familiar que ayuda a bloquear el contenido para adultos, lo cual es perfecto si desea usarlo en su dispositivo familiar.</li><li>WARP funciona en todos los principales sistemas operativos. WARP funcionará en todos sus dispositivos y tiene aplicaciones para macOS, Windows, iOS, Android y GNU/Linux.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Fuente: <a href="https://www.vpnmentor.com/reviews/warp-by-cloudflare/" target="_blank" rel="noreferrer noopener">https://www.vpnmentor.com/reviews/warp-by-cloudflare/</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Otras cosas a tener en cuenta es que, si admite torrents, no tiene activo la importantísima opción que si tenemos en ProtonVPN de Kill switch para evitar una fuga de datos ante el apagado, por otro lado, la política de No logs que antes se les mencionó.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Conclusión: </strong>espero que hayan entendido por completo este artículo, es demasiada información que puede llegar a desconcertar a cualquiera y más cuando solo se echa un vistazo rápidamente, por lo que sugiero ir leyendo detenidamente dichas características antes de iniciar con cualquier servicio, por lo tanto, mi conclusión final es que es una excelente alternativa para usuarios NO avanzados, para aquellos que necesiten una VPN de forma rápida, eficaz y por última, algo segura, enfocada para los menos expertos, para la gente más mayor de la casa o que no le preocupa mucho su privacidad, por lo menos es mucho más segura en la materia que el promedio, eso si, no satisface a nosotros los usuarios más paranoicos del sector, por ello hago hincapié en únicamente utilizar su servicio en casos específicos o para familiares poco relacionados con el ecosistema, es mejor una protección extra que nada en lo absoluto… sin más, procedo a darte las gracias si llegaste hasta acá y leíste por completo el artículo, recuerda que hay que compartir las buenas prácticas para extender esos buenos hábitos a todos los internautas de la red y así no dar papaya (dicho coloquial en referencia a no regalarse, fiarse, dejarse tomar del pelo, ser engañado).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Utilización: <a href="https://cloudflarewarp.com/" target="_blank" rel="noreferrer noopener">https://cloudflarewarp.com/</a></p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

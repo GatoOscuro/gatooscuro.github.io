@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Me encanta WordPress, aunque los problemas le sigan - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Me encanta WordPress, aunque los problemas le sigan</h2>
+            <p class='meta'>Publicado el 30/06/2024</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>PD: Estuve de viaje por lo que este artículo se retrasó unos días y por eso las novedades más «recientes» ya llevan días, disculpen la tardanza. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>WordPress es el CMS que dio vida a mis textos, esencialmente es el software que ha experimentado mi crecimiento, tanto en términos de longevidad como de capacidad mental, adquiriendo nuevas formas de adaptar mi escritura en función de mis conocimientos a lo largo del tiempo. Además, es la tecnología que se alinea casi a la perfección con mi filosofía respecto al software libre, principio que no siempre es fácil de aplicar a las grandes tecnologías debido a que hay mentes brillantes que únicamente piensan en generar dinero, no conocimiento. Sin embargo, en este caso se puede ver el aporte que se ha hecho al mundo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A pesar de ser una tecnología puntera y prácticamente uno de los pilares fundamentales que sustentan los weblogs en Internet, sigue siendo alarmantemente atractiva para los piratas informáticos. Desde hace un tiempo vengo reflexionando sobre esto, y es que no pasa un mes sin que se descubran nuevas vulnerabilidades respecto a este CMS. Si bien esto no es del todo negativo por las siguientes razones:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><!-- wp:list-item -->
+<li>Podría ser algo bueno debido a la gran cantidad de contribuyentes que tiene este software, con muchas personas vigilando y auditando su código. Además, parchean vulnerabilidades en tiempo récord.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Sigue demostrando que tiene muchos vectores de ataque, siendo vulnerable en muchas partes de su estructura.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Justamente hace unos días, concretamente el 24 de Junio de 2024 se publico en el sitio de Wordfence "Varios complementos de WordPress.org &lt;= varias versiones: puerta trasera inyectada"</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Varios complementos para WordPress alojados en WordPress.org se han visto comprometidos y se les han inyectado scripts PHP maliciosos. Un actor de amenaza malicioso comprometió el código fuente de varios complementos e inyectó código que extrae las credenciales de la base de datos y se utiliza para crear nuevos usuarios administradores maliciosos y enviar esos datos a un servidor. Actualmente, no todos los complementos han sido parcheados y recomendamos encarecidamente desinstalarlos por el momento y ejecutar un análisis completo de malware". <a href="https://www.wordfence.com/threat-intel/vulnerabilities/detail/several-wordpressorg-plugins-various-versions-injected-backdoor" target="_blank" rel="noreferrer noopener">Fuente.</a></p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Lo delicado de este asunto es que el agujero de seguridad tiene su <a href="https://www.wordfence.com/blog/2024/06/supply-chain-attack-on-wordpress-org-plugins-leads-to-5-maliciously-compromised-wordpress-plugins/" target="_blank" rel="noreferrer noopener">origen en los repositorios oficiales de WordPress.org</a>, donde fue <a href="https://www.wordfence.com/blog/2024/06/supply-chain-attack-on-wordpress-org-plugins-leads-to-5-maliciously-compromised-wordpress-plugins/" target="_blank" rel="noreferrer noopener">catalogado como un ataque a la cadena de suministro.</a> En este ataque, los atacantes obtuvieron acceso a confirmaciones de código de algunas de las cuentas de los <a href="https://wordpress.org/support/topic/a-security-message-from-the-plugin-review-team/" target="_blank" rel="noreferrer noopener">contribuyentes</a>, una forma de engañar a cualquiera, y pudieron dirigir nuevas actualizaciones infectadas de X complementos. En estos informes se confirmó que al menos 5 plugins estaban infectados, por lo que los expertos recomiendan desactivar las actualizaciones automáticas e incluso revisar el código de cada actualización. En serio… ¿Quién hace eso? Sólo aquellos que tienen conocimiento del tema, por lo que noto un fallo en la confianza ciega depositada en el proveedor del servicio; En caso de caer, caemos todos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Si estás dentro de los afectados, lo recomendable es revisar el sitio con algún plugin de seguridad y revisar los privilegios administrativos en los que solo estás tú; por ende, mi clave número 1 en WordPress es "menos es más": entre menos plugins, más será la protección ante dichas vulnerabilidades, y menos probabilidades de algún agujero de seguridad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Mi dualidad</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Tengo una dualidad hace algún tiempo acerca de mis protocolos de seguridad aplicados a WordPress y es que, a pesar de que me he mantenido invicto en cuanto a las no vulnerabilidades, sí que se ha mermado la usabilidad de mi sitio. Muchos creían que, por ser un sitio algo pequeño y poco conocido, no iba a tener ataques, pero nada de eso; diariamente podía ver en los sistemas de defensa cientos de mensajes de spam bloqueados, también un conjunto de bloqueos hacía intentos de ataques de fuerza bruta, denegación de servicio y otras tácticas, por lo que día a día era una lucha constante por parte de mis sistemas de defensa para repeler tales ataques, cuestión que demanda recursos y conocimientos básicos. Pero la otra cara de la moneda era: ¿Cómo le explico a un usuario no experto que no puede acceder al blog porque su dirección IP alternativa fue bloqueada por abuso en otro caso diferente? Día a día me llegaban estos tipos de reportes, en los que, con capturas de pantalla, me mostraban que no podían acceder al sitio cuando intentaban conectarse desde la red Tor o algún proxy/VPN gratuito.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La razón de dichos falsos positivos era básicamente por el abuso que les dan los agentes malintencionados, aquellos malditos suelen utilizar dichos servicios para realizar sus hazañas y lo que hacen es quemar las direcciones IP, también para quienes sí las van a utilizar para buenos actos. Mayoritariamente, se ve demasiado en VPNs como ProtonVPN, en los que veía día tras día cómo mi sitio bloqueaba IPs desde Países Bajos, Estados Unidos y Japón. Iba a mirar y claro, eran las direcciones gratuitas de dicha VPN. Lo sé porque también la uso en diferentes dispositivos y efectivamente quedaba bloqueado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La cuestión aquí es: ¿Qué decisión tomar? ¿Bajar las defensas para que el sitio sea más accesible o mantener la protección para evitar algún agujero de seguridad? Por mucho tiempo tomé la segunda opción, aunque ver informes sobre la nula accesibilidad me frustraba y más aún cuando difundía precisamente cómo intentar conectarse a la red de manera más privada para que, incidentalmente, esas personas no pudieran acceder a mi sitio, pues… es irónico. Así que hoy he decidido bajar las defensas y estar alerta. Si tú que lees esto tenías problemas, espero que ahora no los tengas y conozcas tal situación. Además, quedo atento a cualquier reporte; muchas gracias por leer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3354,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full"><img src="https://gatooscuro.xyz/wp-content/uploads/2024/06/consejos-seguridad-wordpress-jpg.avif" alt="" class="wp-image-3354"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://documentacionhoy.com/sites/default/files/2019-09/consejos-seguridad-wordpress.jpg" target="_blank" rel="noreferrer noopener">acá.</a></figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

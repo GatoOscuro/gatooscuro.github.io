@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>El día que Hack Liberty rompió con Matrix | La oscura verdad sobre la seguridad del usuario - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>El día que Hack Liberty rompió con Matrix | La oscura verdad sobre la seguridad del usuario</h2>
+            <p class='meta'>Publicado el 25/06/2025</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p><strong>NOTA: </strong>La fuente de referencia es del 7 de noviembre de 2024, por lo que en este artículo se hará referencia a lo que ha cambiado y lo que aun permanece igual, que por ende cobra sentido el migrar (o no elegir).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Durante años, la palabra <em>Matrix</em> nos sonó a rebelión digital. Algo así como la versión nerd y federada del manifiesto ciberpunk. El protocolo prometía descentralización, privacidad, independencia de grandes corporaciones… una red sin amos, donde cada usuario podía hospedar <strong>su propio nodo</strong>, administrar sus datos y mantener conversaciones cifradas sin que el mensaje pasara por manos turbias.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pero cuando se ve con más detalle —no desde la ideología, sino desde la arquitectura y la experiencia— el relato se desmorona. La federación, en vez de blindar, comenzó a convertirse en una exposición prolongada. Cada mensaje en Matrix deja huellas que atraviesan servidores de terceros; los metadatos están allí, a la vista de quien quiera mirar: <strong>cuándo te conectas, desde dónde, con qué dispositivo, cuánto duró tu sesión, a qué sala entraste, cuántas veces escribiste. </strong>No es teoría conspirativa: es cómo<a href="https://web.archive.org/web/20210202175947/https://serpentsec.1337.cx/matrix" target="_blank" rel="noreferrer noopener"> funciona su estructura.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El colectivo <strong>Hack Liberty</strong>, un grupo profundamente involucrado con la defensa de la privacidad real, lo vivió desde dentro. Administraron durante años su propio nodo, lidiando con el coste técnico, las políticas de bloqueo federado, el spam automatizado, los nodos censores. Y lo más grave: la creciente sensación de que estaban sosteniendo <strong>una maquinaria que no los protegía, sino que lentamente los exponía.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y fue entonces que decidieron cortar. No de forma emocional ni improvisada.<a href="https://forum.hackliberty.org/t/why-we-abandoned-matrix-the-dark-truth-about-user-security-and-safety/224" target="_blank" rel="noreferrer noopener"> Publicaron un manifiesto honesto</a>, quirúrgico, sin adornos. Una autopsia en primera persona sobre por qué <strong>Matrix había dejado de ser una opción viable para activismo, disidencia y conversaciones sensibles</strong>. <a href="https://telegra.ph/why-not-matrix-08-07" target="_blank" rel="noreferrer noopener">Entre los motivos se destacan tres venas abiertas.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>La primera: la replicación descontrolada de mensajes y archivos entre servidores.</strong> Lo que debía garantizar resiliencia ante fallos, generaba copias no deseadas de información en nodos remotos que nadie podía auditar ni eliminar. Esto, en contextos donde la privacidad es cuestión de vida o muerte, se convierte en una condena.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>La segunda: el cifrado Megolm, diseñado más para eficiencia que para anonimato</strong>. Sí, el texto viaja cifrado —<a href="https://web.archive.org/web/20210202175947/https://snippets.serpentsec.1337.cx/matrix-metadata-leaks" target="_blank" rel="noreferrer noopener">pero todo lo demás no</a>. Alias, avatares, reacciones, eventos, cronologías completas… los patrones de movimiento del usuario se vuelven transparentes. No se requiere desencriptar el contenido para saber quién es quién.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Y la tercera: el costo operativo de mantener un servidor Matrix a escala pública.</strong> Infraestructura que se quema por dentro, saturada de medios replicados, solicitudes federadas, ataques de spam, requerimientos legales y parches constantes. Lo que comenzó como libertad técnica se volvió esclavitud logística. Y lo peor: con cada sacrificio hecho, el sistema seguía sin garantizar anonimato real.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=W8KEuAEYjQ4\u0026t=390s","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=W8KEuAEYjQ4&amp;t=390s
+</div><figcaption class="wp-element-caption"><strong>Vídeo sacada de <a href="https://youtu.be/W8KEuAEYjQ4" target="_blank" rel="noreferrer noopener">acá</a> para contextualización.</strong></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center"><strong>¿Qué ha cambiado desde entonces?</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Matrix 2.0</strong> <a href="https://element.io/blog/experimenting-with-matrix-2-0-using-element-docker-demo/" target="_blank" rel="noreferrer noopener">(oct-2024)</a> trajo avances notables. Las implementaciones de referencia —Synapse y el nuevo stack Rust— incorporaron:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Invisible Encryption</strong> —mejoras de confiabilidad, advertencias TOFU y claves de dispositivo incrustadas en los eventos (MSC4048, MSC4147).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Políticas de retención y borrado local</strong> que permiten a los administradores purgar mensajes y medios con más granularidad (Matrix v1.10).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Reducción de memoria y optimizaciones de caché</strong> en Synapse/Rust-SDK que alivian parte de la factura de RAM y CPU.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>MAS (Matrix Authentication Service)</strong>, un flujo OAuth propio que simplifica altas y recupera cuentas sin exponer tokens sensibles.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><strong>Lo que sigue pendiente</strong>:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Los <strong>metadatos básicos</strong> (quién, cuándo, desde qué dispositivo) aún viajan como eventos sin cifrar; nada en la especificación actual promete ocultarlos.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>La <strong>replicación federada</strong> sigue generando copias de cada evento en todos los servidores participantes. Matrix Foundation propone <em>“erasure requests”</em> para eliminar datos remotos, pero dependen de la buena voluntad del otro nodo.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>El costo de administrar un servidor público bajó en RAM, no en ancho de banda ni en la carga legal si el contenido replicado es problemático.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Pseudonimizar los <strong>MXID</strong> aún es experimental: el propio sitio de Matrix advierte que los IDs continúan filtrándose en los eventos de estado.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"id":3831,"width":"968px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/06/imagen.avif" alt="" class="wp-image-3831" style="width:968px;height:auto"/><figcaption class="wp-element-caption"><strong>Listado propio que saque de lo que pude indagar, referente a los problemas del pasado que aun continúan (qué realmente es debido a su arquitectura). Base especificación oficial “Matrix v1.14 y nuevos anuncios.</strong></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www2.matrix.org/blog/2024/10/29/matrix-2.0-is-here/" target="_blank" rel="noreferrer noopener">Fuente.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En esa encrucijada, decidieron migrar. Y el destino no fue otro sistema federado, ni una solución más bonita o marketeada. Fue <strong>SimpleX Chat</strong>. Una aplicación aún joven, pero con una concepción radical: <strong>no hay cuentas, no hay identificadores, no hay rastro</strong>. Cada usuario establece conversaciones mediante colas unidireccionales únicas, sin vincular su identidad a un servidor. No hay direcciones @dominio, ni perfiles públicos, ni metadatos persistentes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>SimpleX no necesita saber quién eres para que funcione. No hay nodos que puedan federarte o vetarte. Cada conversación es efímera por diseño, y lo único que se transfiere es el mensaje, en doble capa de cifrado, sin canal de retorno directo. El servidor actúa como simple pasarela: no almacena contexto, no conoce el origen ni el destino, y puede desaparecer sin romper la conexión entre pares.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>¿Tiene defectos? </strong>Por supuesto. La experiencia de usuario aún está en construcción. Requiere cierto aprendizaje técnico, y sus métodos de invitación todavía no son ideales. Pero en términos de <strong>arquitectura diseñada para la privacidad de raíz</strong>, no hay comparación. No es un Matrix más elegante; es otra cosa. Un canal de susurros que nadie puede mapear.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El gesto de Hack Liberty no es una moda. Es una advertencia. Si una organización dispuesta a administrar su propio nodo, con gente técnica y motivada, decide que Matrix ya no protege —es porque no lo hace. La privacidad no es una interfaz bonita ni una promesa de federación. Es resistencia real frente a modelos que monetizan, vigilan o filtran. Y si el protocolo falla en eso, no importa cuán abierto sea su código: se vuelve obsoleto para quien busca refugio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por eso el éxodo no es simbólico. Es necesario.<br>Y SimpleX, en medio de sus limitaciones, aún tiene algo que Matrix perdió: el silencio.<br>Y en esta época, eso vale más que cualquier promesa cifrada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gracias por leer; quedo atento a cualquier aporte y/o corrección. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3832,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2025/06/maxresdefault-1024x576.avif" alt="" class="wp-image-3832"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://i.ytimg.com/vi/aT4t7TNnYcg/maxresdefault.jpg" target="_blank" rel="noreferrer noopener">acá.</a></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

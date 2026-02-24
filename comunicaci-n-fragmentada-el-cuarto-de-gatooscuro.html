@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Comunicación fragmentada - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Comunicación fragmentada</h2>
+            <p class='meta'>Publicado el 09/06/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Hilo de conversación surgido en Mastodon: <a href="https://web.archive.org/web/20210212174028/https://mastodon.la/@gatooscuro/105670631614875915" target="_blank" rel="noreferrer noopener">https://web.archive.org/web/20210212174028/https://mastodon.la/@gatooscuro/105670631614875915</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pensé que el tema de puentes (bridges) de Matrix eran sencillos, tipo los de Telegram, pero no… al parecer está dirigido hacia los usuarios avanzados ¿y qué problema hay? Según lo que nos comparten en su sitio https://matrix.org/bridges/ Matrix viene a darle esa seguridad a todos por culpa de la fragmentación, qué es teniendo todas las conversaciones en un sólo lugar siendo algo "transparente" y de forma segura qué es no abandonar tu espacio Matrix, pero… el GRAN problema en el que recae es que es demasiado complicado, el usuario medio qué debería ser el identificado, no lo entiende y no lo podrá aplicar así siga la Wiki escrita por aquel programador que anda en aquel entorno hace 6 años, absolutamente no.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>“Mi teoría de mascotas alrededor de por qué el negocio se hace mucho más rápido en China: porque sólo hay un canal para todo — WeChat. No hay confusión sobre cómo ponerse en contacto con alguien. Un desplazamiento hacia WeChat hace que sea fácil introducir amigos entre sí. Voz y videollamadas sólo funcionan. Y porque el default es chat, no email, todos envían mensajes más cortos, responde rápidamente y mantiene su bandeja de entrada a cero. ¡Quiero ese mundo! Menos los jefes autoritarios leyendo todos tus mensajes” traducción Beeper aplicación.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong> En general, hay dos tipos distintos de personas:</strong><br>-Siloed — Las personas que solo utilizan una red de chat (por ejemplo iMessage) y obligan a otras personas a utilizar su red preferida para ponerse en contacto con ellos.<br>-Ambi-social — Estas personas usan muchas redes de chat, tienen 5+ aplicaciones de chat en su teléfono, necesitan hacer un seguimiento de qué amigos están en la red para que saben cómo contactarlos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El sólo hecho de ver la documentación del bridge de Matrix y WhatsApp me hizo echar una mirada a otro lado, en lo absoluto, no, demasiados procedimientos ❎<br>Creó y lo voy a probar, qué sale más fácil hacer el brige desde WhatsApp-Telegram (creó que he leído una forma) y después Telegram hacia Matrix ¿por qué no centralizar todo en Telegram? 🤔 Se supone que es para detener esa fragmentación de todos nuestros espacios "seguros" de una forma transparente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Para hacer puente entre Matrix y WhatsApp: <a href="https://github.com/tulir/mautrix-whatsapp" target="_blank" rel="noreferrer noopener">https://github.com/tulir/mautrix-whatsapp</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por lo que observe termine “cediendo” a Beeper, un excelente protocolo en donde se centraliza dichas comunicaciones por medio de su ingeniosa interfaz donde puedes tener al menos tus 10 aplicaciones de mensajería favoritas. En este preciso momento ando leyendo pros/contras 👁️ porque a pesar de ser un protocolo "open source" (según ellos) si que toca ver como se hace dichos enlaces entre el protocolo y el resto de mensajerías, aunque… si tienes WhatsApp el resto no puede ser tan malo ;) (es lo que se pensaría con lógica).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Aplicación: <a href="https://web.archive.org/web/20210309052332/https://www.beeperhq.com/" target="_blank" rel="noreferrer noopener">https://www.beeperhq.com/</a><br>Su repositorio: <a href="https://gitlab.com/nova" target="_blank" rel="noreferrer noopener">https://gitlab.com/nova</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El método de puente entre Telegram y WhatsApp también incluye lo que les comentaba al principio, básicamente es forkear en bot Father de Telegram y administrar las comunicaciones a nivel home-server. (<a href="https://ibcomputing.com/whatsapp-telegram-bridge/" target="_blank" rel="noreferrer noopener">https://ibcomputing.com/whatsapp-telegram-bridge/</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La mayoría de las nuevas aplicaciones de chat mueren antes de construir una red. Y ya que todas las redes principales son de código cerrado y no están federadas, es difícil hackear en la parte superior de una red existente y añadir en una o dos nuevas características. Es triste que no haya nada como plugins de Gmail para WhatsApp. Incluso Signal, una aplicación de chat de código abierto, hace cumplir una regla de “no-federación”, lo que significa que no puede albergar su propio servidor de Signal y añadir nuevas características.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bueno, la conclusión es: qué básicamente si quieres hacer puente (bridge) entre todas tus aplicaciones de mensajería o principalmente desde "X" hacia Matrix o "X" hacia Telegram, vas a necesitar 3 factores:<br>-Tiempo<br>-Conocimiento.<br>-Un buen home-server o servicio Docker.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por el otro lado, si no tienes ninguno de estos factores, pagando cierta mensualidad en Beeper por medio de su protocolo harán todos esos puentes respectivos sin mayores complicaciones, actualmente soportan las siguientes mensajerías:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Whatsapp.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Facebook Messenger</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>iMessage</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Android Messages (SMS)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Telegram</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Twitter</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Slack</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Hangouts</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Instagram</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Skype</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>IRC</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Matrix</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Discord</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Signal</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Beeper network</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Yo pensé que al menos te daban una prueba gratuita, pero no… meh. Al parecer, la fragmentación en un futuro podrá ser soluciona por algún proveedor específico que se tome esos problemas personales para orientar al público sin conocimientos, algunos bajo costo, otros nada de ello (imagino).<br>Eso es todo frente a la mensajería fragmentada del momento 👁️ 🤔 , guarden enlaces y no se pierdan en el tiempo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://imgs.xkcd.com/comics/chat_systems.png" alt="xkcd"/></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

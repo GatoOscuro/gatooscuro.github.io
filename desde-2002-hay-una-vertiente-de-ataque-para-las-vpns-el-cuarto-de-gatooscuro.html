@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Desde 2002 hay una vertiente de ataque para las VPNs - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Desde 2002 hay una vertiente de ataque para las VPNs</h2>
+            <p class='meta'>Publicado el 09/05/2024</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Durante mucho tiempo he conocido personas que han recomendado insistentemente invertir y difundir el uso de enrutadores de software libre o código abierto debido a sus innegables beneficios y cómo puede servir de gran filtro para un sin fin de vulnerabilidades o vertientes de ataques para la rama de procesos en conexión. En cambio, desde la base, esto se corrige por sí mismo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La medida en cuestión ha sido catalogada por alguna parte de la comunidad como «exagerada» o innecesaria, pero hoy me voy enterando de una gran vertiente de ataque que, en teoría, se ha estado explotando desde el 2002 y no ha sido corregida en su totalidad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La vulnerabilidad se llama “TunnelVision” reciente descrita por el grupo de investigadores Leviathan Security, básicamente permite que el ISP o el enrutador local vea el tráfico VPN abusando del cliente DHCP y la opción 121. Cito:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Recientemente, identificamos una novedosa técnica de red que evita la encapsulación de VPN. Un atacante puede utilizar esta técnica para forzar el tráfico de un usuario objetivo fuera de su túnel VPN utilizando funciones integradas de DHCP (Protocolo de configuración dinámica de host). El resultado de esto es que el usuario transmite paquetes que una VPN nunca cifra y un atacante puede espiar su tráfico. Estamos utilizando el término decloaking para referirnos a este efecto. Es importante destacar que el canal de control de VPN se mantiene para que funciones como los interruptores de apagado nunca se activen y los usuarios continúen apareciendo como conectados a una VPN en todos los casos que hemos observado".</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.leviathansecurity.com/blog/tunnelvision" target="_blank" rel="noreferrer noopener">Fuente.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Conceptos básicos</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li>Utiliza la red de área local, por lo que estamos hablando de un enrutador hostil.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Android es seguro de forma predeterminada y no se ve afectado.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>GNU/Linux puede ser seguro si se usa correctamente.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Microsoft Windows y Apple son altamente vulnerables.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Aunque Leviatán lo desvelo (más adelante descubrieron que ha habido un hilo de descubrimiento por otros grupos desde el 2015), creen que se ha utilizado en la naturaleza tal vez incluso desde 2002.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Abusa del servidor DHCP para enrutar paquetes incorrectamente.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Los dispositivos aleatorios pueden pretender ser el enrutador con ataques DHCP.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>El protocolo DHCP opera al otorgar direcciones IP a los dispositivos conectados a una red doméstica mediante un enrutador. Dentro de este proceso, se encuentra la "opción 121", una característica especial que permite al enrutador, actuando como servidor DHCP, dirigir el tráfico de VPN del usuario de manera más detallada que lo haría una VPN estándar. TunnelVision explota esta opción 121 para guiar deliberadamente el flujo de datos a través de su interfaz virtual, optimizando así la experiencia del usuario en su red.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cómo pueden protegerse los usuarios de GNU/Linux, cita de Leviatán:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>“El uso de espacios de nombres de red en GNU/Linux puede solucionar completamente este comportamiento. Sin embargo, según nuestra experiencia, se implementa con menos frecuencia. La documentación de WireGuard muestra cómo es posible usar un espacio de nombres para todas las aplicaciones con tráfico que deberían usar una VPN antes de enviarlo a otro espacio de nombres que contenga una interfaz física. Sin embargo, esto parece ser una funcionalidad específica de Linux y no está claro si existe una solución para Windows, MacOS u otros sistemas operativos con la misma solidez”.</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Es acá cuando pienso ¿Qué más quedará por ahí suelto sin ser descubierto o qué en este momento se esté explotando? Una suposición que puede hacer volver loco a cualquier paranoico.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En fin. Muchas gracias por leer y quedo atento a cualquier contribución; saludos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":3222,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2024/05/vpn-flaw-1536x864-1-1024x576.jpg" alt="" class="wp-image-3222"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://cdn.technadu.com/wp-content/uploads/2019/12/vpn-flaw-1536x864.jpg" target="_blank" rel="noreferrer noopener">acá.</a></figcaption></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

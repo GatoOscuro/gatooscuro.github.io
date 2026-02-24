@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cifrado de extremo a extremo en Mastodon ¿realidad? - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Cifrado de extremo a extremo en Mastodon ¿realidad?</h2>
+            <p class='meta'>Publicado el 12/04/2023</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Para empezar, debo agregar que<a href="https://es.wikipedia.org/wiki/Mastodon_(red_social)" target="_blank" rel="noreferrer noopener"> Mastodon</a>, como red social de microblogging, se basa en una premisa muy diferente a lo que se plantea en las redes sociales tradicionales del sector. Se enfoca especialmente en el microblogging descentralizado sin posibilidades de mensajería. Antes de que alguien quiera corregirme, los llamados "DMs" de Mastodon solo son publicaciones regulares con un nivel de privacidad más estricto. En este caso, solo la persona a quien se menciona puede leer la publicación <em><strong><u>y... acá la gran cuestión:</u></strong></em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cuando comenzaron las migraciones (o embarcaciones, como suelen decir internamente) de usuarios de Twitter a Mastodon, incluso mucho antes de que Elon Musk la comprara, la gran mayoría, ansiosa por experimentar, comenzó a preguntarse: <strong>¿Cuál es el equivalente de Mastodon para los mensajes directos (DM) de Twitter?</strong> En aquel entonces, todavía había mucho por revisar en este proyecto en ciernes, lo que causó confusión. En este caso particular, la función de los "DMs" no estaba clara, ni se especificaba si eran privados o no. Por eso se agregó la advertencia con el siguiente texto:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Las publicaciones en Mastodon no están cifradas de extremo a extremo. No comparta ninguna información sensible en Mastodon"</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Redirigiendo al público a <a href="https://mastodon.social/privacy-policy" target="_blank" rel="noreferrer noopener">leer las políticas de privacidad</a> y de allí pasamos al apartado de <strong>"Publicaciones directas y para seguidores"</strong> para leer lo siguiente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Todas las publicaciones se almacenan y procesan en el servidor. Las publicaciones directas se entregan sólo a los usuarios mencionados en ellas. En algunos casos, esto significa que se envían a diferentes servidores y se almacenan allí copias del mismo. Nosotros <strong>hacemos un esfuerzo de buena fe para limitar el acceso a esas publicaciones sólo a las personas autorizadas, pero otros servidores pueden no hacerlo</strong>. Por eso es importante revisar los servidores a los que pertenecen tus seguidores. [...] Ten en cuenta que los operadores del servidor y cualquier servidor receptor pueden ver esos mensajes".</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Según Internet Archive, la primera referencia de dicho texto referente a las <a href="https://web.archive.org/web/20221004194207/https://mastodon.social/privacy-policy" target="_blank" rel="noreferrer noopener">publicaciones directas data del 04 de Octubre de 2022.</a> (<a href="https://github.com/mastodon/mastodon/issues/19565#issue-1429051365" target="_blank" rel="noreferrer noopener">otra referencia de los hechos</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Entonces, teniendo en cuenta todo lo anteriormente escrito, es sumamente valioso nunca intercambiar mensajes clasificados a través de Mastodon en sus "DMs" o publicaciones directas. De esta manera, se puede evitar la posibilidad de que el mensaje sea leído por un operador de cualquier lugar del servidor. Sin embargo, es crucial <strong>señalar que este es un caso hipotético,</strong> ya que la gran mayoría de la comunidad de Mastodon tiene un fuerte sentido altruista y ha trabajado duro para beneficiar a la comunidad. Montar un servicio no es fácil, <strong>y la responsabilidad que conlleva es enorme.</strong> Por lo tanto, debemos respetar, aunque teniendo en cuenta estas vulnerabilidades técnicas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2185,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/04/Mastodon_Graphic_1450x575-1-1-1024x406.png" alt="" class="wp-image-2185"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://www.datingnews.com/wp-content/uploads/2019/08/Mastodon_Graphic_1450x575-1-1.png" target="_blank" rel="noreferrer noopener">acá.</a></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":1} -->
+<h1 class="wp-block-heading has-text-align-center">El futuro es el cifrado de extremo a extremo</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La primera vez que se mencionó la integración del cifrado de extremo a extremo en Mastodon fue el 06 de Abril de 2017, en donde un usuario propuso en GitHub integrar el protocolo de<a href="https://github.com/mastodon/mastodon/issues/1093" target="_blank" rel="noreferrer noopener"> cifrado OTR para los mensajes directos</a>, si el mismo que es utilizado ampliamente en XMPP. Decía el usuario:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Sería bueno tener mensajes OTR para mensajes directos. Esto podría habilitarse de manera oportunista cuando esté disponible (IE, cuando ambas instancias lo admitan) y deshabilitarse de lo contrario".</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p><strong>A lo que Eugen respondió: </strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Agregar OTR a Ruby no ganaría nada. Si Ruby (servidor) puede leer su mensaje, no es OTR (Off-the-Record). OTR debe implementarse en el lado del cliente. Tal vez podría haber un cliente que haga eso a través de DM. Pero la interfaz de usuario web no puede hacer esto porque ejecutar criptografía en JavaScript no es mucho mejor que dejar que el servidor haga la criptografía".</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p><strong>Y en conclusión, cómo pasa en todos los proyectos libres:</strong> una gran discusión acerca de qué protocolo de cifrado se debería utilizar, en este caso OTR no funcionaba, en este caso por ser un protocolo síncrono mientras los mensajes directos son un medio asíncrono, por lo tanto, como mencionaba Eugen únicamente se podría a nivel de cliente y no tiene mucho sentido.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En el camino también se mencionó a OMEMO, que fue descartado rápidamente. Además, se mencionó por primera vez a Signal y su protocolo, aunque con varias dificultades, ya que no está diseñado para este propósito. A pesar de admitir lo mínimo para trabajar en este formato, los propios autores de Signal admiten que en principio es básicamente hostil a un entorno federado y está diseñado para ser una plataforma viva, lo cual lo convierte en un estándar interoperable deficiente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Una de las cosas controvertidas que hicimos con Signal al principio fue construirlo como un servicio no federado. Ninguno de los protocolos que hemos desarrollado requiere centralización; es totalmente posible crear un mensajero basado en el protocolo de señal federado, pero ya no creo que sea posible crear un mensajero federado competitivo en absoluto"&nbsp; -Moxie, <a href="https://whispersystems.org/blog/the-ecosystem-is-moving/" target="_blank" rel="noreferrer noopener">https://whispersystems.org/blog/the-ecosystem-is-moving/</a></p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p><strong>Y la segunda razón es:</strong> "Si no se realiza la autenticación [a través de un canal completamente separado], las partes no reciben ninguna garantía criptográfica sobre con quién se están comunicando" Dando a pie a los ataques MITM.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Durante la discusión, los usuarios más visionarios mencionaron que WebRTC sería la clave para lograr el resultado deseado. También hicieron referencia al protocolo <a href="https://datatracker.ietf.org/doc/draft-barnes-mls-protocol/" target="_blank" rel="noreferrer noopener">MLS</a>, que en aquellos años era evidentemente inestable, pero que hoy en día es considerado por la mensajería Matrix como una integración viable (lo suponen realizar). Quienes mencionaron estos aspectos en aquel momento pueden considerarse unos visionarios completos. En la actualidad, el protocolo MLS parece ser el más realista para Mastodon y está enfocado en entornos federados, lo que lo hace aún más relevante.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Haciendo recuento rápido, se han mencionado los siguientes protocolos:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><strong>OTR.</strong></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>OMEMO.</strong></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Signal Protocol (interación OTR v3) -</strong> <strong>Libsignal.</strong></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>MLS.</strong></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Y sé previa que lo más viable era facilitar los clientes E2E, en lugar de integrar uno propio. Esto permite que los clientes de E2E obtengan beneficios de usabilidad de la interoperabilidad (como usar Mastodon como una plataforma de intercambio de claves no confiable o tener mensajes legibles por máquina, hipotéticamente), sin ninguna integración que pueda comprometer su modelo de seguridad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2186,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://gatooscuro.xyz/wp-content/uploads/2023/04/Red-centralizada-vs-descentralizada-vs-red-distribuida-1024x683.webp" alt="" class="wp-image-2186"/><figcaption class="wp-element-caption">Imagen sacada de <a href="https://101blockchains.com/wp-content/uploads/2018/09/Red-centralizada-vs-descentralizada-vs-red-distribuida.jpg" target="_blank" rel="noreferrer noopener">acá.</a> Contextualiza acerca de la descentralización.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":1} -->
+<h1 class="wp-block-heading has-text-align-center">¿Y cuál es el estado actual?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Es difícil definirlo porque en el año 2022 luego se creó una nueva discusión referente al tema y se extendio tanto que es imposible resumirlo cortamente, aunque un usuario alegaba que los mantenedores de Mastodon "Querían, pero no podían" hacer tal integración, a lo que<a href="https://github.com/mastodon/mastodon/issues/19565#issuecomment-1296784237" target="_blank" rel="noreferrer noopener"> respondió uno de los desarrolladores más activos,</a> eso nos da una claridad del tema:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph -->
+<p>"Eso fue planeado y logramos que el lado del servidor funcionara (o al menos parte de él) como viste en <a href="https://github.com/mastodon/mastodon/pull/13820" target="_blank" rel="noreferrer noopener">#13820</a> . Pero falta el trabajo del lado del cliente, no principalmente por el aspecto criptográfico (aunque, como siempre, la implementación de la criptografía debe hacerse con cuidado), sino porque no hemos definido un protocolo o un formato para el contenido de los mensajes <em>cifrados</em> : el protocolo de servidor a servidor es ActivityPub, y gran parte también podría reutilizarse para los mensajes cifrados, pero esta no es necesariamente la mejor opción, y las aplicaciones cliente generalmente no manejan ActivityPub en sí, sino otras representaciones simplificadas y producidas por el software del servidor. . Por supuesto, con los mensajes encriptados, el servidor no puede realizar este procesamiento y, sea cual sea la forma que elijamos, las aplicaciones tendrán más trabajo que hacer".</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Y no podía faltar el PERO, siendo el único desafío real los clientes de terceros, quienes tendrían que implementar el soporte ellos mismos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A secas... lo tenemos y no, aún pensamos en ello.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mientras escribía este artículo me dio por revisar dicha implementación contando con nuevas respuestas, en ella comentaba hace<a href="https://github.com/mastodon/mastodon/pull/13820#issuecomment-1480301107" target="_blank" rel="noreferrer noopener"> 3 semanas un desarrollador que estaba trabajando en un cliente</a> de tercero para llevar los mensajes de extremo a extremo los "DMs" de Mastodon, solo que ha tenido varios inconvenientes en el camino y que incluso, apenas se daba cuenta de que dicha integración ya existía en la base, en la integración de la API.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Otra cosa, el desarrollador principal del servidor<strong> <a href="https://github.com/mastodon/mastodon/pull/13820#issuecomment-1481400164">koyu.space </a></strong><a href="https://github.com/mastodon/mastodon/pull/13820#issuecomment-1481400164" target="_blank" rel="noreferrer noopener">comentaba </a>algo muy cierto y era que todavía no se adelantaran a utilizar tal API porque no se ha visto en producción, entonces de momento no tiene mucho sentido estar expuesto a fallos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y para finalizar... si Mastodon logra cumplir con el cifrado de extremo a extremo en producción, SI que será un gran acierto, mismo del que traerá a muchos entusiastas pro-privacy, en donde se tendrá todo en un entorno integrado sin tener que emplear "X" mensajería para una cosa y "Y" servicio de Microblogguin para lo otro, quitando menos redundancia del camino; espero esto con muchas ansias.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El futuro de Mastodon parece ser impresionante (espero no decepcionarme).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gracias por leer. Este artículo no esta excepto a fallos, POR FAVOR, corrige amablemente&nbsp; y yo estaré encantando de hacerlo.<br></p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

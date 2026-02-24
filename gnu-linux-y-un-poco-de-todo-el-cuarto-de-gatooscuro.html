@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GNU/Linux y un poco de todo - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>GNU/Linux y un poco de todo</h2>
+            <p class='meta'>Publicado el 01/07/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p>Desde hace mucho tiempo he querido escribir un artículo sobre GNU/Linux y muchas cosas que sucedieron/suceden a su alrededor, pero no sabía concretamente por donde comenzar y estuve con esa duda por mucho tiempo (creo que al momento de escribir esto sigo con la misma duda) es un tema bastante extenso y equivocarse en algo sería fatal, se estaría irrespetando a la historia… antes de comenzar les recomiendo que se lean el libro escrito por Richard M. Stallman «Software libre para una sociedad libre» (<a href="https://www.gnu.org/philosophy/fsfs/free_software.es.pdf" target="_blank" rel="noreferrer noopener">https://www.gnu.org/philosophy/fsfs/free_software.es.pdf</a>) libro el cual me ha servido como base para escribir acerca de este tema.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Primero que todo comencemos con lo más básico <strong>¿Qué es GNU/Linux?</strong> GNU/Linux, también conocido erróneamente como Linux, es un sistema operativo libre tipo Unix; multiplataforma, multiusuario y multitarea. El sistema es la combinación de varios proyectos, entre los cuales destacan GNU (encabezado por Richard Stallman y la Free Software Foundation) y el núcleo Linux (encabezado por Linus Torvalds). Su desarrollo es uno de los ejemplos más prominentes de software libre: todo su código fuente puede ser utilizado, modificado y redistribuido libremente por cualquiera, bajo los términos de la GPL (Licencia Pública General de GNU) y otra serie de licencias libres.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>¿Por qué es GNU/Linux y no solo Linux?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A pesar de que cotidianamente se le dice «Linux» al sistema operativo es este en realidad tan solo el Kernel (núcleo) del sistema. La idea de montar un sistema completo se remonta a la década de 1980 con el proyecto GNU, así como una gran cantidad de los componentes que se usan hoy en día (además del núcleo). Sin embargo con todos estos componentes de dicho proyecto en 1990 una parte significativa de los medios empezó a denominar todo como «Linux» y obviamente esto ha sido motivo de polémicas. De hecho hay más GNU qué Linux pero aun así la ignorancia de muchos continúa y así sucesivamente con su denominación de «Linux» a todo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>En resumen:</strong> El objetivo de la mayoría de los proyectos de software libre era desarrollar un programa particular para cubrir una necesidad particular. Por ejemplo, Linus Torvalds se propuso escribir un kernel de tipo Unix (Linux), Donald Knuth se propuso escribir un editor de textos (TeX), Bob Scheifler se propuso desarrollar un sistema de ventanas (el X Window System) y asi sucesivamente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Siempre es importante llamar las cosas por su nombre para no quitarle mérito/importancia al mismo y además GNU fue un proyecto de larga trayectoria para desarrollar un sistema operativo libre, del cual el núcleo solo fue una pieza. Simplemente los defensores del término «Linux» argumentan que su acogida es por ser más corto, aunque reconocen que GNU es el más grande contribuyente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Dos grandes argumentos de por qué se debería llamar GNU/Linux (Además de respetar la historia):</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>«Si vamos a escoger un nombre para el sistema sobre la base de quién escribió los programas en el sistema, la elección más apropiada sería GNU. Pero no creemos que sea la forma correcta de considerar la pregunta. El Proyecto GNU no fue, y no es, un proyecto para desarrollar paquetes de software específicos. […] Muchas personas han hecho contribuciones enormes al software libre en el sistema y todos merecen crédito. Pero la razón por la cual es un sistema integrado – y no sólo una colección de programas útiles – es porque el Proyecto GNU estableció que así lo fuera. Hicimos una lista de los programas necesarios para crear un sistema libre completo, y todo lo que había en esa lista fuimos escribiéndolo sistemáticamente, o encontramos gente para escribirlo». Richard Stallman</li><li>«Llamar GNU/Linux al sistema reconoce el rol que nuestro idealismo jugó en la construcción de nuestra comunidad, y ayuda al público a reconocer la importancia práctica de estos ideales».</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Cabe señalar que existen derivados de Linux que no tienen componentes GNU (por ejemplo Android), así como distribuciones de GNU donde Linux está ausente (por ejemplo Debian GNU/Hurd).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/1024px-evolucic3b3n_unix.png" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Etimología</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No sé me podía olvidar el mítico acrónimo recursivo GNU: <strong>GNU’s Not Unix (GNU no es Unix).</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hasta el momento he escrito sobre qué es GNU/Linux y el por qué GNU/Linux y no «Linux» todo esto sin entrar mucho en su historia (con detalles) ¿Por qué? Porque es bastante larga y además ya está altamente documentada en cualquier idioma, de hecho a continuación voy a dejar fuentes y vídeos para dejar este artículo bien completo sin saltarme nada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Acerca de GNU: <a href="https://www.gnu.org/gnu/thegnuproject.html" target="_blank" rel="noreferrer noopener">https://www.gnu.org/gnu/thegnuproject.html</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Historia y además datos de GNU/Linux: </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/embed/pDtRCIgbtLk","type":"rich","providerNameSlug":"gestor-del-servicio","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-rich is-provider-gestor-del-servicio wp-block-embed-gestor-del-servicio wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/embed/pDtRCIgbtLk
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/embed/9ip3UA_04LM","type":"rich","providerNameSlug":"gestor-del-servicio","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-rich is-provider-gestor-del-servicio wp-block-embed-gestor-del-servicio wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/embed/9ip3UA_04LM
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>(https://www.youtube.com/embed/9ip3UA_04LM)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ya mencione un montón de información extensa que comprimí en unos cuantos párrafos ¿Ahora que queda por hacer? Por cierto, ya he hecho un artículo sobre Richard Stallman, Fundador del Movimiento del software libre, de la FSF y del Proyecto GNU: https://write.privacytools.io/gatooscuro/richard-stallman-un-ejemplo-de-vida</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>HURD</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Más arriba mencione la distro Debian GNU/Hurd donde Linux está ausente y claro, tenía que profundizar en él porque es parte importante en aquella historia, aunque la verdad no voy a profundizar en él porque prefiero pasar fuentes verídicas donde todo queda bastante claro (a mi de seguro se me escape algo).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>En resumen:</strong> Hurd era el núcleo que estaba desarrollando los mismo encargados del proyecto GNU pero la idea se hizo un poco ambiciosa y su desarrollo fue bastante lento, tan lento que se desarrollo el núcleo Linux primero y eso que se llevaban 1 año de diferencia (más o menos). El desarrollo de Hurd empezó en el año 1990, aunque fue anunciado para el año 2002, esto no fue conseguido porque se comenzó a utilizar el núcleo Linux que se lanzó en 1991. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/embed/JQUAMFHLsc8","type":"rich","providerNameSlug":"gestor-del-servicio","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-rich is-provider-gestor-del-servicio wp-block-embed-gestor-del-servicio wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/embed/JQUAMFHLsc8
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>(https://www.youtube.com/embed/JQUAMFHLsc8)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Más sobre GNU/HURD: <a href="https://es.wikipedia.org/wiki/GNU_Hurd" target="_blank" rel="noreferrer noopener">https://es.wikipedia.org/wiki/GNU_Hurd</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Actualmente el proyecto GNU y Alexandre Oliva mantienen un «Linux-Libre»: Linux-libre es un proyecto que publica y mantiene versiones modificadas del núcleo Linux a las que se les ha quitado todo el software que no incluye código fuente, así como el código fuente ofuscado o el que esté publicado mediante licencias privativas. Las partes que no tienen código fuente son llamadas blobs binarios y corresponden a firmware privativo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/freedo.png" alt="Cosmic radiation"> Freedo el Tux limpio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Distribuciones</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Una distribución de GNU/Linux es una distribución de software basada en el núcleo Linux que incluye determinados paquetes de software para satisfacer las necesidades de un grupo específico de usuarios, dando así origen a ediciones domésticas, empresariales y para servidores. La distribución más famosa es Ubuntu, la cual ha sido una de las que han hecho famoso a GNU/Linux en el mundo y equiparable a otros sistemas como Windows o macOS, pero Ubuntu no existiría sin Debian, una de las más antiguas y grandes distribuciones de la cual se basó Canonical para desarrollar Ubuntu.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hasta el momento he usado las siguientes distribuciones:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Debian</li><li>Ubuntu</li><li>Trisquel</li><li>PureOS</li><li>Tails</li><li>Kali Linux</li><li>Manjaro</li><li>Puppy Linux</li><li>Lubuntu</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Y actualmente estoy en Min GNU/Linux (llevo más de un año en esta).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Rama de todas las distribuciones GNU/Linux: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/320px-Linux_Distribution_Timeline.svg.png" target="_blank" rel="noreferrer noopener">https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/320px-Linux_Distribution_Timeline.svg.png</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Para finalizar un dato curioso: De acuerdo con TOP500.oorg, que lleva estadísticas sobre las 500 principales supercomputadoras del mundo, a noviembre de 2017: las 500 usaban una distribución basada en GNU/Linux.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hasta pronto, ¡No dudéis en criticar, corregir o sugerir!, así aprendemos todos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Fuentes en su respectiva mención.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://raw.githubusercontent.com/GatoOscuro/fotos/main/gnu-and-penguin-color.png" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Errores de principiante | GNU/Linux - El cuarto de GatoOscuro - ARCHIVO</title>
+    <base href="./">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        a { 
+            color: #f0f; 
+            text-decoration: none;
+            border-bottom: 1px dashed #f0f;
+        }
+        a:hover { 
+            background: #0f0; 
+            color: #000;
+        }
+        .navegacion {
+            background: #111;
+            border: 2px solid #f0f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #f0f;
+        }
+        .contenido {
+            padding: 20px;
+            min-height: 200px;
+            background: #0a0a0a;
+        }
+        .pie-pagina {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #0f0;
+        }
+        .blink {
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background:#000; border:2px solid #f0f; padding:10px; margin-bottom:20px; color:#0f0;"><span style="color:#ff0;">⚡ EL CUARTO DE GATOOSCURO</span> | <a href="indice.html" style="color:#0ff;">🏠 INICIO</a> | <a href="indice.html#paginas" style="color:#0ff;">📄 PÁGINAS</a> | <a href="indice.html#articulos" style="color:#0ff;">📰 ARTÍCULOS</a></div>
+    <hr>
+    <div class="contenido">
+        
+    <header>
+        <div class='contenedor'>
+            <h1><a href="indice.html">El cuarto de GatoOscuro</a></h1>
+            <p class='descripcion'>Todo tiene una razón de ser</p>
+        </div>
+    </header>
+    <main class='contenedor'>
+        <article class='entrada-completa'>
+            <h2>Errores de principiante | GNU/Linux</h2>
+            <p class='meta'>Publicado el 01/07/2021</p>
+            <p class='categorias'>Categorías: general</p>
+            <div class='contenido'>
+                <!-- wp:paragraph -->
+<p><strong>Nota:</strong> artículo escrito en 2015.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Llevo más o menos un poco dentro de la comunidad GNU/Linux, aunque siguiendo sus pasos desde hacia ya mucho, pero utilizando sus distribuciones si es hace poco y como principiante tuve algunos problemas que gracias al fuerte soporte que tiene por parte de la comunidad logre solucionar y ahora se los comparto con ustedes por si algún día tienen esta clase de errores o para cualquier otro internauta que ande buscando la solución a su molesto error.<br>Seguramente sean errores bastante estúpidos para los ya experimentados en las distribuciones de GNU/Linux, pero para un principiante que toda la vida perteneció a Windows los errores le han de llegar fácil y estúpidamente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Desmontar la USB en vez de formatearla</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Este fue un error estúpido, pero que es bastante común para usuarios principiantes en Ubuntu y es que cuando quieres formatear tu USB como normalmente lo haces en Windows, en Ubuntu entras a la aplicación Discos, pero terminas desmontando la USB o cambiándole de formato; esto impide la lectura en Windows o cualquier otra distribución GNU/Linux.<br>La solución es descargar el programa MiniTool Partition Wizard y leer las opciones que estas aplicaciones trae, es muy fácil porque la aplicación es muy visual; en caso de no saber por donde comenzar, escoge la opción Wipe y luego asignale un formato (FAT32) y listo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Eliminar GRUB y/o Dual Botting</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si alguna vez quieres eliminar cualquier distribución GNU/Linux tienes que pasar por este proceso para que el inicio de tu ordenador quede como nuevo y no aparezca algún error por eliminar la distribución desde las particiones o salga nuevamente el Dual Botting que utilizabas para iniciar entre los sistemas operativos GNU/Linux y Windows. Otra razón de la eliminación del GRUB y/o Dual Botting es porque quieres cambiar de distribución y primero tienes que limpiar el arranque para tu nueva distribución.<br>La solución es descargar EasyBCD 2.3 y hacer los siguientes pasos:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Ejecutar</li><li>Despliegue de BCD</li><li>Escribir MBR</li><li>Eliminar distribución de tus particiones</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Siguiendo estos pasos correctamente no tendrás ningún error, solo tienes que seguir estos pasos sin tocar nada más y listo, tendrás tu arranque de sistema operativo como nuevo e iniciando el único sistema operativo; Windows.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Problemas con la GRUB</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>GRUB es un gestor de arranque múltiple para iniciar entre diferentes sistemas operativos al arrancar tu máquina y así poder disponer de ambos cuando quieras (es un pequeño resumen de lo que puede hacer).<br>Pasa que el GRUB se suele joder por muchas cosas o mala configuración por parte del usuario, también se suele estropear cuando instalas primero Windows y luego alguna distribución GNU/Linux ¿Solución? La solución es descargar SúperGRUB y ejecutarlo en modo live USB y listo, tendrás todas las herramientas para recuperar la GRUB y demás archivos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Estos son los problemas más frecuentes en principiantes a la hora de iniciar en el mundo de GNU/Linux y aquí he escrito de como solucione dichos problemas, trate de no dar detalles muy técnicos para no confundir a cualquier principiante (tampoco soy técnico), además simplemente descargando los programas mencionados y buscando algún tutorial en YouTube todo estará entendido, por lo tanto solucionado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://www.dedoimedo.com/images/computers_new_2/grub2-chainload.png" alt="Cosmic radiation"/></figure>
+<!-- /wp:image -->
+            </div>
+        </article>
+        <p><a href="indice.html">&larr; Volver al inicio</a></p>
+    </main>
+    <footer>
+        <div class='contenedor'>
+            <p> </p>
+        </div>
+    </footer>
+
+    </div>
+    <hr>
+    <div class="pie-pagina">
+        <a href="indice.html">⬅️ VOLVER AL ÍNDICE</a> | 
+        <a href="indice.html">🏠 PÁGINA PRINCIPAL</a>
+        <div style="color:#666; margin-top:10px;">
+            <span class="blink">🟢</span> 24/02/2026
+        </div>
+    </div>
+</body>
+</html>
